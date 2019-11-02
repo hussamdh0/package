@@ -21,17 +21,25 @@ class BaseUserModel(AbstractUser):
     class Meta:
         abstract = True
         
-        
-class Place(models.Model):
-    city        = models.CharField(max_length=255, unique=False, null=True, blank=True)
+
+class Country(models.Model):
+    name = models.CharField(max_length=64, unique=True,  null=True, blank=True)
+    iso  = models.CharField(max_length=2,  unique=False, null=True, blank=True)
+    def __str__(self):
+        return str(self.name)
+
+class City(models.Model):
+    name        = models.CharField(max_length=64, unique=False, null=True, blank=True)
+    country     = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True, blank=True, related_name='city')
+    population  = models.IntegerField(unique=False, null=True, blank=True)
     latitude    = models.FloatField(unique=False, null=True, blank=True)
     longitude   = models.FloatField(unique=False, null=True, blank=True)
-
-
+    def __str__(self):
+        return str(self.name)
 class Shipment(BaseModel):
     name        = models.CharField(max_length=255, unique=False, null=True, blank=True)
-    origin      = models.ForeignKey(Place, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_origin')
-    destination = models.ForeignKey(Place, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_destination')
+    origin      = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_origin')
+    destination = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_destination')
 
 
 class User(BaseUserModel):
