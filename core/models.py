@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db                  import models
+from core.managers              import CityManager
 
 class BaseModel(models.Model):
     objects         = models.Manager()
@@ -34,8 +35,14 @@ class City(models.Model):
     population  = models.IntegerField(unique=False, null=True, blank=True)
     latitude    = models.FloatField(unique=False, null=True, blank=True)
     longitude   = models.FloatField(unique=False, null=True, blank=True)
+    objects     = CityManager()
     def __str__(self):
         return str(self.name)
+    def distance_squared(self, longitude, latitude):
+        a = longitude - self.longitude
+        b = latitude  - self.latitude
+        return a**2 + b**2
+    
 class Shipment(BaseModel):
     name        = models.CharField(max_length=255, unique=False, null=True, blank=True)
     origin      = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_origin')
