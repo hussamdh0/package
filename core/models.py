@@ -40,7 +40,9 @@ class Shipment(BaseModel):
     name        = models.CharField(max_length=255, unique=False, null=True, blank=True)
     origin      = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_origin')
     destination = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment_destination')
-
+    
+    def __str__(self):
+        return f'{str(self.name)}: from {str(self.origin)} to {str(self.destination)}'
 
 class User(BaseUserModel):
     shipments   = models.ManyToManyField(Shipment)
