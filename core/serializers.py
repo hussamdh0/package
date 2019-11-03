@@ -11,6 +11,6 @@ class CitySerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'country', 'population', 'longitude', 'latitude', 'distance',]  # '__all__'
         
     def get_distance(self, instance):
-        if self.context['latitude'] and self.context['longitude']:
+        if 'latitude' in self.context and 'longitude' in self.context and self.context['latitude'] and self.context['longitude']:
             return instance.distance_squared(latitude=self.context['latitude'], longitude=self.context['longitude'], )
         return None
