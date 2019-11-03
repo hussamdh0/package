@@ -14,3 +14,12 @@ class CityListAPIView(ListAPIView):
         if longitude: kwargs['longitude'] = float(longitude)
         if latitude:  kwargs['latitude']  = float(latitude)
         return City.objects.all_ordered(**kwargs)
+
+    def get_serializer_context(self):
+        return {
+            'request': self.request,
+            'format': self.format_kwarg,
+            'view': self,
+            'longitude': float(self.request.query_params.get('longitude')),
+            'latitude':  float(self.request.query_params.get('latitude')),
+        }
