@@ -32,7 +32,7 @@ class CityManager(models.Manager):
     def all_ordered(self, **kwargs):
         qs = self.get_queryset()
         if ('longitude' in kwargs and 'latitude' in kwargs):
-            return sorted(qs, key=lambda a: a.distance_squared(**kwargs))
+            return sorted(qs, key=lambda a: a.distance(**kwargs))
         if ('longitude' in kwargs):
             qs = qs.filter(longitude__gt=kwargs['longitude'] - 3, longitude__lt=kwargs['longitude'] + 3)
         if ('latitude' in kwargs):

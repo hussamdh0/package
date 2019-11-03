@@ -1,0 +1,81 @@
+ex: (dresden to cairo) http://localhost/api/journey?origin=1941&destination=2059
+
+[
+    {
+        "id": 2,
+        "name": "BtoC",
+        "origin": "Berlin",
+        "destination": "Cairo"
+    },
+    {
+        "id": 3,
+        "name": "DtoC",
+        "origin": "Dresden",
+        "destination": "Cairo"
+    },
+    {
+        "id": 6,
+        "name": "DtoT",
+        "origin": "Dresden",
+        "destination": "Tanta"
+    },
+    {
+        "id": 7,
+        "name": "BtoT",
+        "origin": "Berlin",
+        "destination": "Tanta"
+    }
+]
+
+while all: http://localhost/api/journey
+
+[
+    {
+        "id": 1,
+        "name": "my journey",
+        "origin": "Berlin",
+        "destination": "Dresden"
+    },
+    {
+        "id": 2,
+        "name": "BtoC",
+        "origin": "Berlin",
+        "destination": "Cairo"
+    },
+    {
+        "id": 3,
+        "name": "DtoC",
+        "origin": "Dresden",
+        "destination": "Cairo"
+    },
+    {
+        "id": 4,
+        "name": "DtoJ",
+        "origin": "Dresden",
+        "destination": "Jakarta"
+    },
+    {
+        "id": 5,
+        "name": "MtoC",
+        "origin": "Madrid",
+        "destination": "Cairo"
+    },
+    {
+        "id": 6,
+        "name": "DtoT",
+        "origin": "Dresden",
+        "destination": "Tanta"
+    },
+    {
+        "id": 7,
+        "name": "BtoT",
+        "origin": "Berlin",
+        "destination": "Tanta"
+    },
+    {
+        "id": 8,
+        "name": "PtoT",
+        "origin": "Paris",
+        "destination": "Tanta"
+    }
+]
