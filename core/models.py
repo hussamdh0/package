@@ -68,23 +68,32 @@ class City(models.Model):
 
 class JourneyManager (models.Manager):
 
+    # @staticmethod
+    # def get_coordinate_lt_gt_kwargs(city, s='origin'):
+    #     d = 3
+    #     return {
+    #         f'{s}__longitude__gt': city.longitude - d, f'{s}__longitude__lt': city.longitude + d,
+    #         f'{s}__latitude__gt' : city.latitude  - d, f'{s}__latitude__lt':  city.latitude  + d
+    #     }
+    
     @staticmethod
-    def get_coordinate_lt_gt_kwargs(city, s='origin'):
+    def filter_city(qs, city_id, s='origin', radius=0):
         d = 3
-        return {
-            f'{s}__longitude__gt': city.longitude - d, f'{s}__longitude__lt': city.longitude + d,
-            f'{s}__latitude__gt' : city.latitude  - d, f'{s}__latitude__lt':  city.latitude  + d
-        }
-        
+        city = City.objects.get(id=city_id)
+        if radius:
+            return [x for x in qs if getattr(x, s, None).distance(longitude=city.longitude, latitude=city.latitude) < radius]
+        else:
+            kwargs = {
+                f'{s}__longitude__gt': city.longitude - d, f'{s}__longitude__lt': city.longitude + d,
+                f'{s}__latitude__gt' : city.latitude  - d, f'{s}__latitude__lt':  city.latitude  + d
+            }
+            return qs.filter(**kwargs)
 
     def all_ordered(self, **kwargs):
         qs = self.get_queryset ()
-        if ('origin' in kwargs):
-            origin = City.objects.get (pk=kwargs['origin'])
-            qs = qs.filter (**self.get_coordinate_lt_gt_kwargs (city=origin, s='origin'))
-        if ('destination' in kwargs):
-            destination = City.objects.get (pk=kwargs['destination'])
-            qs = qs.filter (**self.get_coordinate_lt_gt_kwargs (city=destination, s='destination'))
+        radius = kwargs.pop('radius', 0)
+        if 'origin' in kwargs:        qs = self.filter_city(qs, kwargs['origin'],         s='origin',       radius=radius)
+        if 'destination' in kwargs:   qs = self.filter_city(qs, kwargs['destination'],    s='destination',  radius=radius)
         return qs
 
 

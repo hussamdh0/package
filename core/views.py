@@ -42,8 +42,10 @@ class JourneyListAPIView (ListAPIView):
         kwargs      = {}
         origin      = self.request.query_params.get('origin')
         destination = self.request.query_params.get('destination')
+        radius      = self.request.query_params.get('radius')
         if origin:      kwargs['origin']      = int(origin)
         if destination: kwargs['destination'] = int(destination)
+        if radius:      kwargs['radius']      = float(radius)
         return kwargs  # self.request.query_params
     
     def get_queryset(self):
