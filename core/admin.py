@@ -1,8 +1,8 @@
 from django.contrib import admin
-from core.models    import City, Country, Journey, User, Shipment
+from core.models    import City, Country, Journey, User  #  , Shipment_dep
 
 admin.site.register(User)
-admin.site.register(Shipment)
+# admin.site.register(Shipment_dep)
 
 
 class CityInline(admin.TabularInline):

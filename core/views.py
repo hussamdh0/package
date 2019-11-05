@@ -4,6 +4,7 @@ from rest_framework.response    import Response
 from rest_framework.generics    import ListAPIView, RetrieveAPIView, CreateAPIView
 from core.serializers           import CitySerializer,  CityNamesSerializer, JourneySerializer
 from core.models                import City, Journey
+from datetime                   import date, timedelta
 
 
 class CityListAPIView(ListAPIView):
@@ -40,9 +41,11 @@ class JourneyListAPIView (ListAPIView):
     
     def get_params(self):
         kwargs      = {}
+        _date       = self.request.query_params.get('date')
         origin      = self.request.query_params.get('origin')
         destination = self.request.query_params.get('destination')
         radius      = self.request.query_params.get('radius')
+        if _date:       kwargs['date']        = date(_date)
         if origin:      kwargs['origin']      = int(origin)
         if destination: kwargs['destination'] = int(destination)
         if radius:      kwargs['radius']      = float(radius)
@@ -50,11 +53,3 @@ class JourneyListAPIView (ListAPIView):
     
     def get_queryset(self):
         return Journey.objects.all_ordered(**self.get_params())
-    
-    # def get_serializer_context(self):
-    #     return {
-    #         'request': self.request,
-    #         'format' : self.format_kwarg,
-    #         'view'   : self,
-    #         **self.get_params (),
-    #     }
