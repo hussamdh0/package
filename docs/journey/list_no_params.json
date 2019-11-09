@@ -1,0 +1,55 @@
+{
+    "count": 8,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "name": "my journey",
+            "origin": "Berlin",
+            "destination": "Dresden"
+        },
+        {
+            "id": 2,
+            "name": "BtoC",
+            "origin": "Berlin",
+            "destination": "Cairo"
+        },
+        {
+            "id": 3,
+            "name": "DtoC",
+            "origin": "Dresden",
+            "destination": "Cairo"
+        },
+        {
+            "id": 4,
+            "name": "DtoJ",
+            "origin": "Dresden",
+            "destination": "Jakarta"
+        },
+        {
+            "id": 5,
+            "name": "MtoC",
+            "origin": "Madrid",
+            "destination": "Cairo"
+        },
+        {
+            "id": 6,
+            "name": "DtoT",
+            "origin": "Dresden",
+            "destination": "Tanta"
+        },
+        {
+            "id": 7,
+            "name": "BtoT",
+            "origin": "Berlin",
+            "destination": "Tanta"
+        },
+        {
+            "id": 8,
+            "name": "PtoT",
+            "origin": "Paris",
+            "destination": "Tanta"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+#%RAML 1.0
+title: package api
+version: v1
+baseUri: http://192.168.178.80/api/
+
+/city:
+  get:
+    queryParameters:
+      longitude:
+        displayName: longitude
+        type: number
+        description: can br passed to along with latitude to sort the results by distance to said coordinates
+        example: 51.0
+        required: false
+      latitude:
+        displayName: latitude
+        type: number
+        description: can br passed to along with longitude to sort the results by distance to said coordinates
+        example: 13.7
+        required: false
+      names_only:
+        displayName: names_only
+        type: boolean
+        description: limit fields to names only
+        example: 1
+        required: false
+    description: !include city/get_list.txt
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include city/list_no_params.json
+
+/city?latitude=51&longitude=13.7 (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include city/list_dresden.json
+
+/city?latitude=51&longitude=13.7&names_only=true (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include city/list_dresden_names_only.json
+
+/journey:
+  get:
+    queryParameters:
+      date:
+        displayName: date
+        type: string
+        description: return only journeys on that date (not implemented fully yet)
+        example: 2019-12-25
+        required: false
+      origin:
+        displayName: origin
+        type: int (city id)
+        description: return journey starting within 'radius' away from
+        example: 1941 (Dresden)
+        required: false
+      destination:
+        displayName: destination
+        type: int (city id)
+        description: return journey arriving within 'radius' away from
+        example: 2059 (Cairo)
+        required: false
+      radius:
+        displayName: radius
+        type: int (km)
+        description: explained, default = 50
+        example: 1
+        required: false
+    description: !include journey/get_list.txt
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include journey/list_no_params.json
+
+/journey?origin=1941&destination=2059&radius=100 (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include journey/list_dresden_to_cairo_radius_100.json
+
+/journey?origin=1941&destination=2059&radius=200 (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include journey/list_dresden_to_cairo_radius_200.json
+
+/journey?origin=1941&destination=2059&radius=18000 (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include journey/list_dresden_to_cairo_radius_18000.json

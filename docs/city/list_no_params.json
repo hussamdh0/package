@@ -1,0 +1,368 @@
+
+{
+    "count": 3212,
+    "next": "http://localhost/api/city?limit=40&offset=40",
+    "previous": null,
+    "results": [
+        {
+            "id": 2693,
+            "name": "Tokyo",
+            "country": "Japan",
+            "population": 35676000,
+            "longitude": 139.7514,
+            "latitude": 35.685,
+            "distance": null
+        },
+        {
+            "id": 2971,
+            "name": "New York",
+            "country": "United States",
+            "population": 19354922,
+            "longitude": -73.9249,
+            "latitude": 40.6943,
+            "distance": null
+        },
+        {
+            "id": 212,
+            "name": "Mexico City",
+            "country": "Mexico",
+            "population": 19028000,
+            "longitude": -99.131,
+            "latitude": 19.4424,
+            "distance": null
+        },
+        {
+            "id": 213,
+            "name": "Mexico City",
+            "country": "Mexico",
+            "population": 19028000,
+            "longitude": -99.131,
+            "latitude": 19.4424,
+            "distance": null
+        },
+        {
+            "id": 2389,
+            "name": "Mumbai",
+            "country": "India",
+            "population": 18978000,
+            "longitude": 72.857,
+            "latitude": 19.017,
+            "distance": null
+        },
+        {
+            "id": 1407,
+            "name": "Sao Paulo",
+            "country": "Brazil",
+            "population": 18845000,
+            "longitude": -46.625,
+            "latitude": -23.5587,
+            "distance": null
+        },
+        {
+            "id": 2454,
+            "name": "Delhi",
+            "country": "India",
+            "population": 15926000,
+            "longitude": 77.23,
+            "latitude": 28.67,
+            "distance": null
+        },
+        {
+            "id": 1558,
+            "name": "Shanghai",
+            "country": "China",
+            "population": 14987000,
+            "longitude": 121.4365,
+            "latitude": 31.2165,
+            "distance": null
+        },
+        {
+            "id": 2414,
+            "name": "Kolkata",
+            "country": "India",
+            "population": 14787000,
+            "longitude": 88.3247,
+            "latitude": 22.495,
+            "distance": null
+        },
+        {
+            "id": 3063,
+            "name": "Los Angeles",
+            "country": "United States",
+            "population": 12815475,
+            "longitude": -118.4068,
+            "latitude": 34.1139,
+            "distance": null
+        },
+        {
+            "id": 1232,
+            "name": "Dhaka",
+            "country": "Bangladesh",
+            "population": 12797394,
+            "longitude": 90.4086,
+            "latitude": 23.7231,
+            "distance": null
+        },
+        {
+            "id": 1202,
+            "name": "Buenos Aires",
+            "country": "Argentina",
+            "population": 12795000,
+            "longitude": -58.3975,
+            "latitude": -34.6025,
+            "distance": null
+        },
+        {
+            "id": 504,
+            "name": "Karachi",
+            "country": "Pakistan",
+            "population": 12130000,
+            "longitude": 66.99,
+            "latitude": 24.87,
+            "distance": null
+        },
+        {
+            "id": 2059,
+            "name": "Cairo",
+            "country": "Egypt",
+            "population": 11893000,
+            "longitude": 31.25,
+            "latitude": 30.05,
+            "distance": null
+        },
+        {
+            "id": 1389,
+            "name": "Rio de Janeiro",
+            "country": "Brazil",
+            "population": 11748000,
+            "longitude": -43.225,
+            "latitude": -22.925,
+            "distance": null
+        },
+        {
+            "id": 2728,
+            "name": "Osaka",
+            "country": "Japan",
+            "population": 11294000,
+            "longitude": 135.4601,
+            "latitude": 34.75,
+            "distance": null
+        },
+        {
+            "id": 1729,
+            "name": "Beijing",
+            "country": "China",
+            "population": 11106000,
+            "longitude": 116.3883,
+            "latitude": 39.9289,
+            "distance": null
+        },
+        {
+            "id": 479,
+            "name": "Manila",
+            "country": "Philippines",
+            "population": 11100000,
+            "longitude": 120.9822,
+            "latitude": 14.6042,
+            "distance": null
+        },
+        {
+            "id": 642,
+            "name": "Moscow",
+            "country": "Russia",
+            "population": 10452000,
+            "longitude": 37.6155,
+            "latitude": 55.7522,
+            "distance": null
+        },
+        {
+            "id": 934,
+            "name": "Istanbul",
+            "country": "Turkey",
+            "population": 10061000,
+            "longitude": 29.01,
+            "latitude": 41.105,
+            "distance": null
+        },
+        {
+            "id": 2139,
+            "name": "Paris",
+            "country": "France",
+            "population": 9904000,
+            "longitude": 2.3333,
+            "latitude": 48.8667,
+            "distance": null
+        },
+        {
+            "id": 2782,
+            "name": "Seoul",
+            "country": "Korea, South",
+            "population": 9796000,
+            "longitude": 126.9997,
+            "latitude": 37.5663,
+            "distance": null
+        },
+        {
+            "id": 360,
+            "name": "Lagos",
+            "country": "Nigeria",
+            "population": 9466000,
+            "longitude": 3.3915,
+            "latitude": 6.4433,
+            "distance": null
+        },
+        {
+            "id": 2292,
+            "name": "Jakarta",
+            "country": "Indonesia",
+            "population": 9125000,
+            "longitude": 106.8294,
+            "latitude": -6.1744,
+            "distance": null
+        },
+        {
+            "id": 1717,
+            "name": "Guangzhou",
+            "country": "China",
+            "population": 8829000,
+            "longitude": 113.325,
+            "latitude": 23.145,
+            "distance": null
+        },
+        {
+            "id": 3096,
+            "name": "Chicago",
+            "country": "United States",
+            "population": 8675982,
+            "longitude": -87.6861,
+            "latitude": 41.8373,
+            "distance": null
+        },
+        {
+            "id": 2202,
+            "name": "London",
+            "country": "United Kingdom",
+            "population": 8567000,
+            "longitude": -0.1167,
+            "latitude": 51.5,
+            "distance": null
+        },
+        {
+            "id": 449,
+            "name": "Lima",
+            "country": "Peru",
+            "population": 8012000,
+            "longitude": -77.0501,
+            "latitude": -12.048,
+            "distance": null
+        },
+        {
+            "id": 2622,
+            "name": "Tehran",
+            "country": "Iran",
+            "population": 7873000,
+            "longitude": 51.4243,
+            "latitude": 35.6719,
+            "distance": null
+        },
+        {
+            "id": 1473,
+            "name": "Kinshasa",
+            "country": "Congo (Kinshasa)",
+            "population": 7843000,
+            "longitude": 15.315,
+            "latitude": -4.3297,
+            "distance": null
+        },
+        {
+            "id": 1881,
+            "name": "Bogota",
+            "country": "Colombia",
+            "population": 7772000,
+            "longitude": -74.0833,
+            "latitude": 4.5964,
+            "distance": null
+        },
+        {
+            "id": 1682,
+            "name": "Shenzhen",
+            "country": "China",
+            "population": 7581000,
+            "longitude": 114.1221,
+            "latitude": 22.5524,
+            "distance": null
+        },
+        {
+            "id": 1703,
+            "name": "Wuhan",
+            "country": "China",
+            "population": 7243000,
+            "longitude": 114.27,
+            "latitude": 30.58,
+            "distance": null
+        },
+        {
+            "id": 2249,
+            "name": "Hong Kong",
+            "country": "Hong Kong",
+            "population": 7206000,
+            "longitude": 114.185,
+            "latitude": 22.305,
+            "distance": null
+        },
+        {
+            "id": 1573,
+            "name": "Tianjin",
+            "country": "China",
+            "population": 7180000,
+            "longitude": 117.2,
+            "latitude": 39.13,
+            "distance": null
+        },
+        {
+            "id": 2407,
+            "name": "Chennai",
+            "country": "India",
+            "population": 7163000,
+            "longitude": 80.28,
+            "latitude": 13.09,
+            "distance": null
+        },
+        {
+            "id": 955,
+            "name": "Taipei",
+            "country": "Taiwan",
+            "population": 6900273,
+            "longitude": 121.5683,
+            "latitude": 25.0358,
+            "distance": null
+        },
+        {
+            "id": 2394,
+            "name": "Bangalore",
+            "country": "India",
+            "population": 6787000,
+            "longitude": 77.56,
+            "latitude": 12.97,
+            "distance": null
+        },
+        {
+            "id": 859,
+            "name": "Bangkok",
+            "country": "Thailand",
+            "population": 6704000,
+            "longitude": 100.5166,
+            "latitude": 13.75,
+            "distance": null
+        },
+        {
+            "id": 514,
+            "name": "Lahore",
+            "country": "Pakistan",
+            "population": 6577000,
+            "longitude": 74.35,
+            "latitude": 31.56,
+            "distance": null
+        }
+    ]
+}

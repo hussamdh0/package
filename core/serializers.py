@@ -28,5 +28,5 @@ class JourneySerializer (serializers.ModelSerializer):
     
     class Meta:
         model = Journey
-        fields = ['id', 'name', 'origin', 'destination',]
+        fields = ['id', 'name', 'date', 'origin', 'destination',]
     

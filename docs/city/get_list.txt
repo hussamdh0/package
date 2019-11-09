@@ -1,0 +1,7 @@
+Get list of cities
+
+Fields: id, name, country, population, longitude, latitude, distance
+
+id: primary key
+
+distance: distance between the city and the location at the passed coordinates

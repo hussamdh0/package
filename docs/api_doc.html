@@ -1,0 +1,1194 @@
+<!DOCTYPE HTML><html><head><title>package api API documentation</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="https://github.com/raml2html/raml2html 7.5.0"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script type="text/javascript">
+      $(document).ready(function() {
+  $('.page-header pre code, .top-resource-description pre code, .modal-body pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+
+  $('[data-toggle]').click(function() {
+    var selector = $(this).data('target') + ' pre code';
+    $(selector).each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  });
+
+  // open modal on hashes like #_action_get
+  $(window).bind('hashchange', function(e) {
+    var anchor_id = document.location.hash.substr(1); //strip #
+    var element = $('#' + anchor_id);
+
+    // do we have such element + is it a modal?  --> show it
+    if (element.length && element.hasClass('modal')) {
+      element.modal('show');
+    }
+  });
+
+  // execute hashchange on first page load
+  $(window).trigger('hashchange');
+
+  // remove url fragment on modal hide
+  $('.modal').on('hidden.bs.modal', function() {
+    try {
+      if (history && history.replaceState) {
+          history.replaceState({}, '', '#');
+      }
+    } catch(e) {}
+  });
+});
+    </script><style>
+      .hljs {
+  background: transparent;
+}
+.parent {
+  color: #999;
+}
+.list-group-item > .badge {
+  float: none;
+  margin-right: 6px;
+}
+.panel-title > .methods {
+  float: right;
+}
+.badge {
+  border-radius: 0;
+  text-transform: uppercase;
+  width: 70px;
+  font-weight: normal;
+  color: #f3f3f6;
+  line-height: normal;
+}
+.badge_get {
+  background-color: #63a8e2;
+}
+.badge_post {
+  background-color: #6cbd7d;
+}
+.badge_put {
+  background-color: #22bac4;
+}
+.badge_delete {
+  background-color: #d26460;
+}
+.badge_patch {
+  background-color: #ccc444;
+}
+.list-group,
+.panel-group {
+  margin-bottom: 0;
+}
+.panel-group .panel+.panel-white {
+  margin-top: 0;
+}
+.panel-group .panel-white {
+  border-bottom: 1px solid #F5F5F5;
+  border-radius: 0;
+}
+.panel-white:last-child {
+  border-bottom-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.panel-white .panel-heading {
+  background: white;
+}
+.tab-pane ul {
+  padding-left: 2em;
+}
+.tab-pane h1 {
+  font-size: 1.3em;
+}
+.tab-pane h2 {
+  font-size: 1.2em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+.tab-pane h3 {
+  font-size: 1.1em;
+}
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+#sidebar {
+  margin-top: 30px;
+  padding-right: 5px;
+  overflow: auto;
+  height: 90%;
+}
+.top-resource-description {
+  border-bottom: 1px solid #ddd;
+  background: #fcfcfc;
+  padding: 15px 15px 0 15px;
+  margin: -15px -15px 10px -15px;
+}
+.resource-description {
+  border-bottom: 1px solid #fcfcfc;
+  background: #fcfcfc;
+  padding: 15px 15px 0 15px;
+  margin: -15px -15px 10px -15px;
+}
+.resource-description p:last-child {
+  margin: 0;
+}
+.list-group .badge {
+  float: left;
+}
+.method_description {
+  margin-left: 85px;
+}
+.method_description p:last-child {
+  margin: 0;
+}
+.list-group-item {
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: #f5f5f5;
+}
+pre code {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+.items {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+.examples {
+  margin-left: 0.5em;
+}
+.resource-modal li > ul {
+  margin-bottom: 1em;
+}
+.required {
+  color: #f00;
+}
+    </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>package api API documentation <small>version v1</small></h1><p>http://192.168.178.80/api/</p></div><div class="panel panel-default"><div class="panel-heading"><h3 id="city" class="panel-title">/city</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_city"><span class="parent"></span>/city</a> <span class="methods"><a href="#city_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_city" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#city_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get list of cities</p><p>Fields: id, name, country, population, longitude, latitude, distance</p><p>id: primary key</p><p>distance: distance between the city and the location at the passed coordinates</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="city_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/city</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get list of cities</p><p>Fields: id, name, country, population, longitude, latitude, distance</p><p>id: primary key</p><p>distance: distance between the city and the location at the passed coordinates</p></div><ul class="nav nav-tabs"><li class="active"><a href="#city_get_request" data-toggle="tab">Request</a></li><li><a href="#city_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="city_get_request"><h3>Query Parameters</h3><ul><li><strong>longitude</strong>: <em>(number)</em><p>can br passed to along with latitude to sort the results by distance to said coordinates</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>51</code></pre></div></li><li><strong>latitude</strong>: <em>(number)</em><p>can br passed to along with longitude to sort the results by distance to said coordinates</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>13.7</code></pre></div></li><li><strong>names_only</strong>: <em>(boolean)</em><p>limit fields to names only</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>1</code></pre></div></li></ul></div><div class="tab-pane" id="city_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>
+{
+    "count": 3212,
+    "next": "http://localhost/api/city?limit=40&amp;offset=40",
+    "previous": null,
+    "results": [
+        {
+            "id": 2693,
+            "name": "Tokyo",
+            "country": "Japan",
+            "population": 35676000,
+            "longitude": 139.7514,
+            "latitude": 35.685,
+            "distance": null
+        },
+        {
+            "id": 2971,
+            "name": "New York",
+            "country": "United States",
+            "population": 19354922,
+            "longitude": -73.9249,
+            "latitude": 40.6943,
+            "distance": null
+        },
+        {
+            "id": 212,
+            "name": "Mexico City",
+            "country": "Mexico",
+            "population": 19028000,
+            "longitude": -99.131,
+            "latitude": 19.4424,
+            "distance": null
+        },
+        {
+            "id": 213,
+            "name": "Mexico City",
+            "country": "Mexico",
+            "population": 19028000,
+            "longitude": -99.131,
+            "latitude": 19.4424,
+            "distance": null
+        },
+        {
+            "id": 2389,
+            "name": "Mumbai",
+            "country": "India",
+            "population": 18978000,
+            "longitude": 72.857,
+            "latitude": 19.017,
+            "distance": null
+        },
+        {
+            "id": 1407,
+            "name": "Sao Paulo",
+            "country": "Brazil",
+            "population": 18845000,
+            "longitude": -46.625,
+            "latitude": -23.5587,
+            "distance": null
+        },
+        {
+            "id": 2454,
+            "name": "Delhi",
+            "country": "India",
+            "population": 15926000,
+            "longitude": 77.23,
+            "latitude": 28.67,
+            "distance": null
+        },
+        {
+            "id": 1558,
+            "name": "Shanghai",
+            "country": "China",
+            "population": 14987000,
+            "longitude": 121.4365,
+            "latitude": 31.2165,
+            "distance": null
+        },
+        {
+            "id": 2414,
+            "name": "Kolkata",
+            "country": "India",
+            "population": 14787000,
+            "longitude": 88.3247,
+            "latitude": 22.495,
+            "distance": null
+        },
+        {
+            "id": 3063,
+            "name": "Los Angeles",
+            "country": "United States",
+            "population": 12815475,
+            "longitude": -118.4068,
+            "latitude": 34.1139,
+            "distance": null
+        },
+        {
+            "id": 1232,
+            "name": "Dhaka",
+            "country": "Bangladesh",
+            "population": 12797394,
+            "longitude": 90.4086,
+            "latitude": 23.7231,
+            "distance": null
+        },
+        {
+            "id": 1202,
+            "name": "Buenos Aires",
+            "country": "Argentina",
+            "population": 12795000,
+            "longitude": -58.3975,
+            "latitude": -34.6025,
+            "distance": null
+        },
+        {
+            "id": 504,
+            "name": "Karachi",
+            "country": "Pakistan",
+            "population": 12130000,
+            "longitude": 66.99,
+            "latitude": 24.87,
+            "distance": null
+        },
+        {
+            "id": 2059,
+            "name": "Cairo",
+            "country": "Egypt",
+            "population": 11893000,
+            "longitude": 31.25,
+            "latitude": 30.05,
+            "distance": null
+        },
+        {
+            "id": 1389,
+            "name": "Rio de Janeiro",
+            "country": "Brazil",
+            "population": 11748000,
+            "longitude": -43.225,
+            "latitude": -22.925,
+            "distance": null
+        },
+        {
+            "id": 2728,
+            "name": "Osaka",
+            "country": "Japan",
+            "population": 11294000,
+            "longitude": 135.4601,
+            "latitude": 34.75,
+            "distance": null
+        },
+        {
+            "id": 1729,
+            "name": "Beijing",
+            "country": "China",
+            "population": 11106000,
+            "longitude": 116.3883,
+            "latitude": 39.9289,
+            "distance": null
+        },
+        {
+            "id": 479,
+            "name": "Manila",
+            "country": "Philippines",
+            "population": 11100000,
+            "longitude": 120.9822,
+            "latitude": 14.6042,
+            "distance": null
+        },
+        {
+            "id": 642,
+            "name": "Moscow",
+            "country": "Russia",
+            "population": 10452000,
+            "longitude": 37.6155,
+            "latitude": 55.7522,
+            "distance": null
+        },
+        {
+            "id": 934,
+            "name": "Istanbul",
+            "country": "Turkey",
+            "population": 10061000,
+            "longitude": 29.01,
+            "latitude": 41.105,
+            "distance": null
+        },
+        {
+            "id": 2139,
+            "name": "Paris",
+            "country": "France",
+            "population": 9904000,
+            "longitude": 2.3333,
+            "latitude": 48.8667,
+            "distance": null
+        },
+        {
+            "id": 2782,
+            "name": "Seoul",
+            "country": "Korea, South",
+            "population": 9796000,
+            "longitude": 126.9997,
+            "latitude": 37.5663,
+            "distance": null
+        },
+        {
+            "id": 360,
+            "name": "Lagos",
+            "country": "Nigeria",
+            "population": 9466000,
+            "longitude": 3.3915,
+            "latitude": 6.4433,
+            "distance": null
+        },
+        {
+            "id": 2292,
+            "name": "Jakarta",
+            "country": "Indonesia",
+            "population": 9125000,
+            "longitude": 106.8294,
+            "latitude": -6.1744,
+            "distance": null
+        },
+        {
+            "id": 1717,
+            "name": "Guangzhou",
+            "country": "China",
+            "population": 8829000,
+            "longitude": 113.325,
+            "latitude": 23.145,
+            "distance": null
+        },
+        {
+            "id": 3096,
+            "name": "Chicago",
+            "country": "United States",
+            "population": 8675982,
+            "longitude": -87.6861,
+            "latitude": 41.8373,
+            "distance": null
+        },
+        {
+            "id": 2202,
+            "name": "London",
+            "country": "United Kingdom",
+            "population": 8567000,
+            "longitude": -0.1167,
+            "latitude": 51.5,
+            "distance": null
+        },
+        {
+            "id": 449,
+            "name": "Lima",
+            "country": "Peru",
+            "population": 8012000,
+            "longitude": -77.0501,
+            "latitude": -12.048,
+            "distance": null
+        },
+        {
+            "id": 2622,
+            "name": "Tehran",
+            "country": "Iran",
+            "population": 7873000,
+            "longitude": 51.4243,
+            "latitude": 35.6719,
+            "distance": null
+        },
+        {
+            "id": 1473,
+            "name": "Kinshasa",
+            "country": "Congo (Kinshasa)",
+            "population": 7843000,
+            "longitude": 15.315,
+            "latitude": -4.3297,
+            "distance": null
+        },
+        {
+            "id": 1881,
+            "name": "Bogota",
+            "country": "Colombia",
+            "population": 7772000,
+            "longitude": -74.0833,
+            "latitude": 4.5964,
+            "distance": null
+        },
+        {
+            "id": 1682,
+            "name": "Shenzhen",
+            "country": "China",
+            "population": 7581000,
+            "longitude": 114.1221,
+            "latitude": 22.5524,
+            "distance": null
+        },
+        {
+            "id": 1703,
+            "name": "Wuhan",
+            "country": "China",
+            "population": 7243000,
+            "longitude": 114.27,
+            "latitude": 30.58,
+            "distance": null
+        },
+        {
+            "id": 2249,
+            "name": "Hong Kong",
+            "country": "Hong Kong",
+            "population": 7206000,
+            "longitude": 114.185,
+            "latitude": 22.305,
+            "distance": null
+        },
+        {
+            "id": 1573,
+            "name": "Tianjin",
+            "country": "China",
+            "population": 7180000,
+            "longitude": 117.2,
+            "latitude": 39.13,
+            "distance": null
+        },
+        {
+            "id": 2407,
+            "name": "Chennai",
+            "country": "India",
+            "population": 7163000,
+            "longitude": 80.28,
+            "latitude": 13.09,
+            "distance": null
+        },
+        {
+            "id": 955,
+            "name": "Taipei",
+            "country": "Taiwan",
+            "population": 6900273,
+            "longitude": 121.5683,
+            "latitude": 25.0358,
+            "distance": null
+        },
+        {
+            "id": 2394,
+            "name": "Bangalore",
+            "country": "India",
+            "population": 6787000,
+            "longitude": 77.56,
+            "latitude": 12.97,
+            "distance": null
+        },
+        {
+            "id": 859,
+            "name": "Bangkok",
+            "country": "Thailand",
+            "population": 6704000,
+            "longitude": 100.5166,
+            "latitude": 13.75,
+            "distance": null
+        },
+        {
+            "id": 514,
+            "name": "Lahore",
+            "country": "Pakistan",
+            "population": 6577000,
+            "longitude": 74.35,
+            "latitude": 31.56,
+            "distance": null
+        }
+    ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="city_latitude_51_longitude_13_7__this_is_an_example_" class="panel-title">/city?latitude=51&longitude=13.7 (this is an example)</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_city_latitude_51_longitude_13_7__this_is_an_example_"><span class="parent"></span>/city?latitude=51&longitude=13.7 (this is an example)</a> <span class="methods"><a href="#city_latitude_51_longitude_13_7__this_is_an_example__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_city_latitude_51_longitude_13_7__this_is_an_example_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#city_latitude_51_longitude_13_7__this_is_an_example__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="city_latitude_51_longitude_13_7__this_is_an_example__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/city?latitude=51&longitude=13.7 (this is an example)</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#city_latitude_51_longitude_13_7__this_is_an_example__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="city_latitude_51_longitude_13_7__this_is_an_example__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "count": 3212,
+    "next": "http://localhost/api/city?latitude=51&amp;limit=40&amp;longitude=13.7&amp;offset=40",
+    "previous": null,
+    "results": [
+        {
+            "id": 1941,
+            "name": "Dresden",
+            "country": "Germany",
+            "population": 617515,
+            "longitude": 13.75,
+            "latitude": 51.05,
+            "distance": 6.563951823078475
+        },
+        {
+            "id": 1972,
+            "name": "Chemnitz",
+            "country": "Germany",
+            "population": 302643,
+            "longitude": 12.92,
+            "latitude": 50.83,
+            "distance": 57.82064679600922
+        },
+        {
+            "id": 1973,
+            "name": "Cottbus",
+            "country": "Germany",
+            "population": 105067,
+            "longitude": 14.33,
+            "latitude": 51.7704,
+            "distance": 96.11426907752202
+        },
+        {
+            "id": 1976,
+            "name": "Leipzig",
+            "country": "Germany",
+            "population": 542529,
+            "longitude": 12.41,
+            "latitude": 51.3354,
+            "distance": 97.30662745972633
+        },
+        {
+            "id": 1921,
+            "name": "Liberec",
+            "country": "Czechia",
+            "population": 102175,
+            "longitude": 15.08,
+            "latitude": 50.8,
+            "distance": 99.23494677043007
+        },
+        {
+            "id": 1975,
+            "name": "Gera",
+            "country": "Germany",
+            "population": 104659,
+            "longitude": 12.07,
+            "latitude": 50.8704,
+            "distance": 115.05289105192237
+        },
+        {
+            "id": 1922,
+            "name": "Prague",
+            "country": "Czechia",
+            "population": 1162000,
+            "longitude": 14.466,
+            "latitude": 50.0833,
+            "distance": 115.33960003180962
+        },
+        {
+            "id": 1924,
+            "name": "Pizen",
+            "country": "Czechia",
+            "population": 164180,
+            "longitude": 13.36,
+            "latitude": 49.7404,
+            "distance": 142.03208162743786
+        },
+        {
+            "id": 1974,
+            "name": "Jena",
+            "country": "Germany",
+            "population": 104712,
+            "longitude": 11.58,
+            "latitude": 50.9304,
+            "distance": 148.56607089025178
+        },
+        {
+            "id": 1931,
+            "name": "Potsdam",
+            "country": "Germany",
+            "population": 218095,
+            "longitude": 13.07,
+            "latitude": 52.4004,
+            "distance": 161.55365008498381
+        },
+        {
+            "id": 544,
+            "name": "Zielona Gora",
+            "country": "Poland",
+            "population": 118433,
+            "longitude": 15.5,
+            "latitude": 51.9504,
+            "distance": 163.3190465550987
+        },
+        {
+            "id": 1928,
+            "name": "Berlin",
+            "country": "Germany",
+            "population": 3406000,
+            "longitude": 13.4015,
+            "latitude": 52.5218,
+            "distance": 170.35149635456875
+        },
+        {
+            "id": 1920,
+            "name": "Pardubice",
+            "country": "Czechia",
+            "population": 107064,
+            "longitude": 15.76,
+            "latitude": 50.0404,
+            "distance": 180.41933510659186
+        },
+        {
+            "id": 1942,
+            "name": "Erfurt",
+            "country": "Germany",
+            "population": 203254,
+            "longitude": 11.03,
+            "latitude": 50.9701,
+            "distance": 186.80140627262082
+        },
+        {
+            "id": 1934,
+            "name": "Magdeburg",
+            "country": "Germany",
+            "population": 229826,
+            "longitude": 11.62,
+            "latitude": 52.1304,
+            "distance": 190.83676675649969
+        },
+        {
+            "id": 541,
+            "name": "Wroclaw",
+            "country": "Poland",
+            "population": 634893,
+            "longitude": 17.03,
+            "latitude": 51.1104,
+            "distance": 232.9040516104136
+        },
+        {
+            "id": 1964,
+            "name": "Regensburg",
+            "country": "Germany",
+            "population": 164359,
+            "longitude": 12.12,
+            "latitude": 49.0204,
+            "distance": 247.21910302173674
+        },
+        {
+            "id": 1967,
+            "name": "Nurnberg",
+            "country": "Germany",
+            "population": 737304,
+            "longitude": 11.08,
+            "latitude": 49.45,
+            "distance": 253.67149741104086
+        },
+        {
+            "id": 1968,
+            "name": "Furth",
+            "country": "Germany",
+            "population": 237844,
+            "longitude": 11.0,
+            "latitude": 49.47,
+            "distance": 256.3658271028208
+        },
+        {
+            "id": 1957,
+            "name": "Braunschweig",
+            "country": "Germany",
+            "population": 244715,
+            "longitude": 10.5,
+            "latitude": 52.25,
+            "distance": 260.78812899714546
+        },
+        {
+            "id": 1955,
+            "name": "Gottingen",
+            "country": "Germany",
+            "population": 139419,
+            "longitude": 9.92,
+            "latitude": 51.5204,
+            "distance": 269.1153934124826
+        },
+        {
+            "id": 543,
+            "name": "Poznan",
+            "country": "Poland",
+            "population": 623997,
+            "longitude": 16.8999,
+            "latitude": 52.4058,
+            "distance": 270.08657267535597
+        },
+        {
+            "id": 546,
+            "name": "Szczecin",
+            "country": "Poland",
+            "population": 407811,
+            "longitude": 14.53,
+            "latitude": 53.4204,
+            "distance": 274.8358582543553
+        },
+        {
+            "id": 1923,
+            "name": "Brno",
+            "country": "Czechia",
+            "population": 388277,
+            "longitude": 16.61,
+            "latitude": 49.2004,
+            "distance": 288.08719952553287
+        },
+        {
+            "id": 1926,
+            "name": "Olomouc",
+            "country": "Czechia",
+            "population": 101268,
+            "longitude": 17.25,
+            "latitude": 49.63,
+            "distance": 294.29275333772284
+        },
+        {
+            "id": 1945,
+            "name": "Kassel",
+            "country": "Germany",
+            "population": 289924,
+            "longitude": 9.5,
+            "latitude": 51.3,
+            "distance": 294.61984797252325
+        },
+        {
+            "id": 1962,
+            "name": "Ingolstadt",
+            "country": "Germany",
+            "population": 163325,
+            "longitude": 11.45,
+            "latitude": 48.7704,
+            "distance": 295.5022975149774
+        },
+        {
+            "id": 1965,
+            "name": "Wurzburg",
+            "country": "Germany",
+            "population": 168561,
+            "longitude": 9.95,
+            "latitude": 49.8004,
+            "distance": 297.15076540122635
+        },
+        {
+            "id": 552,
+            "name": "Opole",
+            "country": "Poland",
+            "population": 131412,
+            "longitude": 17.9313,
+            "latitude": 50.685,
+            "distance": 298.9260962451843
+        },
+        {
+            "id": 1205,
+            "name": "Linz",
+            "country": "Austria",
+            "population": 349161,
+            "longitude": 14.2888,
+            "latitude": 48.3192,
+            "distance": 300.8972537116403
+        },
+        {
+            "id": 1936,
+            "name": "Hannover",
+            "country": "Germany",
+            "population": 722490,
+            "longitude": 9.7167,
+            "latitude": 52.367,
+            "distance": 313.61600392242366
+        },
+        {
+            "id": 1927,
+            "name": "Zlin",
+            "country": "Czechia",
+            "population": 124610,
+            "longitude": 17.65,
+            "latitude": 49.2304,
+            "distance": 343.2845445499785
+        },
+        {
+            "id": 1925,
+            "name": "Ostrava",
+            "country": "Czechia",
+            "population": 478963,
+            "longitude": 18.25,
+            "latitude": 49.8304,
+            "distance": 347.3436115151476
+        },
+        {
+            "id": 1930,
+            "name": "Munich",
+            "country": "Germany",
+            "population": 1275000,
+            "longitude": 11.575,
+            "latitude": 48.1299,
+            "distance": 353.77019954288664
+        },
+        {
+            "id": 1963,
+            "name": "Augsburg",
+            "country": "Germany",
+            "population": 358989,
+            "longitude": 10.9,
+            "latitude": 48.35,
+            "distance": 356.6793314061367
+        },
+        {
+            "id": 1944,
+            "name": "Rostock",
+            "country": "Germany",
+            "population": 203080,
+            "longitude": 12.15,
+            "latitude": 54.0704,
+            "distance": 356.8992060775204
+        },
+        {
+            "id": 1204,
+            "name": "Salzburg",
+            "country": "Austria",
+            "population": 206279,
+            "longitude": 13.04,
+            "latitude": 47.8105,
+            "distance": 357.6279474689973
+        },
+        {
+            "id": 556,
+            "name": "Gliwice",
+            "country": "Poland",
+            "population": 507670,
+            "longitude": 18.67,
+            "latitude": 50.3304,
+            "distance": 357.8163947837532
+        },
+        {
+            "id": 1207,
+            "name": "Vienna",
+            "country": "Austria",
+            "population": 2400000,
+            "longitude": 16.3666,
+            "latitude": 48.2,
+            "distance": 365.5926740710396
+        },
+        {
+            "id": 1970,
+            "name": "Frankfurt",
+            "country": "Germany",
+            "population": 2895000,
+            "longitude": 8.675,
+            "latitude": 50.1,
+            "distance": 368.55406389573716
+        }
+    ]
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="city_latitude_51_longitude_13_7_names_only_true__this_is_an_example_" class="panel-title">/city?latitude=51&longitude=13.7&names_only=true (this is an example)</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_city_latitude_51_longitude_13_7_names_only_true__this_is_an_example_"><span class="parent"></span>/city?latitude=51&longitude=13.7&names_only=true (this is an example)</a> <span class="methods"><a href="#city_latitude_51_longitude_13_7_names_only_true__this_is_an_example__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_city_latitude_51_longitude_13_7_names_only_true__this_is_an_example_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#city_latitude_51_longitude_13_7_names_only_true__this_is_an_example__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="city_latitude_51_longitude_13_7_names_only_true__this_is_an_example__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/city?latitude=51&longitude=13.7&names_only=true (this is an example)</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#city_latitude_51_longitude_13_7_names_only_true__this_is_an_example__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="city_latitude_51_longitude_13_7_names_only_true__this_is_an_example__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "count": 3212,
+    "next": "http://localhost/api/city?latitude=51&amp;limit=40&amp;longitude=13.7&amp;names_only=true&amp;offset=40",
+    "previous": null,
+    "results": [
+        {
+            "name": "Dresden"
+        },
+        {
+            "name": "Chemnitz"
+        },
+        {
+            "name": "Cottbus"
+        },
+        {
+            "name": "Leipzig"
+        },
+        {
+            "name": "Liberec"
+        },
+        {
+            "name": "Gera"
+        },
+        {
+            "name": "Prague"
+        },
+        {
+            "name": "Pizen"
+        },
+        {
+            "name": "Jena"
+        },
+        {
+            "name": "Potsdam"
+        },
+        {
+            "name": "Zielona Gora"
+        },
+        {
+            "name": "Berlin"
+        },
+        {
+            "name": "Pardubice"
+        },
+        {
+            "name": "Erfurt"
+        },
+        {
+            "name": "Magdeburg"
+        },
+        {
+            "name": "Wroclaw"
+        },
+        {
+            "name": "Regensburg"
+        },
+        {
+            "name": "Nurnberg"
+        },
+        {
+            "name": "Furth"
+        },
+        {
+            "name": "Braunschweig"
+        },
+        {
+            "name": "Gottingen"
+        },
+        {
+            "name": "Poznan"
+        },
+        {
+            "name": "Szczecin"
+        },
+        {
+            "name": "Brno"
+        },
+        {
+            "name": "Olomouc"
+        },
+        {
+            "name": "Kassel"
+        },
+        {
+            "name": "Ingolstadt"
+        },
+        {
+            "name": "Wurzburg"
+        },
+        {
+            "name": "Opole"
+        },
+        {
+            "name": "Linz"
+        },
+        {
+            "name": "Hannover"
+        },
+        {
+            "name": "Zlin"
+        },
+        {
+            "name": "Ostrava"
+        },
+        {
+            "name": "Munich"
+        },
+        {
+            "name": "Augsburg"
+        },
+        {
+            "name": "Rostock"
+        },
+        {
+            "name": "Salzburg"
+        },
+        {
+            "name": "Gliwice"
+        },
+        {
+            "name": "Vienna"
+        },
+        {
+            "name": "Frankfurt"
+        }
+    ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="journey" class="panel-title">/journey</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_journey"><span class="parent"></span>/journey</a> <span class="methods"><a href="#journey_get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_journey" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#journey_get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"><p>Get list of journeys</p><p>Fields: id, name, origin, destination</p><p>id: primary key</p></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="journey_get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/journey</h4></div><div class="modal-body"><div class="alert alert-info"><p>Get list of journeys</p><p>Fields: id, name, origin, destination</p><p>id: primary key</p></div><ul class="nav nav-tabs"><li class="active"><a href="#journey_get_request" data-toggle="tab">Request</a></li><li><a href="#journey_get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="journey_get_request"><h3>Query Parameters</h3><ul><li><strong>date</strong>: <em>(string)</em><p>return only journeys on that date (not implemented fully yet)</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>2019-12-25</code></pre></div></li><li><strong>origin</strong>: <em>(int (city id))</em><p>return journey starting within &#39;radius&#39; away from</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>1941 (Dresden)</code></pre></div></li><li><strong>destination</strong>: <em>(int (city id))</em><p>return journey arriving within &#39;radius&#39; away from</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>2059 (Cairo)</code></pre></div></li><li><strong>radius</strong>: <em>(int (km))</em><p>explained, default = 50</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>1</code></pre></div></li></ul></div><div class="tab-pane" id="journey_get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "count": 8,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "name": "my journey",
+            "origin": "Berlin",
+            "destination": "Dresden"
+        },
+        {
+            "id": 2,
+            "name": "BtoC",
+            "origin": "Berlin",
+            "destination": "Cairo"
+        },
+        {
+            "id": 3,
+            "name": "DtoC",
+            "origin": "Dresden",
+            "destination": "Cairo"
+        },
+        {
+            "id": 4,
+            "name": "DtoJ",
+            "origin": "Dresden",
+            "destination": "Jakarta"
+        },
+        {
+            "id": 5,
+            "name": "MtoC",
+            "origin": "Madrid",
+            "destination": "Cairo"
+        },
+        {
+            "id": 6,
+            "name": "DtoT",
+            "origin": "Dresden",
+            "destination": "Tanta"
+        },
+        {
+            "id": 7,
+            "name": "BtoT",
+            "origin": "Berlin",
+            "destination": "Tanta"
+        },
+        {
+            "id": 8,
+            "name": "PtoT",
+            "origin": "Paris",
+            "destination": "Tanta"
+        }
+    ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="journey_origin_1941_destination_2059_radius_100__this_is_an_example_" class="panel-title">/journey?origin=1941&destination=2059&radius=100 (this is an example)</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_journey_origin_1941_destination_2059_radius_100__this_is_an_example_"><span class="parent"></span>/journey?origin=1941&destination=2059&radius=100 (this is an example)</a> <span class="methods"><a href="#journey_origin_1941_destination_2059_radius_100__this_is_an_example__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_journey_origin_1941_destination_2059_radius_100__this_is_an_example_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#journey_origin_1941_destination_2059_radius_100__this_is_an_example__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="journey_origin_1941_destination_2059_radius_100__this_is_an_example__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/journey?origin=1941&destination=2059&radius=100 (this is an example)</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#journey_origin_1941_destination_2059_radius_100__this_is_an_example__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="journey_origin_1941_destination_2059_radius_100__this_is_an_example__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 3,
+            "name": "DtoC",
+            "origin": "Dresden",
+            "destination": "Cairo"
+        },
+        {
+            "id": 6,
+            "name": "DtoT",
+            "origin": "Dresden",
+            "destination": "Tanta"
+        }
+    ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="journey_origin_1941_destination_2059_radius_200__this_is_an_example_" class="panel-title">/journey?origin=1941&destination=2059&radius=200 (this is an example)</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_journey_origin_1941_destination_2059_radius_200__this_is_an_example_"><span class="parent"></span>/journey?origin=1941&destination=2059&radius=200 (this is an example)</a> <span class="methods"><a href="#journey_origin_1941_destination_2059_radius_200__this_is_an_example__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_journey_origin_1941_destination_2059_radius_200__this_is_an_example_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#journey_origin_1941_destination_2059_radius_200__this_is_an_example__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="journey_origin_1941_destination_2059_radius_200__this_is_an_example__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/journey?origin=1941&destination=2059&radius=200 (this is an example)</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#journey_origin_1941_destination_2059_radius_200__this_is_an_example__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="journey_origin_1941_destination_2059_radius_200__this_is_an_example__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 3,
+            "name": "DtoC",
+            "origin": "Dresden",
+            "destination": "Cairo"
+        },
+        {
+            "id": 6,
+            "name": "DtoT",
+            "origin": "Dresden",
+            "destination": "Tanta"
+        },
+        {
+            "id": 2,
+            "name": "BtoC",
+            "origin": "Berlin",
+            "destination": "Cairo"
+        },
+        {
+            "id": 7,
+            "name": "BtoT",
+            "origin": "Berlin",
+            "destination": "Tanta"
+        }
+    ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="journey_origin_1941_destination_2059_radius_18000__this_is_an_example_" class="panel-title">/journey?origin=1941&destination=2059&radius=18000 (this is an example)</h3></div><div class="panel-body"><div class="panel-group"><div class="panel panel-white resource-modal"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_journey_origin_1941_destination_2059_radius_18000__this_is_an_example_"><span class="parent"></span>/journey?origin=1941&destination=2059&radius=18000 (this is an example)</a> <span class="methods"><a href="#journey_origin_1941_destination_2059_radius_18000__this_is_an_example__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_journey_origin_1941_destination_2059_radius_18000__this_is_an_example_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#journey_origin_1941_destination_2059_radius_18000__this_is_an_example__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="journey_origin_1941_destination_2059_radius_18000__this_is_an_example__get"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent"></span>/journey?origin=1941&destination=2059&radius=18000 (this is an example)</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#journey_origin_1941_destination_2059_radius_18000__this_is_an_example__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="journey_origin_1941_destination_2059_radius_18000__this_is_an_example__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Media type</strong>: application/json</p><p><strong>Type</strong>: any</p><p><strong>Example</strong>:</p><div class="examples"><pre><code>{
+    "count": 8,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 3,
+            "name": "DtoC",
+            "origin": "Dresden",
+            "destination": "Cairo"
+        },
+        {
+            "id": 6,
+            "name": "DtoT",
+            "origin": "Dresden",
+            "destination": "Tanta"
+        },
+        {
+            "id": 2,
+            "name": "BtoC",
+            "origin": "Berlin",
+            "destination": "Cairo"
+        },
+        {
+            "id": 7,
+            "name": "BtoT",
+            "origin": "Berlin",
+            "destination": "Tanta"
+        },
+        {
+            "id": 8,
+            "name": "PtoT",
+            "origin": "Paris",
+            "destination": "Tanta"
+        },
+        {
+            "id": 5,
+            "name": "MtoC",
+            "origin": "Madrid",
+            "destination": "Cairo"
+        },
+        {
+            "id": 1,
+            "name": "my journey",
+            "origin": "Berlin",
+            "destination": "Dresden"
+        },
+        {
+            "id": 4,
+            "name": "DtoJ",
+            "origin": "Dresden",
+            "destination": "Jakarta"
+        }
+    ]
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#city">/city</a></li><li><a href="#city_latitude_51_longitude_13_7__this_is_an_example_">/city?latitude=51&longitude=13.7 (this is an example)</a></li><li><a href="#city_latitude_51_longitude_13_7_names_only_true__this_is_an_example_">/city?latitude=51&longitude=13.7&names_only=true (this is an example)</a></li><li><a href="#journey">/journey</a></li><li><a href="#journey_origin_1941_destination_2059_radius_100__this_is_an_example_">/journey?origin=1941&destination=2059&radius=100 (this is an example)</a></li><li><a href="#journey_origin_1941_destination_2059_radius_200__this_is_an_example_">/journey?origin=1941&destination=2059&radius=200 (this is an example)</a></li><li><a href="#journey_origin_1941_destination_2059_radius_18000__this_is_an_example_">/journey?origin=1941&destination=2059&radius=18000 (this is an example)</a></li></ul></div></div></div></div></body></html>

@@ -1,0 +1,5 @@
+Get list of journeys
+
+Fields: id, name, origin, destination
+
+id: primary key

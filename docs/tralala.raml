@@ -1,0 +1,211 @@
+/activate_employee:
+  post:
+    description: Activate employee account by supplying hash sent to email
+    body:
+      application/json:
+        example: |
+          {
+              "email": "hussamdh0@gmail.com",
+              "hash": "vxoxqwjqldxoprgkghggerycfmypkinqrrrdblewcekokmrsht",
+              "pw": "123"
+          }
+
+/login:
+  post:
+    description: Login user by username and password
+    body:
+      application/json:
+        example: |
+          {
+              "username": "cfe",
+              "password": "123"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImNmZSIsImV4cCI6MTU2NjQ3NzQyMCwiZW1haWwiOiIiLCJvcmlnX2lhdCI6MTU2NjQ3MzgyMH0.NkaLRRReeZ6bNbB1xerNkuyn3n80dH9i8AIX5YSdkH4",
+                  "user_id": 1,
+                  "email": "",
+                  "is_superuser": true,
+                  "exp": "2019-08-22T12:37:00.781319",
+                  "orig_iat": 1566473820
+              }
+
+/login_employee:
+  post:
+    description: Login user by email (instead of username) and password
+    body:
+      application/json:
+        example: |
+          {
+              "email": "hussamdh0@gmail.com",
+              "password": "123"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6Imh1c3NhbWRoMEBnbWFpbC5jb20iLCJ1c2VybmFtZSI6Imh1c3NhbWRoMEBnbWFpbC5jb20iLCJleHAiOjE1NjY0Nzc1MTUsIm9yaWdfaWF0IjoxNTY2NDczOTE1fQ.Fl1conjSCGrqLpLjlGr_1uTml0Pd7mb7ndckTTwHn_g",
+                  "user_id": 5,
+                  "email": "",
+                  "is_superuser": false,
+                  "exp": "2019-08-22T12:38:35.389822",
+                  "orig_iat": 1566473915
+              }
+
+/current_user_info:
+  get:
+    description: Get Current Applicant's session info
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                  "name": "salwa",
+                  "email": "s_sd21@hotmail.com",
+                  "valid": false
+              }
+
+/matchposition:
+  get:
+    description: Get all job profiles. Should we enforce some ordering or get only specific JP depending on current user?? lots of room for improvment
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/matchposition.json
+
+/matchcompany:
+  get:
+    description: Get all companies???
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/matchcompany.json
+
+/messages:
+  get:
+    description: Get messeges sent to currently logged in user
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/messages.json
+
+/sent_messages:
+  get:
+    description: Get messeges that the currently logged in user has sent
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/sent_messages.json
+
+/add_message:
+  post:
+    description: Send a message from currently logged in user to user with id 'to'
+    body:
+      application/json:
+        example: !include examples/add_message.json
+
+/comapny/{id}:
+  get:
+    description: Get specific company (different schema than companies/{id})
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/company_id.json
+
+/upload_image:
+  post:
+    description: Use key value form data where key is 'data' and value is the file iteslf
+    body:
+      multipart/form-data:
+        type: file
+        displayName: data
+    responses:
+      201:
+        body:
+          application/json:
+            example: |
+              {
+                  "id": 10,
+                  "url": "http://192.168.178.80/media/images/f9beedf2af3a111a2e7e_download_aEkE84E.jpg",
+                  "name": null
+              }
+
+
+
+#%RAML 1.0
+title: c4c api
+version: v1
+baseUri: http://192.168.178.80/api/
+
+
+/job_profiles:
+  get:
+    description: List Job Profiles
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/job_profiles.json
+  /{id}:
+    get:
+      description: Get Specific Job Profile
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/job_profile.json
+  /templates:
+    get:
+      description: Get Job Templates (titles and ids)
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/job_templates.json
+    /{id}:
+      get:
+        description: Get Specific Job Template
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/job_template.json
+/job_profile:
+  get:
+    description: List Job Profiles of current company
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/job_profiles.json
+  /{id}:
+    get:
+      description: Get Specific Job Profile (must belong to current company)
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/job_profile.json
+  /add:
+    post:
+      description: !include documentation/job_add_desc.txt
+      body:
+        application/json:
+          example: !include examples/job_profile_add_request.json
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/job_profile_add_response.json

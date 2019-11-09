@@ -1,0 +1,19 @@
+{
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 3,
+            "name": "DtoC",
+            "origin": "Dresden",
+            "destination": "Cairo"
+        },
+        {
+            "id": 6,
+            "name": "DtoT",
+            "origin": "Dresden",
+            "destination": "Tanta"
+        }
+    ]
+}

@@ -1,0 +1,366 @@
+{
+    "count": 3212,
+    "next": "http://localhost/api/city?latitude=51&limit=40&longitude=13.7&offset=40",
+    "previous": null,
+    "results": [
+        {
+            "id": 1941,
+            "name": "Dresden",
+            "country": "Germany",
+            "population": 617515,
+            "longitude": 13.75,
+            "latitude": 51.05,
+            "distance": 6.563951823078475
+        },
+        {
+            "id": 1972,
+            "name": "Chemnitz",
+            "country": "Germany",
+            "population": 302643,
+            "longitude": 12.92,
+            "latitude": 50.83,
+            "distance": 57.82064679600922
+        },
+        {
+            "id": 1973,
+            "name": "Cottbus",
+            "country": "Germany",
+            "population": 105067,
+            "longitude": 14.33,
+            "latitude": 51.7704,
+            "distance": 96.11426907752202
+        },
+        {
+            "id": 1976,
+            "name": "Leipzig",
+            "country": "Germany",
+            "population": 542529,
+            "longitude": 12.41,
+            "latitude": 51.3354,
+            "distance": 97.30662745972633
+        },
+        {
+            "id": 1921,
+            "name": "Liberec",
+            "country": "Czechia",
+            "population": 102175,
+            "longitude": 15.08,
+            "latitude": 50.8,
+            "distance": 99.23494677043007
+        },
+        {
+            "id": 1975,
+            "name": "Gera",
+            "country": "Germany",
+            "population": 104659,
+            "longitude": 12.07,
+            "latitude": 50.8704,
+            "distance": 115.05289105192237
+        },
+        {
+            "id": 1922,
+            "name": "Prague",
+            "country": "Czechia",
+            "population": 1162000,
+            "longitude": 14.466,
+            "latitude": 50.0833,
+            "distance": 115.33960003180962
+        },
+        {
+            "id": 1924,
+            "name": "Pizen",
+            "country": "Czechia",
+            "population": 164180,
+            "longitude": 13.36,
+            "latitude": 49.7404,
+            "distance": 142.03208162743786
+        },
+        {
+            "id": 1974,
+            "name": "Jena",
+            "country": "Germany",
+            "population": 104712,
+            "longitude": 11.58,
+            "latitude": 50.9304,
+            "distance": 148.56607089025178
+        },
+        {
+            "id": 1931,
+            "name": "Potsdam",
+            "country": "Germany",
+            "population": 218095,
+            "longitude": 13.07,
+            "latitude": 52.4004,
+            "distance": 161.55365008498381
+        },
+        {
+            "id": 544,
+            "name": "Zielona Gora",
+            "country": "Poland",
+            "population": 118433,
+            "longitude": 15.5,
+            "latitude": 51.9504,
+            "distance": 163.3190465550987
+        },
+        {
+            "id": 1928,
+            "name": "Berlin",
+            "country": "Germany",
+            "population": 3406000,
+            "longitude": 13.4015,
+            "latitude": 52.5218,
+            "distance": 170.35149635456875
+        },
+        {
+            "id": 1920,
+            "name": "Pardubice",
+            "country": "Czechia",
+            "population": 107064,
+            "longitude": 15.76,
+            "latitude": 50.0404,
+            "distance": 180.41933510659186
+        },
+        {
+            "id": 1942,
+            "name": "Erfurt",
+            "country": "Germany",
+            "population": 203254,
+            "longitude": 11.03,
+            "latitude": 50.9701,
+            "distance": 186.80140627262082
+        },
+        {
+            "id": 1934,
+            "name": "Magdeburg",
+            "country": "Germany",
+            "population": 229826,
+            "longitude": 11.62,
+            "latitude": 52.1304,
+            "distance": 190.83676675649969
+        },
+        {
+            "id": 541,
+            "name": "Wroclaw",
+            "country": "Poland",
+            "population": 634893,
+            "longitude": 17.03,
+            "latitude": 51.1104,
+            "distance": 232.9040516104136
+        },
+        {
+            "id": 1964,
+            "name": "Regensburg",
+            "country": "Germany",
+            "population": 164359,
+            "longitude": 12.12,
+            "latitude": 49.0204,
+            "distance": 247.21910302173674
+        },
+        {
+            "id": 1967,
+            "name": "Nurnberg",
+            "country": "Germany",
+            "population": 737304,
+            "longitude": 11.08,
+            "latitude": 49.45,
+            "distance": 253.67149741104086
+        },
+        {
+            "id": 1968,
+            "name": "Furth",
+            "country": "Germany",
+            "population": 237844,
+            "longitude": 11.0,
+            "latitude": 49.47,
+            "distance": 256.3658271028208
+        },
+        {
+            "id": 1957,
+            "name": "Braunschweig",
+            "country": "Germany",
+            "population": 244715,
+            "longitude": 10.5,
+            "latitude": 52.25,
+            "distance": 260.78812899714546
+        },
+        {
+            "id": 1955,
+            "name": "Gottingen",
+            "country": "Germany",
+            "population": 139419,
+            "longitude": 9.92,
+            "latitude": 51.5204,
+            "distance": 269.1153934124826
+        },
+        {
+            "id": 543,
+            "name": "Poznan",
+            "country": "Poland",
+            "population": 623997,
+            "longitude": 16.8999,
+            "latitude": 52.4058,
+            "distance": 270.08657267535597
+        },
+        {
+            "id": 546,
+            "name": "Szczecin",
+            "country": "Poland",
+            "population": 407811,
+            "longitude": 14.53,
+            "latitude": 53.4204,
+            "distance": 274.8358582543553
+        },
+        {
+            "id": 1923,
+            "name": "Brno",
+            "country": "Czechia",
+            "population": 388277,
+            "longitude": 16.61,
+            "latitude": 49.2004,
+            "distance": 288.08719952553287
+        },
+        {
+            "id": 1926,
+            "name": "Olomouc",
+            "country": "Czechia",
+            "population": 101268,
+            "longitude": 17.25,
+            "latitude": 49.63,
+            "distance": 294.29275333772284
+        },
+        {
+            "id": 1945,
+            "name": "Kassel",
+            "country": "Germany",
+            "population": 289924,
+            "longitude": 9.5,
+            "latitude": 51.3,
+            "distance": 294.61984797252325
+        },
+        {
+            "id": 1962,
+            "name": "Ingolstadt",
+            "country": "Germany",
+            "population": 163325,
+            "longitude": 11.45,
+            "latitude": 48.7704,
+            "distance": 295.5022975149774
+        },
+        {
+            "id": 1965,
+            "name": "Wurzburg",
+            "country": "Germany",
+            "population": 168561,
+            "longitude": 9.95,
+            "latitude": 49.8004,
+            "distance": 297.15076540122635
+        },
+        {
+            "id": 552,
+            "name": "Opole",
+            "country": "Poland",
+            "population": 131412,
+            "longitude": 17.9313,
+            "latitude": 50.685,
+            "distance": 298.9260962451843
+        },
+        {
+            "id": 1205,
+            "name": "Linz",
+            "country": "Austria",
+            "population": 349161,
+            "longitude": 14.2888,
+            "latitude": 48.3192,
+            "distance": 300.8972537116403
+        },
+        {
+            "id": 1936,
+            "name": "Hannover",
+            "country": "Germany",
+            "population": 722490,
+            "longitude": 9.7167,
+            "latitude": 52.367,
+            "distance": 313.61600392242366
+        },
+        {
+            "id": 1927,
+            "name": "Zlin",
+            "country": "Czechia",
+            "population": 124610,
+            "longitude": 17.65,
+            "latitude": 49.2304,
+            "distance": 343.2845445499785
+        },
+        {
+            "id": 1925,
+            "name": "Ostrava",
+            "country": "Czechia",
+            "population": 478963,
+            "longitude": 18.25,
+            "latitude": 49.8304,
+            "distance": 347.3436115151476
+        },
+        {
+            "id": 1930,
+            "name": "Munich",
+            "country": "Germany",
+            "population": 1275000,
+            "longitude": 11.575,
+            "latitude": 48.1299,
+            "distance": 353.77019954288664
+        },
+        {
+            "id": 1963,
+            "name": "Augsburg",
+            "country": "Germany",
+            "population": 358989,
+            "longitude": 10.9,
+            "latitude": 48.35,
+            "distance": 356.6793314061367
+        },
+        {
+            "id": 1944,
+            "name": "Rostock",
+            "country": "Germany",
+            "population": 203080,
+            "longitude": 12.15,
+            "latitude": 54.0704,
+            "distance": 356.8992060775204
+        },
+        {
+            "id": 1204,
+            "name": "Salzburg",
+            "country": "Austria",
+            "population": 206279,
+            "longitude": 13.04,
+            "latitude": 47.8105,
+            "distance": 357.6279474689973
+        },
+        {
+            "id": 556,
+            "name": "Gliwice",
+            "country": "Poland",
+            "population": 507670,
+            "longitude": 18.67,
+            "latitude": 50.3304,
+            "distance": 357.8163947837532
+        },
+        {
+            "id": 1207,
+            "name": "Vienna",
+            "country": "Austria",
+            "population": 2400000,
+            "longitude": 16.3666,
+            "latitude": 48.2,
+            "distance": 365.5926740710396
+        },
+        {
+            "id": 1970,
+            "name": "Frankfurt",
+            "country": "Germany",
+            "population": 2895000,
+            "longitude": 8.675,
+            "latitude": 50.1,
+            "distance": 368.55406389573716
+        }
+    ]

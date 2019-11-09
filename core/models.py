@@ -66,7 +66,9 @@ from datetime import date, timedelta
 class JourneyManager(models.Manager):
     @staticmethod
     def filter_date(qs, **kwargs):
-        date_range = [date.today() - timedelta(days=1), date.today() + timedelta(days=1)]
+        _date = kwargs['date']
+        t = kwargs['date_tolerance']
+        date_range = [_date - timedelta(days=t), _date + timedelta(days=t)]
         return [x for x in qs if x.date >= date_range[0] and x.date <= date_range[1]]
 
     @staticmethod
@@ -74,7 +76,7 @@ class JourneyManager(models.Manager):
         d = 3
         city = City.objects.get(id=city_id)
         if radius:
-            return [x for x in qs if getattr(x, s, None).distance(longitude=city.longitude, latitude=city.latitude) < radius]
+            return [x for x in qs if getattr(x, s, None).distance(longitude=city.longitude, latitude=city.latitude) < radius], city
         else:
             kwargs = {
                 f'{s}__longitude__gt': city.longitude - d, f'{s}__longitude__lt': city.longitude + d,

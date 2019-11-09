@@ -1,0 +1,127 @@
+{
+    "count": 3212,
+    "next": "http://localhost/api/city?latitude=51&limit=40&longitude=13.7&names_only=true&offset=40",
+    "previous": null,
+    "results": [
+        {
+            "name": "Dresden"
+        },
+        {
+            "name": "Chemnitz"
+        },
+        {
+            "name": "Cottbus"
+        },
+        {
+            "name": "Leipzig"
+        },
+        {
+            "name": "Liberec"
+        },
+        {
+            "name": "Gera"
+        },
+        {
+            "name": "Prague"
+        },
+        {
+            "name": "Pizen"
+        },
+        {
+            "name": "Jena"
+        },
+        {
+            "name": "Potsdam"
+        },
+        {
+            "name": "Zielona Gora"
+        },
+        {
+            "name": "Berlin"
+        },
+        {
+            "name": "Pardubice"
+        },
+        {
+            "name": "Erfurt"
+        },
+        {
+            "name": "Magdeburg"
+        },
+        {
+            "name": "Wroclaw"
+        },
+        {
+            "name": "Regensburg"
+        },
+        {
+            "name": "Nurnberg"
+        },
+        {
+            "name": "Furth"
+        },
+        {
+            "name": "Braunschweig"
+        },
+        {
+            "name": "Gottingen"
+        },
+        {
+            "name": "Poznan"
+        },
+        {
+            "name": "Szczecin"
+        },
+        {
+            "name": "Brno"
+        },
+        {
+            "name": "Olomouc"
+        },
+        {
+            "name": "Kassel"
+        },
+        {
+            "name": "Ingolstadt"
+        },
+        {
+            "name": "Wurzburg"
+        },
+        {
+            "name": "Opole"
+        },
+        {
+            "name": "Linz"
+        },
+        {
+            "name": "Hannover"
+        },
+        {
+            "name": "Zlin"
+        },
+        {
+            "name": "Ostrava"
+        },
+        {
+            "name": "Munich"
+        },
+        {
+            "name": "Augsburg"
+        },
+        {
+            "name": "Rostock"
+        },
+        {
+            "name": "Salzburg"
+        },
+        {
+            "name": "Gliwice"
+        },
+        {
+            "name": "Vienna"
+        },
+        {
+            "name": "Frankfurt"
+        }
+    ]
+}

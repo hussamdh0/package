@@ -4,7 +4,7 @@ from rest_framework.response    import Response
 from rest_framework.generics    import ListAPIView, RetrieveAPIView, CreateAPIView
 from core.serializers           import CitySerializer,  CityNamesSerializer, JourneySerializer
 from core.models                import City, Journey
-from datetime                   import date, timedelta
+from datetime                   import date, timedelta, datetime
 
 
 class CityListAPIView(ListAPIView):
@@ -40,16 +40,20 @@ class JourneyListAPIView (ListAPIView):
     serializer_class = JourneySerializer
     
     def get_params(self):
-        kwargs      = {}
-        _date       = self.request.query_params.get('date')
-        origin      = self.request.query_params.get('origin')
-        destination = self.request.query_params.get('destination')
-        radius      = self.request.query_params.get('radius')
-        if _date:       kwargs['date']        = date(_date)
-        if origin:      kwargs['origin']      = int(origin)
-        if destination: kwargs['destination'] = int(destination)
-        if radius:      kwargs['radius']      = float(radius)
-        return kwargs  # self.request.query_params
+        kwargs          = {}
+        _date           = self.request.query_params.get('date')
+        date_tolerance  = self.request.query_params.get('date_tolerance')
+        origin          = self.request.query_params.get('origin')
+        destination     = self.request.query_params.get('destination')
+        radius          = self.request.query_params.get('radius')
+        if _date:
+            kwargs['date']              = datetime.strptime(_date, '%Y-%m-%d').date()
+            kwargs['date_tolerance']    = 1
+        if date_tolerance:  kwargs['date_tolerance']    = int(date_tolerance)
+        if origin:          kwargs['origin']            = int(origin)
+        if destination:     kwargs['destination']       = int(destination)
+        if radius:          kwargs['radius']            = float(radius)
+        return kwargs  #     self.request.query_params
     
     def get_queryset(self):
         return Journey.objects.all_ordered(**self.get_params())

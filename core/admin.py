@@ -17,11 +17,11 @@ class CountryAdmin(admin.ModelAdmin):
 
 @admin.register(City)
 class CityAdmin(admin.ModelAdmin):
-    list_display = ('__str__', 'name', 'population', 'latitude', 'longitude', 'pk')
+    list_display = ('__str__', 'name', 'country', 'population', 'latitude', 'longitude', 'pk')
     search_fields = ('name',)
     
     
 @admin.register(Journey)
 class JourneyAdmin(admin.ModelAdmin):
     raw_id_fields = ('origin', 'destination')
-    list_display = ('__str__', 'name', 'pk')
+    list_display = ('__str__', 'name', 'date', 'pk')
