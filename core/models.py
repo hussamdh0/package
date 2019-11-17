@@ -2,7 +2,20 @@ from django.contrib.auth.models import AbstractUser
 from django.db                  import models
 from core.managers              import CityManager
 from math                       import pi, sqrt, sin, cos, atan2
+from datetime                   import date, timedelta
 
+
+# mixin
+
+class HasContact(models.Model):
+    class Meta:
+        abstract = True
+    
+    phone = models.CharField (max_length=30, blank=True, null=True)
+    email = models.CharField (max_length=30, blank=True, null=True)
+
+
+# abstract
 
 class BaseModel(models.Model):
     objects         = models.Manager()
@@ -24,6 +37,8 @@ class BaseUserModel(AbstractUser):
     class Meta:
         abstract = True
         
+
+# models and managers
 
 class Country(models.Model):
     name = models.CharField(max_length=64, unique=True,  null=True, blank=True)
@@ -60,16 +75,16 @@ class City(models.Model):
         c = 2 * atan2 (sqrt (a), sqrt (1 - a))
         return 6367 * c
 
-    # def distance2(self, city1, city2):
-    #     return self.distance(city1.longitude, city1.latitude) + self.distance(city2.longitude, city2.latitude)
-from datetime import date, timedelta
+    def distance_city(self, city):
+        return self.distance(city.longitude, city.latitude)
+    
 class JourneyManager(models.Manager):
     @staticmethod
     def filter_date(qs, **kwargs):
-        _date = kwargs['date']
-        t = kwargs['date_tolerance']
-        date_range = [_date - timedelta(days=t), _date + timedelta(days=t)]
-        return [x for x in qs if x.date >= date_range[0] and x.date <= date_range[1]]
+        d = kwargs['date']  # date
+        t = timedelta(days=kwargs['date_tolerance'])  # number of tolerance days
+        min, max = (d-t, d+t)
+        return [x for x in qs if x.date >= min and x.date <= max]
 
     @staticmethod
     def filter_city(qs, city_id, s='origin', radius=0):
@@ -97,10 +112,16 @@ class JourneyManager(models.Manager):
         return qs
 
 
-class Journey(BaseModel):
+class User(BaseUserModel, HasContact):
+    pass
+    # journeys = models.ManyToManyField(Journey, related_name='user')
+    
+
+class Journey(BaseModel, HasContact):
     name        = models.CharField(max_length=255, unique=False, null=True, blank=True)
     origin      = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_origin')
     destination = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_destination')
+    user        = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
     date        = models.DateField(null=True, blank=True)
     objects     = JourneyManager()
     
@@ -112,5 +133,5 @@ class Journey(BaseModel):
 #     journey  = models.ForeignKey(Journey, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment')
 
 
-class User(BaseUserModel):
-    journeys = models.ManyToManyField(Journey)
+# class User(BaseUserModel, HasContact):
+#     journeys = models.ManyToManyField(Journey, related_name='user')

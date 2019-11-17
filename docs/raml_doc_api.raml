@@ -53,8 +53,14 @@ baseUri: http://192.168.178.80/api/
       date:
         displayName: date
         type: string
-        description: return only journeys on that date (not implemented fully yet)
+        description: return only journeys on that date or.. (see date_tolerance)
         example: 2019-12-25
+        required: false
+      date_tolerance:
+        displayName: date_tolerance
+        type: integer
+        description: should be accompanied with param 'date' and specifies how tolerant filtering dates is
+        example: 1
         required: false
       origin:
         displayName: origin

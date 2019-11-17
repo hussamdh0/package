@@ -5,14 +5,18 @@ from django.http            import HttpResponse
 from core.models            import City, Country
 from django.core.exceptions import MultipleObjectsReturned
 
-def add_city_data(request):
+def add_city_data(request, test=False):
     data_path = os.path.join('backend', 'template_scripts', 'data', 'worldcities.csv')
-
+    population_limit = 100_000
+    if test:
+        population_limit = 500_000
+        data_path = os.path.join ('C:\\Users\\Hussam\\Desktop\\appdev_project', data_path)
     with open (data_path, mode='r', encoding="utf8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         line_count = 0
         for row in csv_reader:
-            if row["population"] and float(row["population"]) > 100_000:
+            if row["population"] and float(row["population"]) > population_limit:
+                if test and row["iso2"] != 'US': continue
                 cntry, crtd = Country.objects.get_or_create(name__iexact=row["country"])
                 
                 if crtd:
