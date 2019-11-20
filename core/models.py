@@ -102,7 +102,7 @@ class JourneyManager(models.Manager):
 
     def all_ordered(self, **kwargs):
         qs = self.get_queryset ()
-        radius = kwargs.pop('radius', 0)
+        radius = kwargs.pop('radius', 50)
         c1 = None
         c2 = None
         if 'date' in kwargs:          qs = self.filter_date(qs, **kwargs)
