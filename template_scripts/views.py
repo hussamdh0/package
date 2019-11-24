@@ -10,7 +10,7 @@ def add_city_data(request, test=False):
     population_limit = 100_000
     if test:
         population_limit = 500_000
-        data_path = os.path.join ('C:\\Users\\Hussam\\Desktop\\appdev_project', data_path)
+    data_path = os.path.join ('C:\\Users\\Hussam\\Desktop\\appdev_project', data_path)
     with open (data_path, mode='r', encoding="utf8") as csv_file:
         csv_reader = csv.DictReader(csv_file)
         line_count = 0
