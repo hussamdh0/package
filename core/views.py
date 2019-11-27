@@ -2,8 +2,13 @@ from rest_framework.filters     import SearchFilter
 from rest_framework.views       import APIView
 from rest_framework.response    import Response
 from rest_framework.generics    import ListAPIView, RetrieveAPIView, CreateAPIView
-from core.serializers           import CitySerializer,  CityNamesSerializer, JourneySerializer
-from core.models                import City, Journey
+from core.serializers           import (
+    CitySerializer,
+    CityNamesSerializer,
+    JourneySerializer,
+    UserSerializer,
+)
+from core.models                import City, Journey, User
 from datetime                   import date, timedelta, datetime
 
 
@@ -36,7 +41,7 @@ class CityListAPIView(ListAPIView):
         }
 
 
-class JourneyListAPIView (ListAPIView):
+class JourneyListAPIView(ListAPIView):
     serializer_class = JourneySerializer
     
     def get_params(self):
@@ -57,3 +62,15 @@ class JourneyListAPIView (ListAPIView):
     
     def get_queryset(self):
         return Journey.objects.all_ordered(**self.get_params())
+
+
+class CreateUserAPIView(APIView):
+    def post(self, request):
+        serialized = UserSerializer(data=request.data)
+        if serialized.is_valid():
+            # User.objects.create_user(
+            serialized.save()
+            # )
+            return Response(serialized.data)
+        else:
+            return Response(serialized._errors)

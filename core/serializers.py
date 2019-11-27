@@ -1,5 +1,5 @@
 from rest_framework             import serializers
-from core.models                import City, Journey
+from core.models                import City, Journey, User
 
 
 class CitySerializer(serializers.ModelSerializer):
@@ -22,11 +22,21 @@ class CityNamesSerializer(CitySerializer):
         fields = ('name',)
 
 
-class JourneySerializer (serializers.ModelSerializer):
-    origin      = serializers.StringRelatedField()
+class JourneySerializer(serializers.ModelSerializer):
+    origin = serializers.StringRelatedField()
     destination = serializers.StringRelatedField()
     
     class Meta:
         model = Journey
-        fields = ['id', 'name', 'date', 'origin', 'destination',]
+        fields = ['id', 'name', 'date', 'origin', 'destination', ]
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model  = User
+        fields = ['id', 'username', 'password',]
+        extra_kwargs = { 'password': {'write_only': True}, }
     
+    def create(self, validated_data):
+        user = User.objects.create_user(**validated_data)
+        return user

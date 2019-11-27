@@ -1,4 +1,4 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, UserManager
 from django.db                  import models
 from core.managers              import CityManager
 from math                       import pi, sqrt, sin, cos, atan2
@@ -77,7 +77,30 @@ class City(models.Model):
 
     def distance_city(self, city):
         return self.distance(city.longitude, city.latitude)
-    
+
+
+# class CUserManager(UserManager):
+#     def create(self, username=None, password=None):
+#         # username = kwargs.pop('email', '')
+#         # password = kwargs.pop('password', '')
+#
+#         if not username:
+#             raise ValueError("Username must be provided to create user")
+#
+#         user = self.model(username=username)
+#         # if created:
+#         #     user.username = username
+#         if password:
+#             # set password if provided
+#             user.set_password(password)
+#         user.save()
+#         return user
+
+
+class User(BaseUserModel, HasContact):
+    objects = UserManager()
+
+
 class JourneyManager(models.Manager):
     @staticmethod
     def filter_date(qs, **kwargs):
@@ -111,11 +134,6 @@ class JourneyManager(models.Manager):
         if c1 and c2: qs = sorted(qs, key=lambda a: a.origin.distance(c1.longitude, c1.latitude) + a.destination.distance(c2.longitude, c2.latitude))
         return qs
 
-
-class User(BaseUserModel, HasContact):
-    pass
-    # journeys = models.ManyToManyField(Journey, related_name='user')
-    
 
 class Journey(BaseModel, HasContact):
     name        = models.CharField(max_length=255, unique=False, null=True, blank=True)
