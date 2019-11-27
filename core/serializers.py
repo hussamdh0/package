@@ -23,13 +23,19 @@ class CityNamesSerializer(CitySerializer):
 
 
 class JourneySerializer(serializers.ModelSerializer):
-    origin = serializers.StringRelatedField()
-    destination = serializers.StringRelatedField()
+    origin      = serializers.JSONField(required=False, source='_origin')
+    destination = serializers.JSONField(required=False, source='_destination')
+    phone       = serializers.JSONField(required=False)
+    email       = serializers.JSONField(required=False)
     
     class Meta:
         model = Journey
-        fields = ['id', 'name', 'date', 'origin', 'destination', ]
-
+        fields = ['id', 'name', 'date', 'origin', 'destination', 'phone', 'email',]
+    
+    def create(self, validated_data):
+        journey = Journey.objects.create(**validated_data, user=self.context['user'])
+        return journey
+    
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

@@ -1,7 +1,7 @@
 from rest_framework.filters     import SearchFilter
 from rest_framework.views       import APIView
 from rest_framework.response    import Response
-from rest_framework.generics    import ListAPIView, RetrieveAPIView, CreateAPIView
+from rest_framework.generics    import ListAPIView, RetrieveUpdateDestroyAPIView
 from core.serializers           import (
     CitySerializer,
     CityNamesSerializer,
@@ -41,6 +41,11 @@ class CityListAPIView(ListAPIView):
         }
 
 
+class CityRetrieveUpdateDestroyAPIView(ListAPIView):
+    serializer_class = CitySerializer
+    lookup_field = 'id'
+    
+    
 class JourneyListAPIView(ListAPIView):
     serializer_class = JourneySerializer
     
@@ -64,13 +69,27 @@ class JourneyListAPIView(ListAPIView):
         return Journey.objects.all_ordered(**self.get_params())
 
 
+class JourneyRUDAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = Journey.objects.all()
+    serializer_class = JourneySerializer
+    lookup_field = 'id'
+    
+
+class CreateJourneyAPIView(APIView):
+    def post(self, request):
+        serialized = JourneySerializer(data=request.data, context={'user': request.user})
+        if serialized.is_valid():
+            serialized.save()
+            return Response(serialized.data)
+        else:
+            return Response(serialized._errors)
+        
+
 class CreateUserAPIView(APIView):
     def post(self, request):
         serialized = UserSerializer(data=request.data)
         if serialized.is_valid():
-            # User.objects.create_user(
             serialized.save()
-            # )
             return Response(serialized.data)
         else:
             return Response(serialized._errors)

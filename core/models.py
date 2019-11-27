@@ -3,7 +3,7 @@ from django.db                  import models
 from core.managers              import CityManager
 from math                       import pi, sqrt, sin, cos, atan2
 from datetime                   import date, timedelta
-
+from django.core.exceptions     import PermissionDenied
 
 # mixin
 
@@ -11,8 +11,8 @@ class HasContact(models.Model):
     class Meta:
         abstract = True
     
-    phone = models.CharField (max_length=30, blank=True, null=True)
-    email = models.CharField (max_length=30, blank=True, null=True)
+    _phone = models.CharField(max_length=30, db_column='phone', blank=True, null=True)
+    _email = models.CharField(max_length=30, db_column='cemail', blank=True, null=True)
 
 
 # abstract
@@ -122,9 +122,8 @@ class JourneyManager(models.Manager):
             }
             return qs.filter(**kwargs), city
     
-
     def all_ordered(self, **kwargs):
-        qs = self.get_queryset ()
+        qs = self.get_queryset()
         radius = kwargs.pop('radius', 50)
         c1 = None
         c2 = None
@@ -133,23 +132,61 @@ class JourneyManager(models.Manager):
         if 'destination' in kwargs:   qs, c2 = self.filter_city(qs, kwargs['destination'],    s='destination',  radius=radius)
         if c1 and c2: qs = sorted(qs, key=lambda a: a.origin.distance(c1.longitude, c1.latitude) + a.destination.distance(c2.longitude, c2.latitude))
         return qs
+    
+    # def create(self, name=None, origin=None, destination=None, user=None, date=None):
+    def create(self, **kwargs):
+        if kwargs['user'] is None or kwargs['user'].is_anonymous:
+            raise PermissionDenied('Please log in to add a journey.')
+        journey_obj = self.model()
+        for kwarg in kwargs:
+            setattr(journey_obj, kwarg, kwargs[kwarg])
+        journey_obj.save()
+        return journey_obj
 
 
 class Journey(BaseModel, HasContact):
-    name        = models.CharField(max_length=255, unique=False, null=True, blank=True)
-    origin      = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_origin')
-    destination = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_destination')
-    user        = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
-    date        = models.DateField(null=True, blank=True)
-    objects     = JourneyManager()
+    name         = models.CharField(max_length=255, unique=False, null=True, blank=True)
+    origin       = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_origin')
+    destination  = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_destination')
+    user         = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
+    date         = models.DateField(null=True, blank=True)
+    objects      = JourneyManager()
+
+    @property
+    def _destination(self):
+        return str(self.destination)
+        
+    @_destination.setter
+    def _destination(self, value):
+        self.destination = City.objects.get_json(value)
+
+    @property
+    def _origin(self):
+        return  str(self.origin)
+
+    @_origin.setter
+    def _origin(self, value):
+        self.origin = City.objects.get_json(value)
+    
+    
+    @property
+    def phone(self):
+        if self._phone: return self._phone
+        return self.user._phone
+    
+    @phone.setter
+    def phone(self, value):
+        self._phone = value
+        
+    @property
+    def email(self):
+        if self._email: return self._email
+        return self.user._email
+    
+    @email.setter
+    def email(self, value):
+        self._email = value
+
     
     def __str__(self):
         return f'{str(self.name)}: from {str(self.origin)} to {str(self.destination)}'
-    
-    
-# class Shipment_dep(BaseModel):
-#     journey  = models.ForeignKey(Journey, on_delete=models.SET_NULL, null=True, blank=True, related_name='shipment')
-
-
-# class User(BaseUserModel, HasContact):
-#     journeys = models.ManyToManyField(Journey, related_name='user')
