@@ -4,7 +4,7 @@ from django.conf.urls import include
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
     path('scripts/',    include ('template_scripts.urls', namespace="scripts")),
     path('api/',        include ('core.urls',             namespace="api")),
 
