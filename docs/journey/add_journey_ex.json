@@ -1,0 +1,8 @@
+{
+    "name": null,
+    "date": "1993-03-03",
+    "origin": "Sioux Falls",  // City name or id, in case of duplicate names, the city with the larger populations is assigned
+    "destination": 134,
+    "phone": "+491781676556",
+    "email": "s_sd21@hotmail.com"
+}

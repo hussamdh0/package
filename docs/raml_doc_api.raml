@@ -3,6 +3,7 @@ title: package api
 version: v1
 baseUri: http://192.168.178.80/api/
 
+
 /city:
   get:
     queryParameters:
@@ -31,21 +32,6 @@ baseUri: http://192.168.178.80/api/
           application/json:
             example: !include city/list_no_params.json
 
-/city?latitude=51&longitude=13.7 (this is an example):
-  get:
-    responses:
-      200:
-        body:
-          application/json:
-            example: !include city/list_dresden.json
-
-/city?latitude=51&longitude=13.7&names_only=true (this is an example):
-  get:
-    responses:
-      200:
-        body:
-          application/json:
-            example: !include city/list_dresden_names_only.json
 
 /journey:
   get:
@@ -86,6 +72,145 @@ baseUri: http://192.168.178.80/api/
         body:
           application/json:
             example: !include journey/list_no_params.json
+  /{id}:
+    get:
+      description: get specific journey by id
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                api/journey/14   >>
+                {
+                    "id": 14,
+                    "name": "si",
+                    "date": "1993-03-03",
+                    "origin": "Sioux Falls",
+                    "destination": "Dresden",
+                    "phone": "+491781676556",
+                    "email": "s_sd21@hotmail.com"
+                }
+    put:
+      description: patch also works.  modify journey (you only need submit the fields to be modified)
+        _ _ _
+        only users that are owner of said journey have permissions to modify it. (not implemented yet)
+      body:
+        application/json:
+          example: |
+            api/journey/14   >>
+            {
+              "date": "2020-03-03"
+            }
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "id": 14,
+                  "name": "si",
+                  "date": "2020-03-03",
+                  "origin": "Sioux Falls",
+                  "destination": "Dresden",
+                  "phone": "+491781676556",
+                  "email": "s_sd21@hotmail.com"
+                }
+        403:
+          description: this is not you journey so you cannot delete it
+          body:
+            application/json:
+              example: |
+                {"detail":"You must be the owner of this object."}
+        401:
+          description: you must log in first
+          body:
+            application/json:
+              example: |
+                {"detail":"Authentication credentials were not provided."}
+    delete:
+      description: delete journey
+        _ _ _
+        only users that are owner of said journey have permissions to delete it. (not implemented yet)
+      responses:
+        204:
+          description: successfully deleted
+        403:
+          description: this is not you journey so you cannot delete it
+          body:
+            application/json:
+              example: |
+                {"detail":"You must be the owner of this object."}
+        401:
+          description: you must log in first
+          body:
+            application/json:
+              example: |
+                {"detail":"Authentication credentials were not provided."}
+
+
+
+
+/add_journey:
+  post:
+    description: |
+      add new journey to logged in user (Authorization: JWT <token>)
+    body:
+      application/json:
+        example: !include journey/add_journey_ex.json
+    responses:
+      200:
+        description: created successfully
+        body:
+          application/json:
+            example: |
+              {
+                "id": 15,
+                "name": null,
+                "date": "1993-03-03",
+                "origin": "Sioux Falls",
+                "destination": "Athens",
+                "phone": "+491781676556",
+                "email": "s_sd21@hotmail.com"
+              }
+      401:
+        description: no user is logged in
+        body:
+          application/json:
+            example: |
+              {
+                "detail": "Authentication credentials were not provided."
+              }
+      403:
+        description: error
+        body:
+          application/json:
+            example: |
+              {
+                "detail": "You do not have permission to perform this action."
+              }
+
+
+
+
+
+
+
+
+/city?latitude=51&longitude=13.7 (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include city/list_dresden.json
+
+/city?latitude=51&longitude=13.7&names_only=true (this is an example):
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include city/list_dresden_names_only.json
 
 /journey?origin=1941&destination=2059&radius=100 (this is an example):
   get:
