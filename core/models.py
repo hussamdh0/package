@@ -123,7 +123,8 @@ class JourneyManager(models.Manager):
             return qs.filter(**kwargs), city
     
     def all_ordered(self, **kwargs):
-        qs = self.get_queryset()
+        if 'user' in kwargs: qs = self.filter(user=kwargs['user'])
+        else : qs = self.get_queryset()
         radius = kwargs.pop('radius', 50)
         c1 = None
         c2 = None

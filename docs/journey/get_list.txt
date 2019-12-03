@@ -1,5 +1,8 @@
 Get list of journeys
 
-Fields: id, name, origin, destination
+Fields: id, name, origin, destination, phone, email
 
 id: primary key
+
+phone & email: each journey can have its contact info, but if those don't exist,
+the contact of the journey user is returned

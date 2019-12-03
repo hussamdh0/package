@@ -4,7 +4,7 @@ from django.test                import RequestFactory, TestCase
 from core.models                import Journey, User, City, Country
 from template_scripts.views     import add_city_data
 from mixer.backend.django       import mixer
-from core.views                 import JourneyListAPIView, CityListAPIView
+from core.views                 import JourneyLCV, CityLV
 import pytest
 import json
 
@@ -72,7 +72,7 @@ class ApplicantCreationTest (TestCase):
         user         = kwargs.pop('user', AnonymousUser())
         request      = self.factory.get('/api/city', kwargs)
         request.user = user
-        response     = CityListAPIView.as_view()(request)
+        response     = CityLV.as_view()(request)
         response.render()
         return json.loads(response.content)
     
@@ -80,7 +80,7 @@ class ApplicantCreationTest (TestCase):
         user         = kwargs.pop('user', AnonymousUser())
         request      = self.factory.get('/api/journey', kwargs)
         request.user = user
-        response     = JourneyListAPIView.as_view()(request)
+        response     = JourneyLCV.as_view()(request)
         response.render()
         return json.loads(response.content)
 
@@ -95,7 +95,9 @@ class ApplicantCreationTest (TestCase):
             
         # Test Names only
         results = self.city_request(names_only=1)['results']
-        assert results[0] == {'name': 'New York'}
+        assert results[0]['name'] == 'New York'
+        assert 'name' in results[0]
+        assert 'country' not in results[0]
 
     def test_journey(self):
         # Test no kwargs

@@ -1,7 +1,7 @@
 #  from rest_framework.filters     import SearchFilter
 from rest_framework.views       import APIView
 from rest_framework.response    import Response
-from rest_framework.generics    import ListAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics    import ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from core.serializers           import (
     CitySerializer,
     CityNamesSerializer,
@@ -14,19 +14,20 @@ from django.shortcuts           import render
 from .permissions               import IsObjectOwner
 from rest_framework.exceptions  import NotAuthenticated
 
+
 def index(request):
     return render(request, 'api_doc.html')
 
 
-class CityListAPIView(ListAPIView):
+class CityLV(ListAPIView):
     serializer_class = CitySerializer
 
     def get_params(self):
         kwargs = {}
-        longitude = self.request.query_params.get('longitude')
-        latitude  = self.request.query_params.get('latitude')
-        if longitude: kwargs['longitude'] = float(longitude)
-        if latitude:  kwargs['latitude']  = float(latitude)
+        longitude   = self.request.query_params.get('longitude')
+        latitude    = self.request.query_params.get('latitude')
+        if longitude:    kwargs['longitude'] = float(longitude)
+        if latitude:     kwargs['latitude']  = float(latitude)
         
         if self.request.query_params.get('names_only'):
             # self.serializer_class._declared_fields = {}
@@ -47,12 +48,12 @@ class CityListAPIView(ListAPIView):
         }
 
 
-class CityRetrieveUpdateDestroyAPIView(ListAPIView):
-    serializer_class = CitySerializer
-    lookup_field = 'id'
+# class CityRetrieveUpdateDestroyAPIView(ListAPIView):
+#     serializer_class = CitySerializer
+#     lookup_field = 'id'
     
     
-class JourneyListAPIView(ListAPIView):
+class JourneyLCV(ListCreateAPIView):
     serializer_class = JourneySerializer
     
     def get_params(self):
@@ -62,6 +63,7 @@ class JourneyListAPIView(ListAPIView):
         origin          = self.request.query_params.get('origin')
         destination     = self.request.query_params.get('destination')
         radius          = self.request.query_params.get('radius')
+        my_journeys     = self.request.query_params.get('my_journeys')
         if _date:
             kwargs['date']              = datetime.strptime(_date, '%Y-%m-%d').date()
             kwargs['date_tolerance']    = 1
@@ -69,32 +71,35 @@ class JourneyListAPIView(ListAPIView):
         if origin:          kwargs['origin']            = int(origin)
         if destination:     kwargs['destination']       = int(destination)
         if radius:          kwargs['radius']            = float(radius)
+        if my_journeys and self.request.user and not self.request.user.is_anonymous:
+                            kwargs['user']              = self.request.user
+
         return kwargs  #     self.request.query_params
     
     def get_queryset(self):
         return Journey.objects.all_ordered(**self.get_params())
 
 
-class JourneyRUDAPIView(RetrieveUpdateDestroyAPIView):
+class JourneyRUDV(RetrieveUpdateDestroyAPIView):
     queryset = Journey.objects.all()
     serializer_class = JourneySerializer
     permission_classes = [IsObjectOwner,]
     lookup_field = 'id'
     
 
-class CreateJourneyAPIView(APIView):
-    def post(self, request):
-        if request.user is None or request.user.is_anonymous:
-            raise NotAuthenticated
-        serialized = JourneySerializer(data=request.data, context={'user': request.user})
-        if serialized.is_valid():
-            serialized.save()
-            return Response(serialized.data)
-        else:
-            return Response(serialized._errors)
+# class CreateJourneyAPIView(APIView):
+#     def post(self, request):
+#         if request.user is None or request.user.is_anonymous:
+#             raise NotAuthenticated
+#         serialized = JourneySerializer(data=request.data, context={'user': request.user})
+#         if serialized.is_valid():
+#             serialized.save()
+#             return Response(serialized.data)
+#         else:
+#             return Response(serialized._errors)
         
 
-class CreateUserAPIView(APIView):
+class UserCV(APIView):
     def post(self, request):
         serialized = UserSerializer(data=request.data)
         if serialized.is_valid():

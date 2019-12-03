@@ -1,7 +1,7 @@
 #%RAML 1.0
 title: package api
 version: v1
-baseUri: http://192.168.178.80/api/
+baseUri: http://167.71.46.156:8080/api/
 
 
 /city:
@@ -66,12 +66,55 @@ baseUri: http://192.168.178.80/api/
         description: explained, default = 50
         example: 1
         required: false
+      my_journeys:
+        displayName: my_journeys
+        type: boolean
+        description: return journeys of logged in user only (ignored if no one is logged in)
+        example: 1
+        required: false
     description: !include journey/get_list.txt
     responses:
       200:
         body:
           application/json:
             example: !include journey/list_no_params.json
+  post:
+    description: |
+      add new journey to logged in user (Authorization: JWT <token>)
+    body:
+      application/json:
+        example: !include journey/add_journey_ex.json
+    responses:
+      200:
+        description: created successfully
+        body:
+          application/json:
+            example: |
+              {
+                "id": 15,
+                "name": null,
+                "date": "1993-03-03",
+                "origin": "Sioux Falls",
+                "destination": "Athens",
+                "phone": "+491781676556",
+                "email": "s_sd21@hotmail.com"
+              }
+      401:
+        description: no user is logged in
+        body:
+          application/json:
+            example: |
+              {
+                "detail": "Authentication credentials were not provided."
+              }
+      403:
+        description: error
+        body:
+          application/json:
+            example: |
+              {
+                "detail": "You do not have permission to perform this action."
+              }
   /{id}:
     get:
       description: get specific journey by id
@@ -146,50 +189,6 @@ baseUri: http://192.168.178.80/api/
             application/json:
               example: |
                 {"detail":"Authentication credentials were not provided."}
-
-
-
-
-/add_journey:
-  post:
-    description: |
-      add new journey to logged in user (Authorization: JWT <token>)
-    body:
-      application/json:
-        example: !include journey/add_journey_ex.json
-    responses:
-      200:
-        description: created successfully
-        body:
-          application/json:
-            example: |
-              {
-                "id": 15,
-                "name": null,
-                "date": "1993-03-03",
-                "origin": "Sioux Falls",
-                "destination": "Athens",
-                "phone": "+491781676556",
-                "email": "s_sd21@hotmail.com"
-              }
-      401:
-        description: no user is logged in
-        body:
-          application/json:
-            example: |
-              {
-                "detail": "Authentication credentials were not provided."
-              }
-      403:
-        description: error
-        body:
-          application/json:
-            example: |
-              {
-                "detail": "You do not have permission to perform this action."
-              }
-
-
 
 
 

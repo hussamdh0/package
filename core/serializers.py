@@ -19,7 +19,7 @@ class CitySerializer(serializers.ModelSerializer):
 class CityNamesSerializer(CitySerializer):
     class Meta:
         model = City
-        fields = ('name',)
+        fields = ('id', 'name',)
 
 
 class JourneySerializer(serializers.ModelSerializer):
@@ -33,7 +33,7 @@ class JourneySerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'date', 'origin', 'destination', 'phone', 'email',]
     
     def create(self, validated_data):
-        journey = Journey.objects.create(**validated_data, user=self.context['user'])
+        journey = Journey.objects.create(**validated_data, user=self.context['request'].user)
         return journey
     
 
