@@ -1,5 +1,6 @@
 from django.contrib import admin
 from core.models    import City, Country, Journey, User  #  , Shipment_dep
+from django.contrib.auth.admin import UserAdmin
 
 # admin.site.register(User)
 # admin.site.register(Shipment_dep)
@@ -10,7 +11,10 @@ class CityInline(admin.TabularInline):
     
     
 @admin.register(User)
-class UserAdmin(admin.ModelAdmin):
+class CUserAdmin(UserAdmin):
+    fieldsets = UserAdmin.fieldsets + (
+            (None, {'fields': ('reset_token',)}),
+    )
     list_display = ('__str__', 'username', 'email',)
 
 

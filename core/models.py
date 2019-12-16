@@ -17,7 +17,36 @@ class HasContact(models.Model):
     _email = models.CharField(max_length=30, db_column='cemail', blank=True, null=True)
 
 
+class HasLocation(models.Model):
+    class Meta:
+        abstract = True
+    
+    latitude    = models.FloatField(unique=False, null=True, blank=True)
+    longitude   = models.FloatField(unique=False, null=True, blank=True)
+
+    # returns distance between two sets of coordinates in KM
+    def distance(self, longitude=0, latitude=0, o=None):
+        if o:
+            latitude  = o.latitude
+            longitude = o.longitude
+        lat1  = latitude
+        long1 = longitude
+        lat2  = self.latitude
+        long2 = self.longitude
+
+        degree_to_rad = float (pi / 180.0)
+
+        d_lat = (lat2 - lat1) * degree_to_rad
+        d_long = (long2 - long1) * degree_to_rad
+
+        a = pow (sin (d_lat / 2), 2) + cos (lat1 * degree_to_rad) * cos (lat2 * degree_to_rad) * pow (sin (d_long / 2), 2)
+        c = 2 * atan2 (sqrt (a), sqrt (1 - a))
+        return 6367 * c
+
+    def distance_object(self, o):
+        return self.distance(longitude=o.longitude, latitude=o.latitude)
 # abstract
+
 
 class BaseModel(models.Model):
     objects         = models.Manager()
@@ -50,35 +79,16 @@ class Country(models.Model):
         return str(self.name)
 
 
-class City(models.Model):
+class City(HasLocation):
     name        = models.CharField(max_length=64, unique=False, null=True, blank=True)
     country     = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True, blank=True, related_name='city')
     population  = models.IntegerField(unique=False, null=True, blank=True)
-    latitude    = models.FloatField(unique=False, null=True, blank=True)
-    longitude   = models.FloatField(unique=False, null=True, blank=True)
     objects     = CityManager()
     
     def __str__(self):
         return str(self.name)
     
-    # returns distance between two sets of coordinates in KM
-    def distance(self, longitude, latitude):
-        lat1  = latitude
-        long1 = longitude
-        lat2  = self.latitude
-        long2 = self.longitude
 
-        degree_to_rad = float (pi / 180.0)
-
-        d_lat = (lat2 - lat1) * degree_to_rad
-        d_long = (long2 - long1) * degree_to_rad
-
-        a = pow (sin (d_lat / 2), 2) + cos (lat1 * degree_to_rad) * cos (lat2 * degree_to_rad) * pow (sin (d_long / 2), 2)
-        c = 2 * atan2 (sqrt (a), sqrt (1 - a))
-        return 6367 * c
-
-    def distance_city(self, city):
-        return self.distance(city.longitude, city.latitude)
 
 
 # class CUserManager(UserManager):
@@ -99,9 +109,10 @@ class City(models.Model):
 #         return user
 
 
-class User(BaseUserModel, HasContact):
-    objects = UserManager()
-    email = models.EmailField(_('email address'), blank=False, null=False, unique=True)
+class User(BaseUserModel, HasContact, HasLocation):
+    objects     = UserManager()
+    email       = models.EmailField(_('email address'), blank=False, null=False, unique=True)
+    reset_token = models.CharField(max_length=16, blank=True, null=True, default=None)
     
     # def save(self, *args, **kwargs):
     #     if not self.username:
