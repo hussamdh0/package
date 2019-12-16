@@ -1,13 +1,18 @@
 from django.contrib import admin
 from core.models    import City, Country, Journey, User  #  , Shipment_dep
 
-admin.site.register(User)
+# admin.site.register(User)
 # admin.site.register(Shipment_dep)
 
 
 class CityInline(admin.TabularInline):
     model = City
     
+    
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'username', 'email',)
+
 
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):

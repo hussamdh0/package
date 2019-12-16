@@ -4,6 +4,8 @@ from core.managers              import CityManager
 from math                       import pi, sqrt, sin, cos, atan2
 from datetime                   import date, timedelta
 from django.core.exceptions     import PermissionDenied
+from django.utils.translation   import gettext_lazy as _
+
 
 # mixin
 
@@ -99,6 +101,14 @@ class City(models.Model):
 
 class User(BaseUserModel, HasContact):
     objects = UserManager()
+    email = models.EmailField(_('email address'), blank=False, null=False, unique=True)
+    
+    # def save(self, *args, **kwargs):
+    #     if not self.username:
+    #         self.username = self.email
+    #     if not self.email:
+    #         self.email = self.username
+    #     super(User, self).save(*args, **kwargs)
 
 
 class JourneyManager(models.Manager):
@@ -112,7 +122,9 @@ class JourneyManager(models.Manager):
     @staticmethod
     def filter_city(qs, city_id, s='origin', radius=0):
         d = 3
-        city = City.objects.get(id=city_id)
+        try: city_id = int(city_id)
+        except: pass
+        city = City.objects.get_json(city_id)
         if radius:
             return [x for x in qs if getattr(x, s, None).distance(longitude=city.longitude, latitude=city.latitude) < radius], city
         else:
@@ -147,8 +159,8 @@ class JourneyManager(models.Manager):
 
 class Journey(BaseModel, HasContact):
     name         = models.CharField(max_length=255, unique=False, null=True, blank=True)
-    origin       = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_origin')
-    destination  = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey_destination')
+    origin       = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_origin')
+    destination  = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_destination')
     user         = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
     date         = models.DateField(null=True, blank=True)
     objects      = JourneyManager()
@@ -182,7 +194,7 @@ class Journey(BaseModel, HasContact):
     @property
     def email(self):
         if self._email: return self._email
-        return self.user._email
+        return self.user.email
     
     @email.setter
     def email(self, value):

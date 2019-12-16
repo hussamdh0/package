@@ -3,6 +3,87 @@ title: package api
 version: v1
 baseUri: http://167.71.46.156:8080/api/
 
+/login:
+  post:
+    description: |
+      obtain jwt token for user by providing email or username
+    body:
+      application/json:
+        example: |
+          {
+            "email":    "cfe@example.de",
+            "password": "pass123"
+          }
+
+    responses:
+      200:
+        description: |
+          logged in successfully, the response body contains a token that could later be used for authentication.
+            In later requests, you have to use header: (Authorization: JWT token)
+        body:
+          application/json:
+            example: |
+              {
+                  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImNmZUBjZmUuY2ZlIiwiaXNfc3VwZXJ1c2VyIjp0cnVlLCJ1c2VybmFtZSI6ImNmZSIsImV4cCI6MTU3NjUyNTQ0NSwib3JpZ19pYXQiOjE1NzY1MjE4NDV9.4EmFYmNyGE8lt15HlaYsIp-_fj5BR_2KKnqiJsL_nbg"
+              }
+      400:
+        description: Failed to log in
+        body:
+          application/json:
+            example: |
+              {
+                  "non_field_errors": [
+                      "Account with this email/username does not exists"
+                  ]
+              }
+              or
+              {
+                  "non_field_errors": [
+                      "Unable to log in with provided credentials."
+                  ]
+              }
+
+/add_user:
+  post:
+    description: |
+      create new user by providing a new email (must be a new email to our database) you can provide a username but it is optional, if username is provided, it can be used later for login (email is still possible as well)
+    body:
+      application/json:
+        example: |
+          {
+          	"username": "cfe", (optional)
+            "email":    "cfe@example.de",
+            "password": "pass123"
+          }
+
+    responses:
+      200:
+        description: created successfully
+        body:
+          application/json:
+            example: |
+              {
+                "id": 12,
+                "username": "cfe",
+                "email":    "cfe@example.de",
+                "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwidXNlcm5hbWUiOiJkZGFzY2FzY2FzY2RAc2QuZGUiLCJleHAiOjE1NzY1MjY3NTAsImVtYWlsIjoiZGRhc2Nhc2Nhc2NkQHNkLmRlIiwib3JpZ19pYXQiOjE1NzY1MjMxNTB9.xosGeZWdpxMVj_8eQIGHTbfvOw9fz5WUYDQRa6nf8x8"
+              }
+      400:
+        description: failed to create new user
+        body:
+          application/json:
+            example: |
+              {
+                  "username": [
+                      "A user with that username already exists."
+                  ],
+                  "email": [
+                      "user with this email address already exists."
+                  ],
+                  "password": [
+                      "This field is required."
+                  ]
+              }
 
 /city:
   get:
@@ -189,6 +270,7 @@ baseUri: http://167.71.46.156:8080/api/
             application/json:
               example: |
                 {"detail":"Authentication credentials were not provided."}
+
 
 
 

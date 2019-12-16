@@ -68,8 +68,8 @@ class JourneyLCV(ListCreateAPIView):
             kwargs['date']              = datetime.strptime(_date, '%Y-%m-%d').date()
             kwargs['date_tolerance']    = 1
         if date_tolerance:  kwargs['date_tolerance']    = int(date_tolerance)
-        if origin:          kwargs['origin']            = int(origin)
-        if destination:     kwargs['destination']       = int(destination)
+        if origin:          kwargs['origin']            = origin
+        if destination:     kwargs['destination']       = destination
         if radius:          kwargs['radius']            = float(radius)
         if my_journeys and self.request.user and not self.request.user.is_anonymous:
                             kwargs['user']              = self.request.user
@@ -106,4 +106,4 @@ class UserCV(APIView):
             serialized.save()
             return Response(serialized.data)
         else:
-            return Response(serialized._errors)
+            return Response(serialized._errors, status=400)

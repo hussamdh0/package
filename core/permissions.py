@@ -1,5 +1,6 @@
 from rest_framework.permissions import BasePermission
 
+
 class IsObjectOwner(BasePermission):
     message = "You must be the owner of this object."
     my_safe_methods = ['GET', 'PUT', 'PATCH', 'DELETE']
