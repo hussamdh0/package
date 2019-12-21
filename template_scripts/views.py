@@ -17,6 +17,7 @@ def add_city_data(request, test=False):
         for row in csv_reader:
             if row["population"] and float(row["population"]) > population_limit:
                 if test and row["iso2"] != 'US': continue
+                if not test and row["iso2"] not in ['DE', 'AE', 'BE', 'CH'' CZ', 'EG', 'ES', 'FR', 'GB', 'IT', 'NL', 'SY']: continue
                 cntry, crtd = Country.objects.get_or_create(name__iexact=row["country"])
                 
                 if crtd:

@@ -7,6 +7,7 @@ from core.views                 import (
     CityLV,
     JourneyLCV,
     UserCV,
+    UserRUV,
     # CreateJourneyAPIView,
     JourneyRUDV,
     index,
@@ -25,6 +26,8 @@ urlpatterns = [
     path('add_user', UserCV.as_view(), name='add_user'),
     
     path('city', CityLV.as_view(), name='city'),
+    
+    path('user', UserRUV.as_view(), name='user'),
     
     # path('add_journey',         CreateJourneyAPIView.as_view(),     name='add_journey'),
     

@@ -1,7 +1,7 @@
 #  from rest_framework.filters     import SearchFilter
 from rest_framework.views       import APIView
 from rest_framework.response    import Response
-from rest_framework.generics    import ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics    import ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveUpdateAPIView
 from core.serializers           import (
     CitySerializer,
     CityNamesSerializer,
@@ -12,6 +12,7 @@ from core.models                import City, Journey, User
 from datetime                   import date, timedelta, datetime
 from django.shortcuts           import render
 from .permissions               import IsObjectOwner
+from django.http                import Http404
 from rest_framework.exceptions  import NotAuthenticated
 
 
@@ -87,17 +88,14 @@ class JourneyRUDV(RetrieveUpdateDestroyAPIView):
     lookup_field = 'id'
     
 
-# class CreateJourneyAPIView(APIView):
-#     def post(self, request):
-#         if request.user is None or request.user.is_anonymous:
-#             raise NotAuthenticated
-#         serialized = JourneySerializer(data=request.data, context={'user': request.user})
-#         if serialized.is_valid():
-#             serialized.save()
-#             return Response(serialized.data)
-#         else:
-#             return Response(serialized._errors)
-        
+class UserRUV(RetrieveUpdateAPIView):
+    serializer_class = UserSerializer
+
+    def get_object(self):
+        if self.request.user.is_authenticated:
+            return self.request.user
+        raise Http404
+    
 
 class UserCV(APIView):
     def post(self, request):

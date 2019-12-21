@@ -1,0 +1,40 @@
+[
+{
+  "model": "core.journey",
+  "pk": 14,
+  "fields": {
+    "_phone": "+49112312312333312",
+    "_email": "s_sd21@hotmacil.com",
+    "creation_date": "2019-11-27T19:44:20.637Z",
+    "last_modified": "2019-12-20T21:20:13.630Z",
+    "name": null,
+    "description": "Package to be checked first",
+    "available_weight": 3,
+    "origin": 1966,
+    "destination": 2002,
+    "user": 1,
+    "date": "2019-12-23",
+    "time": "21:07:17",
+    "successful": true
+  }
+},
+{
+  "model": "core.journey",
+  "pk": 28,
+  "fields": {
+    "_phone": null,
+    "_email": null,
+    "creation_date": "2019-12-20T21:45:43.685Z",
+    "last_modified": "2019-12-20T21:45:43.685Z",
+    "name": null,
+    "description": "This journey has passed",
+    "available_weight": 1,
+    "origin": 1,
+    "destination": 2,
+    "user": 1,
+    "date": "2019-12-10",
+    "time": "21:45:27",
+    "successful": true
+  }
+}
+]

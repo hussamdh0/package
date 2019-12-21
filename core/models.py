@@ -7,6 +7,7 @@ from django.core.exceptions     import PermissionDenied
 from django.utils.translation   import gettext_lazy as _
 
 
+
 # mixin
 
 class HasContact(models.Model):
@@ -45,6 +46,8 @@ class HasLocation(models.Model):
 
     def distance_object(self, o):
         return self.distance(longitude=o.longitude, latitude=o.latitude)
+
+
 # abstract
 
 
@@ -87,8 +90,6 @@ class City(HasLocation):
     
     def __str__(self):
         return str(self.name)
-    
-
 
 
 # class CUserManager(UserManager):
@@ -111,8 +112,30 @@ class City(HasLocation):
 
 class User(BaseUserModel, HasContact, HasLocation):
     objects     = UserManager()
+    avatar      = models.ImageField(null=True, blank=True)
     email       = models.EmailField(_('email address'), blank=False, null=False, unique=True)
     reset_token = models.CharField(max_length=16, blank=True, null=True, default=None)
+    
+    @property
+    def successful_journeys(self):
+        return len( Journey.objects.filter(user=self, date__lt=date.today(), successful=True) )
+    
+    @property
+    def full_name(self):
+        res = self.get_full_name()
+        if res is not None and res != '': return res
+        return self.username
+    
+    @full_name.setter
+    def full_name(self, value):
+        if type(value) is str:
+            value_split = value.split(' ')
+            if len(value_split) == 2:
+                self.first_name = value_split[0]
+                self.last_name = value_split[1]
+            else:
+                self.first_name = value
+        else: raise TypeError
     
     # def save(self, *args, **kwargs):
     #     if not self.username:
@@ -169,12 +192,16 @@ class JourneyManager(models.Manager):
 
 
 class Journey(BaseModel, HasContact):
-    name         = models.CharField(max_length=255, unique=False, null=True, blank=True)
-    origin       = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_origin')
-    destination  = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_destination')
-    user         = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
-    date         = models.DateField(null=True, blank=True)
-    objects      = JourneyManager()
+    name             = models.CharField(max_length=255, unique=False, null=True, blank=True)
+    description      = models.CharField(max_length=255, null=True, blank=True)
+    available_weight = models.IntegerField(default=1)
+    origin           = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_origin')
+    destination      = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_destination')
+    user             = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
+    date             = models.DateField(null=True, blank=True)
+    time             = models.TimeField(null=True, blank=True)
+    successful       = models.BooleanField(default=True)
+    objects          = JourneyManager()
 
     @property
     def _destination(self):
