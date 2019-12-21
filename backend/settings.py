@@ -14,6 +14,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1:8080',
     '167.71.46.156',
     'localhost',
+    'hussamtech.de',
     'c4cbackend.herokuapp.com'
 ]
 

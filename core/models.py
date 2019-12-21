@@ -1,14 +1,13 @@
 from django.contrib.auth.models import AbstractUser, UserManager
 from django.db                  import models
-from core.managers              import CityManager
 from math                       import pi, sqrt, sin, cos, atan2
 from datetime                   import date, timedelta
 from django.core.exceptions     import PermissionDenied
 from django.utils.translation   import gettext_lazy as _
 
 
-
 # mixin
+
 
 class HasContact(models.Model):
     class Meta:
@@ -30,17 +29,17 @@ class HasLocation(models.Model):
         if o:
             latitude  = o.latitude
             longitude = o.longitude
-        lat1  = latitude
-        long1 = longitude
-        lat2  = self.latitude
-        long2 = self.longitude
+        latitude1  = latitude
+        longitude1 = longitude
+        latitude2  = self.latitude
+        longitude2 = self.longitude
 
-        degree_to_rad = float (pi / 180.0)
+        dtor = float (pi / 180.0)
 
-        d_lat = (lat2 - lat1) * degree_to_rad
-        d_long = (long2 - long1) * degree_to_rad
+        d_latitude  = (latitude2  - latitude1)  * dtor
+        d_longitude = (longitude2 - longitude1) * dtor
 
-        a = pow (sin (d_lat / 2), 2) + cos (lat1 * degree_to_rad) * cos (lat2 * degree_to_rad) * pow (sin (d_long / 2), 2)
+        a = pow (sin (d_latitude / 2), 2) + cos (latitude1 * dtor) * cos (latitude2 * dtor) * pow (sin (d_longitude / 2), 2)
         c = 2 * atan2 (sqrt (a), sqrt (1 - a))
         return 6367 * c
 
@@ -82,8 +81,35 @@ class Country(models.Model):
         return str(self.name)
 
 
+class CityManager(models.Manager):
+    def all_ordered(self, **kwargs):
+        qs = self.get_queryset()
+        if ('longitude' in kwargs and 'latitude' in kwargs):
+            return sorted(qs, key=lambda a: a.distance(**kwargs))
+        if ('longitude' in kwargs):
+            qs = qs.filter(longitude__gt=kwargs['longitude'] - 3, longitude__lt=kwargs['longitude'] + 3)
+        if ('latitude' in kwargs):
+            qs = qs.filter(latitude__gt=kwargs['latitude'] - 3, latitude__lt=kwargs['latitude'] + 3)
+        return qs.order_by('-population')
+    
+    def get_json(self, value):
+        if type(value) is int:
+            return self.get(id=value)
+        if type(value) is str:
+            qs = self.filter(name__iexact=value)
+            res = None
+            if len(qs) == 1:
+                res = qs[0]
+            if len(qs) > 1:
+                res = qs[0]
+                for e in qs[1:]:
+                    if e.population > res.population:
+                        res = e
+            return res
+        
+        
 class City(HasLocation):
-    name        = models.CharField(max_length=64, unique=False, null=True, blank=True)
+    name        = models.CharField(max_length=64, unique=True, null=True, blank=True)
     country     = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True, blank=True, related_name='city')
     population  = models.IntegerField(unique=False, null=True, blank=True)
     objects     = CityManager()
@@ -197,9 +223,9 @@ class Journey(BaseModel, HasContact):
     available_weight = models.IntegerField(default=1)
     origin           = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_origin')
     destination      = models.ForeignKey(City, on_delete=models.CASCADE, related_name='journey_destination')
-    user             = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='journey')
-    date             = models.DateField(null=True, blank=True)
-    time             = models.TimeField(null=True, blank=True)
+    user             = models.ForeignKey(User, on_delete=models.CASCADE, related_name='journey')
+    date             = models.DateField(default=date.today)
+    time             = models.TimeField(null=True)
     successful       = models.BooleanField(default=True)
     objects          = JourneyManager()
 
@@ -241,3 +267,4 @@ class Journey(BaseModel, HasContact):
     
     def __str__(self):
         return f'{str(self.name)}: from {str(self.origin)} to {str(self.destination)}'
+

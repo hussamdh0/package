@@ -1,0 +1,5535 @@
+[
+{
+  "model": "core.city",
+  "pk": 1,
+  "fields": {
+    "latitude": 25.7915,
+    "longitude": 55.9428,
+    "name": "Ras al Khaymah",
+    "country": 1,
+    "population": 160849
+  }
+},
+{
+  "model": "core.city",
+  "pk": 2,
+  "fields": {
+    "latitude": 24.2305,
+    "longitude": 55.74,
+    "name": "Al Ayn",
+    "country": 1,
+    "population": 408733
+  }
+},
+{
+  "model": "core.city",
+  "pk": 3,
+  "fields": {
+    "latitude": 24.4667,
+    "longitude": 54.3666,
+    "name": "Abu Dhabi",
+    "country": 1,
+    "population": 603492
+  }
+},
+{
+  "model": "core.city",
+  "pk": 4,
+  "fields": {
+    "latitude": 25.3714,
+    "longitude": 55.4065,
+    "name": "Sharjah",
+    "country": 1,
+    "population": 1103027
+  }
+},
+{
+  "model": "core.city",
+  "pk": 5,
+  "fields": {
+    "latitude": 25.23,
+    "longitude": 55.28,
+    "name": "Dubai",
+    "country": 1,
+    "population": 1379000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 6,
+  "fields": {
+    "latitude": 50.4704,
+    "longitude": 4.87,
+    "name": "Namur",
+    "country": 2,
+    "population": 106284
+  }
+},
+{
+  "model": "core.city",
+  "pk": 7,
+  "fields": {
+    "latitude": 51.2204,
+    "longitude": 3.23,
+    "name": "Brugge",
+    "country": 2,
+    "population": 146469
+  }
+},
+{
+  "model": "core.city",
+  "pk": 8,
+  "fields": {
+    "latitude": 50.4204,
+    "longitude": 4.45,
+    "name": "Charleroi",
+    "country": 2,
+    "population": 345367
+  }
+},
+{
+  "model": "core.city",
+  "pk": 9,
+  "fields": {
+    "latitude": 51.03,
+    "longitude": 3.7,
+    "name": "Gent",
+    "country": 2,
+    "population": 444336
+  }
+},
+{
+  "model": "core.city",
+  "pk": 10,
+  "fields": {
+    "latitude": 50.63,
+    "longitude": 5.58,
+    "name": "Liege",
+    "country": 2,
+    "population": 749110
+  }
+},
+{
+  "model": "core.city",
+  "pk": 11,
+  "fields": {
+    "latitude": 51.2204,
+    "longitude": 4.415,
+    "name": "Antwerpen",
+    "country": 2,
+    "population": 920000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 12,
+  "fields": {
+    "latitude": 50.8333,
+    "longitude": 4.3333,
+    "name": "Brussels",
+    "country": 2,
+    "population": 1743000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 13,
+  "fields": {
+    "latitude": 50.8704,
+    "longitude": 12.07,
+    "name": "Gera",
+    "country": 3,
+    "population": 104659
+  }
+},
+{
+  "model": "core.city",
+  "pk": 14,
+  "fields": {
+    "latitude": 50.9304,
+    "longitude": 11.58,
+    "name": "Jena",
+    "country": 3,
+    "population": 104712
+  }
+},
+{
+  "model": "core.city",
+  "pk": 15,
+  "fields": {
+    "latitude": 51.7704,
+    "longitude": 14.33,
+    "name": "Cottbus",
+    "country": 3,
+    "population": 105067
+  }
+},
+{
+  "model": "core.city",
+  "pk": 16,
+  "fields": {
+    "latitude": 53.5504,
+    "longitude": 8.58,
+    "name": "Bremerhaven",
+    "country": 3,
+    "population": 137751
+  }
+},
+{
+  "model": "core.city",
+  "pk": 17,
+  "fields": {
+    "latitude": 51.5204,
+    "longitude": 9.92,
+    "name": "Gottingen",
+    "country": 3,
+    "population": 139419
+  }
+},
+{
+  "model": "core.city",
+  "pk": 18,
+  "fields": {
+    "latitude": 48.7704,
+    "longitude": 11.45,
+    "name": "Ingolstadt",
+    "country": 3,
+    "population": 163325
+  }
+},
+{
+  "model": "core.city",
+  "pk": 19,
+  "fields": {
+    "latitude": 49.0204,
+    "longitude": 12.12,
+    "name": "Regensburg",
+    "country": 3,
+    "population": 164359
+  }
+},
+{
+  "model": "core.city",
+  "pk": 20,
+  "fields": {
+    "latitude": 53.13,
+    "longitude": 8.22,
+    "name": "Oldenburg",
+    "country": 3,
+    "population": 167458
+  }
+},
+{
+  "model": "core.city",
+  "pk": 21,
+  "fields": {
+    "latitude": 49.8004,
+    "longitude": 9.95,
+    "name": "Wurzburg",
+    "country": 3,
+    "population": 168561
+  }
+},
+{
+  "model": "core.city",
+  "pk": 22,
+  "fields": {
+    "latitude": 48.4004,
+    "longitude": 10.0,
+    "name": "Ulm",
+    "country": 3,
+    "population": 172955
+  }
+},
+{
+  "model": "core.city",
+  "pk": 23,
+  "fields": {
+    "latitude": 49.9825,
+    "longitude": 8.2732,
+    "name": "Mainz",
+    "country": 3,
+    "population": 184997
+  }
+},
+{
+  "model": "core.city",
+  "pk": 24,
+  "fields": {
+    "latitude": 54.0704,
+    "longitude": 12.15,
+    "name": "Rostock",
+    "country": 3,
+    "population": 203080
+  }
+},
+{
+  "model": "core.city",
+  "pk": 25,
+  "fields": {
+    "latitude": 50.9701,
+    "longitude": 11.03,
+    "name": "Erfurt",
+    "country": 3,
+    "population": 203254
+  }
+},
+{
+  "model": "core.city",
+  "pk": 26,
+  "fields": {
+    "latitude": 52.4004,
+    "longitude": 13.07,
+    "name": "Potsdam",
+    "country": 3,
+    "population": 218095
+  }
+},
+{
+  "model": "core.city",
+  "pk": 27,
+  "fields": {
+    "latitude": 52.1304,
+    "longitude": 11.62,
+    "name": "Magdeburg",
+    "country": 3,
+    "population": 229826
+  }
+},
+{
+  "model": "core.city",
+  "pk": 28,
+  "fields": {
+    "latitude": 52.2804,
+    "longitude": 8.05,
+    "name": "Osnabruck",
+    "country": 3,
+    "population": 231268
+  }
+},
+{
+  "model": "core.city",
+  "pk": 29,
+  "fields": {
+    "latitude": 53.8704,
+    "longitude": 10.67,
+    "name": "Lubeck",
+    "country": 3,
+    "population": 235390
+  }
+},
+{
+  "model": "core.city",
+  "pk": 30,
+  "fields": {
+    "latitude": 49.47,
+    "longitude": 11.0,
+    "name": "Furth",
+    "country": 3,
+    "population": 237844
+  }
+},
+{
+  "model": "core.city",
+  "pk": 31,
+  "fields": {
+    "latitude": 52.25,
+    "longitude": 10.5,
+    "name": "Braunschweig",
+    "country": 3,
+    "population": 244715
+  }
+},
+{
+  "model": "core.city",
+  "pk": 32,
+  "fields": {
+    "latitude": 48.0004,
+    "longitude": 7.8699,
+    "name": "Freiburg",
+    "country": 3,
+    "population": 254889
+  }
+},
+{
+  "model": "core.city",
+  "pk": 33,
+  "fields": {
+    "latitude": 54.3304,
+    "longitude": 10.13,
+    "name": "Kiel",
+    "country": 3,
+    "population": 269427
+  }
+},
+{
+  "model": "core.city",
+  "pk": 34,
+  "fields": {
+    "latitude": 51.9704,
+    "longitude": 7.62,
+    "name": "Munster",
+    "country": 3,
+    "population": 270184
+  }
+},
+{
+  "model": "core.city",
+  "pk": 35,
+  "fields": {
+    "latitude": 51.3,
+    "longitude": 9.5,
+    "name": "Kassel",
+    "country": 3,
+    "population": 289924
+  }
+},
+{
+  "model": "core.city",
+  "pk": 36,
+  "fields": {
+    "latitude": 50.83,
+    "longitude": 12.92,
+    "name": "Chemnitz",
+    "country": 3,
+    "population": 302643
+  }
+},
+{
+  "model": "core.city",
+  "pk": 37,
+  "fields": {
+    "latitude": 50.3505,
+    "longitude": 7.6,
+    "name": "Koblenz",
+    "country": 3,
+    "population": 312633
+  }
+},
+{
+  "model": "core.city",
+  "pk": 38,
+  "fields": {
+    "latitude": 52.03,
+    "longitude": 8.53,
+    "name": "Bielefeld",
+    "country": 3,
+    "population": 331906
+  }
+},
+{
+  "model": "core.city",
+  "pk": 39,
+  "fields": {
+    "latitude": 48.35,
+    "longitude": 10.9,
+    "name": "Augsburg",
+    "country": 3,
+    "population": 358989
+  }
+},
+{
+  "model": "core.city",
+  "pk": 40,
+  "fields": {
+    "latitude": 49.0,
+    "longitude": 8.4,
+    "name": "Karlsruhe",
+    "country": 3,
+    "population": 377487
+  }
+},
+{
+  "model": "core.city",
+  "pk": 41,
+  "fields": {
+    "latitude": 49.42,
+    "longitude": 8.7,
+    "name": "Heidelberg",
+    "country": 3,
+    "population": 426590
+  }
+},
+{
+  "model": "core.city",
+  "pk": 42,
+  "fields": {
+    "latitude": 51.3354,
+    "longitude": 12.41,
+    "name": "Leipzig",
+    "country": 3,
+    "population": 542529
+  }
+},
+{
+  "model": "core.city",
+  "pk": 43,
+  "fields": {
+    "latitude": 51.53,
+    "longitude": 7.45,
+    "name": "Dortmund",
+    "country": 3,
+    "population": 588462
+  }
+},
+{
+  "model": "core.city",
+  "pk": 44,
+  "fields": {
+    "latitude": 50.0804,
+    "longitude": 8.25,
+    "name": "Wiesbaden",
+    "country": 3,
+    "population": 617126
+  }
+},
+{
+  "model": "core.city",
+  "pk": 45,
+  "fields": {
+    "latitude": 51.05,
+    "longitude": 13.75,
+    "name": "Dresden",
+    "country": 3,
+    "population": 617515
+  }
+},
+{
+  "model": "core.city",
+  "pk": 46,
+  "fields": {
+    "latitude": 50.7205,
+    "longitude": 7.08,
+    "name": "Bonn",
+    "country": 3,
+    "population": 680543
+  }
+},
+{
+  "model": "core.city",
+  "pk": 47,
+  "fields": {
+    "latitude": 52.367,
+    "longitude": 9.7167,
+    "name": "Hannover",
+    "country": 3,
+    "population": 722490
+  }
+},
+{
+  "model": "core.city",
+  "pk": 48,
+  "fields": {
+    "latitude": 53.08,
+    "longitude": 8.8,
+    "name": "Bremen",
+    "country": 3,
+    "population": 724909
+  }
+},
+{
+  "model": "core.city",
+  "pk": 49,
+  "fields": {
+    "latitude": 49.45,
+    "longitude": 11.08,
+    "name": "Nurnberg",
+    "country": 3,
+    "population": 737304
+  }
+},
+{
+  "model": "core.city",
+  "pk": 50,
+  "fields": {
+    "latitude": 49.2504,
+    "longitude": 6.97,
+    "name": "Saarbrucken",
+    "country": 3,
+    "population": 770001
+  }
+},
+{
+  "model": "core.city",
+  "pk": 51,
+  "fields": {
+    "latitude": 51.25,
+    "longitude": 7.17,
+    "name": "Wuppertal",
+    "country": 3,
+    "population": 776525
+  }
+},
+{
+  "model": "core.city",
+  "pk": 52,
+  "fields": {
+    "latitude": 50.93,
+    "longitude": 6.95,
+    "name": "Cologne",
+    "country": 3,
+    "population": 1004000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 53,
+  "fields": {
+    "latitude": 51.2204,
+    "longitude": 6.78,
+    "name": "Dusseldorf",
+    "country": 3,
+    "population": 1220000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 54,
+  "fields": {
+    "latitude": 48.1299,
+    "longitude": 11.575,
+    "name": "Munich",
+    "country": 3,
+    "population": 1275000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 55,
+  "fields": {
+    "latitude": 51.43,
+    "longitude": 6.75,
+    "name": "Duisburg",
+    "country": 3,
+    "population": 1276757
+  }
+},
+{
+  "model": "core.city",
+  "pk": 56,
+  "fields": {
+    "latitude": 51.45,
+    "longitude": 7.0166,
+    "name": "Essen",
+    "country": 3,
+    "population": 1742135
+  }
+},
+{
+  "model": "core.city",
+  "pk": 57,
+  "fields": {
+    "latitude": 53.55,
+    "longitude": 10.0,
+    "name": "Hamburg",
+    "country": 3,
+    "population": 1757000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 58,
+  "fields": {
+    "latitude": 49.5004,
+    "longitude": 8.47,
+    "name": "Mannheim",
+    "country": 3,
+    "population": 2362000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 59,
+  "fields": {
+    "latitude": 50.1,
+    "longitude": 8.675,
+    "name": "Frankfurt",
+    "country": 3,
+    "population": 2895000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 60,
+  "fields": {
+    "latitude": 48.78,
+    "longitude": 9.2,
+    "name": "Stuttgart",
+    "country": 3,
+    "population": 2944700
+  }
+},
+{
+  "model": "core.city",
+  "pk": 61,
+  "fields": {
+    "latitude": 52.5218,
+    "longitude": 13.4015,
+    "name": "Berlin",
+    "country": 3,
+    "population": 3406000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 62,
+  "fields": {
+    "latitude": 57.0337,
+    "longitude": 9.9166,
+    "name": "Aalborg",
+    "country": 4,
+    "population": 122219
+  }
+},
+{
+  "model": "core.city",
+  "pk": 63,
+  "fields": {
+    "latitude": 55.4004,
+    "longitude": 10.3833,
+    "name": "Odense",
+    "country": 4,
+    "population": 158222
+  }
+},
+{
+  "model": "core.city",
+  "pk": 64,
+  "fields": {
+    "latitude": 56.1572,
+    "longitude": 10.2107,
+    "name": "Aarhus",
+    "country": 4,
+    "population": 237551
+  }
+},
+{
+  "model": "core.city",
+  "pk": 65,
+  "fields": {
+    "latitude": 55.6786,
+    "longitude": 12.5635,
+    "name": "Kobenhavn",
+    "country": 4,
+    "population": 1085000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 66,
+  "fields": {
+    "latitude": 31.3504,
+    "longitude": 27.23,
+    "name": "Matruh",
+    "country": 5,
+    "population": 103470
+  }
+},
+{
+  "model": "core.city",
+  "pk": 67,
+  "fields": {
+    "latitude": 26.3304,
+    "longitude": 31.88,
+    "name": "Girga",
+    "country": 5,
+    "population": 128250
+  }
+},
+{
+  "model": "core.city",
+  "pk": 68,
+  "fields": {
+    "latitude": 31.109,
+    "longitude": 30.936,
+    "name": "Kafr el Sheikh",
+    "country": 5,
+    "population": 143970
+  }
+},
+{
+  "model": "core.city",
+  "pk": 69,
+  "fields": {
+    "latitude": 28.3004,
+    "longitude": 30.71,
+    "name": "Samalut",
+    "country": 5,
+    "population": 152097
+  }
+},
+{
+  "model": "core.city",
+  "pk": 70,
+  "fields": {
+    "latitude": 27.23,
+    "longitude": 33.83,
+    "name": "Hurghada",
+    "country": 5,
+    "population": 157204
+  }
+},
+{
+  "model": "core.city",
+  "pk": 71,
+  "fields": {
+    "latitude": 30.4667,
+    "longitude": 31.1833,
+    "name": "Benha",
+    "country": 5,
+    "population": 167029
+  }
+},
+{
+  "model": "core.city",
+  "pk": 72,
+  "fields": {
+    "latitude": 31.1249,
+    "longitude": 33.8006,
+    "name": "El Arish",
+    "country": 5,
+    "population": 178651
+  }
+},
+{
+  "model": "core.city",
+  "pk": 73,
+  "fields": {
+    "latitude": 30.592,
+    "longitude": 30.9,
+    "name": "Shibin el Kom",
+    "country": 5,
+    "population": 182900
+  }
+},
+{
+  "model": "core.city",
+  "pk": 74,
+  "fields": {
+    "latitude": 31.4604,
+    "longitude": 30.39,
+    "name": "Rashid",
+    "country": 5,
+    "population": 199509
+  }
+},
+{
+  "model": "core.city",
+  "pk": 75,
+  "fields": {
+    "latitude": 27.7304,
+    "longitude": 30.84,
+    "name": "Mallawi",
+    "country": 5,
+    "population": 217365
+  }
+},
+{
+  "model": "core.city",
+  "pk": 76,
+  "fields": {
+    "latitude": 30.5833,
+    "longitude": 31.5167,
+    "name": "Zagazig",
+    "country": 5,
+    "population": 285097
+  }
+},
+{
+  "model": "core.city",
+  "pk": 77,
+  "fields": {
+    "latitude": 31.4204,
+    "longitude": 31.82,
+    "name": "Dumyat",
+    "country": 5,
+    "population": 299459
+  }
+},
+{
+  "model": "core.city",
+  "pk": 78,
+  "fields": {
+    "latitude": 26.1505,
+    "longitude": 32.72,
+    "name": "Qena",
+    "country": 5,
+    "population": 302027
+  }
+},
+{
+  "model": "core.city",
+  "pk": 79,
+  "fields": {
+    "latitude": 24.47,
+    "longitude": 32.95,
+    "name": "Kom Ombo",
+    "country": 5,
+    "population": 303962
+  }
+},
+{
+  "model": "core.city",
+  "pk": 80,
+  "fields": {
+    "latitude": 24.0875,
+    "longitude": 32.8989,
+    "name": "Aswan",
+    "country": 5,
+    "population": 313442
+  }
+},
+{
+  "model": "core.city",
+  "pk": 81,
+  "fields": {
+    "latitude": 29.31,
+    "longitude": 30.84,
+    "name": "El Faiyum",
+    "country": 5,
+    "population": 316772
+  }
+},
+{
+  "model": "core.city",
+  "pk": 82,
+  "fields": {
+    "latitude": 30.7904,
+    "longitude": 31.0,
+    "name": "Tanta",
+    "country": 5,
+    "population": 404901
+  }
+},
+{
+  "model": "core.city",
+  "pk": 83,
+  "fields": {
+    "latitude": 27.19,
+    "longitude": 31.1799,
+    "name": "Asyut",
+    "country": 5,
+    "population": 420585
+  }
+},
+{
+  "model": "core.city",
+  "pk": 84,
+  "fields": {
+    "latitude": 29.0804,
+    "longitude": 31.09,
+    "name": "Beni Suef",
+    "country": 5,
+    "population": 489450
+  }
+},
+{
+  "model": "core.city",
+  "pk": 85,
+  "fields": {
+    "latitude": 28.09,
+    "longitude": 30.75,
+    "name": "El Minya",
+    "country": 5,
+    "population": 500000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 86,
+  "fields": {
+    "latitude": 31.0504,
+    "longitude": 30.47,
+    "name": "Damanhur",
+    "country": 5,
+    "population": 500000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 87,
+  "fields": {
+    "latitude": 30.005,
+    "longitude": 32.5499,
+    "name": "Suez",
+    "country": 5,
+    "population": 508335
+  }
+},
+{
+  "model": "core.city",
+  "pk": 88,
+  "fields": {
+    "latitude": 31.0504,
+    "longitude": 31.38,
+    "name": "El Mansura",
+    "country": 5,
+    "population": 600000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 89,
+  "fields": {
+    "latitude": 26.5504,
+    "longitude": 31.7,
+    "name": "Sohag",
+    "country": 5,
+    "population": 600000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 90,
+  "fields": {
+    "latitude": 25.7,
+    "longitude": 32.65,
+    "name": "Luxor",
+    "country": 5,
+    "population": 609248
+  }
+},
+{
+  "model": "core.city",
+  "pk": 91,
+  "fields": {
+    "latitude": 31.26,
+    "longitude": 32.29,
+    "name": "Bur Said",
+    "country": 5,
+    "population": 623864
+  }
+},
+{
+  "model": "core.city",
+  "pk": 92,
+  "fields": {
+    "latitude": 30.5903,
+    "longitude": 32.26,
+    "name": "Ismailia",
+    "country": 5,
+    "population": 656135
+  }
+},
+{
+  "model": "core.city",
+  "pk": 93,
+  "fields": {
+    "latitude": 30.01,
+    "longitude": 31.19,
+    "name": "El Giza",
+    "country": 5,
+    "population": 2681863
+  }
+},
+{
+  "model": "core.city",
+  "pk": 94,
+  "fields": {
+    "latitude": 31.2,
+    "longitude": 29.95,
+    "name": "Alexandria",
+    "country": 5,
+    "population": 4165000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 95,
+  "fields": {
+    "latitude": 30.05,
+    "longitude": 31.25,
+    "name": "Cairo",
+    "country": 5,
+    "population": 11893000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 96,
+  "fields": {
+    "latitude": 36.1267,
+    "longitude": -5.4665,
+    "name": "Algeciras",
+    "country": 6,
+    "population": 111027
+  }
+},
+{
+  "model": "core.city",
+  "pk": 97,
+  "fields": {
+    "latitude": 37.7704,
+    "longitude": -3.8,
+    "name": "Jaen",
+    "country": 6,
+    "population": 116400
+  }
+},
+{
+  "model": "core.city",
+  "pk": 98,
+  "fields": {
+    "latitude": 42.33,
+    "longitude": -7.87,
+    "name": "Ourense",
+    "country": 6,
+    "population": 118107
+  }
+},
+{
+  "model": "core.city",
+  "pk": 99,
+  "fields": {
+    "latitude": 41.1204,
+    "longitude": 1.25,
+    "name": "Tarragona",
+    "country": 6,
+    "population": 126291
+  }
+},
+{
+  "model": "core.city",
+  "pk": 100,
+  "fields": {
+    "latitude": 42.58,
+    "longitude": -5.57,
+    "name": "Leon",
+    "country": 6,
+    "population": 136227
+  }
+},
+{
+  "model": "core.city",
+  "pk": 101,
+  "fields": {
+    "latitude": 38.8804,
+    "longitude": -6.97,
+    "name": "Badajoz",
+    "country": 6,
+    "population": 140133
+  }
+},
+{
+  "model": "core.city",
+  "pk": 102,
+  "fields": {
+    "latitude": 35.3,
+    "longitude": -2.95,
+    "name": "Melilla",
+    "country": 6,
+    "population": 141308
+  }
+},
+{
+  "model": "core.city",
+  "pk": 103,
+  "fields": {
+    "latitude": 42.4704,
+    "longitude": -2.43,
+    "name": "Logrono",
+    "country": 6,
+    "population": 143698
+  }
+},
+{
+  "model": "core.city",
+  "pk": 104,
+  "fields": {
+    "latitude": 37.2504,
+    "longitude": -6.9299,
+    "name": "Huelva",
+    "country": 6,
+    "population": 144174
+  }
+},
+{
+  "model": "core.city",
+  "pk": 105,
+  "fields": {
+    "latitude": 39.0003,
+    "longitude": -1.87,
+    "name": "Albacete",
+    "country": 6,
+    "population": 158094
+  }
+},
+{
+  "model": "core.city",
+  "pk": 106,
+  "fields": {
+    "latitude": 40.9704,
+    "longitude": -5.67,
+    "name": "Salamanca",
+    "country": 6,
+    "population": 162353
+  }
+},
+{
+  "model": "core.city",
+  "pk": 107,
+  "fields": {
+    "latitude": 42.3504,
+    "longitude": -3.68,
+    "name": "Burgos",
+    "country": 6,
+    "population": 170183
+  }
+},
+{
+  "model": "core.city",
+  "pk": 108,
+  "fields": {
+    "latitude": 36.8303,
+    "longitude": -2.43,
+    "name": "Almeria",
+    "country": 6,
+    "population": 179405
+  }
+},
+{
+  "model": "core.city",
+  "pk": 109,
+  "fields": {
+    "latitude": 39.9704,
+    "longitude": -0.05,
+    "name": "Castello",
+    "country": 6,
+    "population": 180610
+  }
+},
+{
+  "model": "core.city",
+  "pk": 110,
+  "fields": {
+    "latitude": 41.54,
+    "longitude": 2.45,
+    "name": "Mataro",
+    "country": 6,
+    "population": 183293
+  }
+},
+{
+  "model": "core.city",
+  "pk": 111,
+  "fields": {
+    "latitude": 36.5166,
+    "longitude": -4.8833,
+    "name": "Marbella",
+    "country": 6,
+    "population": 186131
+  }
+},
+{
+  "model": "core.city",
+  "pk": 112,
+  "fields": {
+    "latitude": 37.6004,
+    "longitude": -0.98,
+    "name": "Cartagena",
+    "country": 6,
+    "population": 201274
+  }
+},
+{
+  "model": "core.city",
+  "pk": 113,
+  "fields": {
+    "latitude": 43.3805,
+    "longitude": -3.8,
+    "name": "Santander",
+    "country": 6,
+    "population": 208763
+  }
+},
+{
+  "model": "core.city",
+  "pk": 114,
+  "fields": {
+    "latitude": 42.85,
+    "longitude": -2.67,
+    "name": "Vitoria",
+    "country": 6,
+    "population": 224578
+  }
+},
+{
+  "model": "core.city",
+  "pk": 115,
+  "fields": {
+    "latitude": 43.3505,
+    "longitude": -5.83,
+    "name": "Oviedo",
+    "country": 6,
+    "population": 235651
+  }
+},
+{
+  "model": "core.city",
+  "pk": 116,
+  "fields": {
+    "latitude": 42.82,
+    "longitude": -1.65,
+    "name": "Pamplona",
+    "country": 6,
+    "population": 274545
+  }
+},
+{
+  "model": "core.city",
+  "pk": 117,
+  "fields": {
+    "latitude": 36.535,
+    "longitude": -6.225,
+    "name": "Cadiz",
+    "country": 6,
+    "population": 283157
+  }
+},
+{
+  "model": "core.city",
+  "pk": 118,
+  "fields": {
+    "latitude": 38.3512,
+    "longitude": -0.4836,
+    "name": "Alicante",
+    "country": 6,
+    "population": 315863
+  }
+},
+{
+  "model": "core.city",
+  "pk": 119,
+  "fields": {
+    "latitude": 37.88,
+    "longitude": -4.77,
+    "name": "Cordoba",
+    "country": 6,
+    "population": 321376
+  }
+},
+{
+  "model": "core.city",
+  "pk": 120,
+  "fields": {
+    "latitude": 41.65,
+    "longitude": -4.75,
+    "name": "Valladolid",
+    "country": 6,
+    "population": 322304
+  }
+},
+{
+  "model": "core.city",
+  "pk": 121,
+  "fields": {
+    "latitude": 43.53,
+    "longitude": -5.67,
+    "name": "Gijon",
+    "country": 6,
+    "population": 335972
+  }
+},
+{
+  "model": "core.city",
+  "pk": 122,
+  "fields": {
+    "latitude": 28.47,
+    "longitude": -16.25,
+    "name": "Santa Cruz de Tenerife",
+    "country": 6,
+    "population": 336061
+  }
+},
+{
+  "model": "core.city",
+  "pk": 123,
+  "fields": {
+    "latitude": 43.3204,
+    "longitude": -1.98,
+    "name": "San Sebastian",
+    "country": 6,
+    "population": 357468
+  }
+},
+{
+  "model": "core.city",
+  "pk": 124,
+  "fields": {
+    "latitude": 43.33,
+    "longitude": -8.42,
+    "name": "La Coruna",
+    "country": 6,
+    "population": 370610
+  }
+},
+{
+  "model": "core.city",
+  "pk": 125,
+  "fields": {
+    "latitude": 39.5743,
+    "longitude": 2.6542,
+    "name": "Palma",
+    "country": 6,
+    "population": 375773
+  }
+},
+{
+  "model": "core.city",
+  "pk": 126,
+  "fields": {
+    "latitude": 28.1,
+    "longitude": -15.43,
+    "name": "Las Palmas",
+    "country": 6,
+    "population": 378495
+  }
+},
+{
+  "model": "core.city",
+  "pk": 127,
+  "fields": {
+    "latitude": 42.22,
+    "longitude": -8.73,
+    "name": "Vigo",
+    "country": 6,
+    "population": 378952
+  }
+},
+{
+  "model": "core.city",
+  "pk": 128,
+  "fields": {
+    "latitude": 37.165,
+    "longitude": -3.585,
+    "name": "Granada",
+    "country": 6,
+    "population": 388290
+  }
+},
+{
+  "model": "core.city",
+  "pk": 129,
+  "fields": {
+    "latitude": 37.98,
+    "longitude": -1.13,
+    "name": "Murcia",
+    "country": 6,
+    "population": 406807
+  }
+},
+{
+  "model": "core.city",
+  "pk": 130,
+  "fields": {
+    "latitude": 36.7204,
+    "longitude": -4.42,
+    "name": "Malaga",
+    "country": 6,
+    "population": 550058
+  }
+},
+{
+  "model": "core.city",
+  "pk": 131,
+  "fields": {
+    "latitude": 41.65,
+    "longitude": -0.89,
+    "name": "Zaragoza",
+    "country": 6,
+    "population": 649404
+  }
+},
+{
+  "model": "core.city",
+  "pk": 132,
+  "fields": {
+    "latitude": 39.485,
+    "longitude": -0.4,
+    "name": "Valencia",
+    "country": 6,
+    "population": 808000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 133,
+  "fields": {
+    "latitude": 43.25,
+    "longitude": -2.93,
+    "name": "Bilbao",
+    "country": 6,
+    "population": 875552
+  }
+},
+{
+  "model": "core.city",
+  "pk": 134,
+  "fields": {
+    "latitude": 37.405,
+    "longitude": -5.98,
+    "name": "Seville",
+    "country": 6,
+    "population": 1212045
+  }
+},
+{
+  "model": "core.city",
+  "pk": 135,
+  "fields": {
+    "latitude": 41.3833,
+    "longitude": 2.1834,
+    "name": "Barcelona",
+    "country": 6,
+    "population": 4920000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 136,
+  "fields": {
+    "latitude": 40.4,
+    "longitude": -3.6834,
+    "name": "Madrid",
+    "country": 6,
+    "population": 5567000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 137,
+  "fields": {
+    "latitude": 45.9,
+    "longitude": 6.1167,
+    "name": "Annecy",
+    "country": 7,
+    "population": 105749
+  }
+},
+{
+  "model": "core.city",
+  "pk": 138,
+  "fields": {
+    "latitude": 47.23,
+    "longitude": 6.03,
+    "name": "Besancon",
+    "country": 7,
+    "population": 128426
+  }
+},
+{
+  "model": "core.city",
+  "pk": 139,
+  "fields": {
+    "latitude": 49.9004,
+    "longitude": 2.3,
+    "name": "Amiens",
+    "country": 7,
+    "population": 143086
+  }
+},
+{
+  "model": "core.city",
+  "pk": 140,
+  "fields": {
+    "latitude": 48.0004,
+    "longitude": 0.1,
+    "name": "Le Mans",
+    "country": 7,
+    "population": 144515
+  }
+},
+{
+  "model": "core.city",
+  "pk": 141,
+  "fields": {
+    "latitude": 48.3904,
+    "longitude": -4.495,
+    "name": "Brest",
+    "country": 7,
+    "population": 144899
+  }
+},
+{
+  "model": "core.city",
+  "pk": 142,
+  "fields": {
+    "latitude": 43.4733,
+    "longitude": -1.5616,
+    "name": "Biarritz",
+    "country": 7,
+    "population": 145348
+  }
+},
+{
+  "model": "core.city",
+  "pk": 143,
+  "fields": {
+    "latitude": 42.7,
+    "longitude": 2.9,
+    "name": "Perpignan",
+    "country": 7,
+    "population": 146620
+  }
+},
+{
+  "model": "core.city",
+  "pk": 144,
+  "fields": {
+    "latitude": 43.52,
+    "longitude": 5.45,
+    "name": "Aix-en-Provence",
+    "country": 7,
+    "population": 146821
+  }
+},
+{
+  "model": "core.city",
+  "pk": 145,
+  "fields": {
+    "latitude": 45.83,
+    "longitude": 1.25,
+    "name": "Limoges",
+    "country": 7,
+    "population": 152199
+  }
+},
+{
+  "model": "core.city",
+  "pk": 146,
+  "fields": {
+    "latitude": 43.8304,
+    "longitude": 4.35,
+    "name": "Nimes",
+    "country": 7,
+    "population": 169547
+  }
+},
+{
+  "model": "core.city",
+  "pk": 147,
+  "fields": {
+    "latitude": 47.3304,
+    "longitude": 5.03,
+    "name": "Dijon",
+    "country": 7,
+    "population": 169946
+  }
+},
+{
+  "model": "core.city",
+  "pk": 148,
+  "fields": {
+    "latitude": 47.48,
+    "longitude": -0.53,
+    "name": "Angers",
+    "country": 7,
+    "population": 188380
+  }
+},
+{
+  "model": "core.city",
+  "pk": 149,
+  "fields": {
+    "latitude": 49.1838,
+    "longitude": -0.35,
+    "name": "Caen",
+    "country": 7,
+    "population": 190099
+  }
+},
+{
+  "model": "core.city",
+  "pk": 150,
+  "fields": {
+    "latitude": 49.2504,
+    "longitude": 4.03,
+    "name": "Reims",
+    "country": 7,
+    "population": 196565
+  }
+},
+{
+  "model": "core.city",
+  "pk": 151,
+  "fields": {
+    "latitude": 48.1,
+    "longitude": -1.67,
+    "name": "Rennes",
+    "country": 7,
+    "population": 209375
+  }
+},
+{
+  "model": "core.city",
+  "pk": 152,
+  "fields": {
+    "latitude": 47.7504,
+    "longitude": 7.35,
+    "name": "Mulhouse",
+    "country": 7,
+    "population": 215454
+  }
+},
+{
+  "model": "core.city",
+  "pk": 153,
+  "fields": {
+    "latitude": 47.9004,
+    "longitude": 1.9,
+    "name": "Orleans",
+    "country": 7,
+    "population": 217301
+  }
+},
+{
+  "model": "core.city",
+  "pk": 154,
+  "fields": {
+    "latitude": 45.78,
+    "longitude": 3.08,
+    "name": "Clermont-Ferrand",
+    "country": 7,
+    "population": 233050
+  }
+},
+{
+  "model": "core.city",
+  "pk": 155,
+  "fields": {
+    "latitude": 47.3804,
+    "longitude": 0.6999,
+    "name": "Tours",
+    "country": 7,
+    "population": 236096
+  }
+},
+{
+  "model": "core.city",
+  "pk": 156,
+  "fields": {
+    "latitude": 49.505,
+    "longitude": 0.105,
+    "name": "Le Havre",
+    "country": 7,
+    "population": 242124
+  }
+},
+{
+  "model": "core.city",
+  "pk": 157,
+  "fields": {
+    "latitude": 48.5333,
+    "longitude": 2.6666,
+    "name": "Melun",
+    "country": 7,
+    "population": 249432
+  }
+},
+{
+  "model": "core.city",
+  "pk": 158,
+  "fields": {
+    "latitude": 45.4304,
+    "longitude": 4.38,
+    "name": "Saint-Etienne",
+    "country": 7,
+    "population": 265684
+  }
+},
+{
+  "model": "core.city",
+  "pk": 159,
+  "fields": {
+    "latitude": 48.6837,
+    "longitude": 6.2,
+    "name": "Nancy",
+    "country": 7,
+    "population": 268976
+  }
+},
+{
+  "model": "core.city",
+  "pk": 160,
+  "fields": {
+    "latitude": 43.6104,
+    "longitude": 3.87,
+    "name": "Montpellier",
+    "country": 7,
+    "population": 327254
+  }
+},
+{
+  "model": "core.city",
+  "pk": 161,
+  "fields": {
+    "latitude": 43.1342,
+    "longitude": 5.9188,
+    "name": "Toulon",
+    "country": 7,
+    "population": 357693
+  }
+},
+{
+  "model": "core.city",
+  "pk": 162,
+  "fields": {
+    "latitude": 45.1804,
+    "longitude": 5.72,
+    "name": "Grenoble",
+    "country": 7,
+    "population": 388574
+  }
+},
+{
+  "model": "core.city",
+  "pk": 163,
+  "fields": {
+    "latitude": 49.1203,
+    "longitude": 6.18,
+    "name": "Metz",
+    "country": 7,
+    "population": 409186
+  }
+},
+{
+  "model": "core.city",
+  "pk": 164,
+  "fields": {
+    "latitude": 47.2104,
+    "longitude": -1.59,
+    "name": "Nantes",
+    "country": 7,
+    "population": 438537
+  }
+},
+{
+  "model": "core.city",
+  "pk": 165,
+  "fields": {
+    "latitude": 48.58,
+    "longitude": 7.75,
+    "name": "Strasbourg",
+    "country": 7,
+    "population": 439972
+  }
+},
+{
+  "model": "core.city",
+  "pk": 166,
+  "fields": {
+    "latitude": 49.4304,
+    "longitude": 1.08,
+    "name": "Rouen",
+    "country": 7,
+    "population": 532559
+  }
+},
+{
+  "model": "core.city",
+  "pk": 167,
+  "fields": {
+    "latitude": 44.85,
+    "longitude": -0.595,
+    "name": "Bordeaux",
+    "country": 7,
+    "population": 803000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 168,
+  "fields": {
+    "latitude": 43.62,
+    "longitude": 1.4499,
+    "name": "Toulouse",
+    "country": 7,
+    "population": 847000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 169,
+  "fields": {
+    "latitude": 43.715,
+    "longitude": 7.265,
+    "name": "Nice",
+    "country": 7,
+    "population": 927000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 170,
+  "fields": {
+    "latitude": 50.65,
+    "longitude": 3.08,
+    "name": "Lille",
+    "country": 7,
+    "population": 1044000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 171,
+  "fields": {
+    "latitude": 43.29,
+    "longitude": 5.375,
+    "name": "Marseille",
+    "country": 7,
+    "population": 1400000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 172,
+  "fields": {
+    "latitude": 45.77,
+    "longitude": 4.83,
+    "name": "Lyon",
+    "country": 7,
+    "population": 1423000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 173,
+  "fields": {
+    "latitude": 48.8667,
+    "longitude": 2.3333,
+    "name": "Paris",
+    "country": 7,
+    "population": 9904000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 174,
+  "fields": {
+    "latitude": 50.7004,
+    "longitude": -3.53,
+    "name": "Exeter",
+    "country": 8,
+    "population": 113118
+  }
+},
+{
+  "model": "core.city",
+  "pk": 175,
+  "fields": {
+    "latitude": 52.2004,
+    "longitude": 0.1166,
+    "name": "Cambridge",
+    "country": 8,
+    "population": 128488
+  }
+},
+{
+  "model": "core.city",
+  "pk": 176,
+  "fields": {
+    "latitude": 52.5804,
+    "longitude": -0.25,
+    "name": "Peterborough",
+    "country": 8,
+    "population": 140141
+  }
+},
+{
+  "model": "core.city",
+  "pk": 177,
+  "fields": {
+    "latitude": 52.0703,
+    "longitude": 1.17,
+    "name": "Ipswich",
+    "country": 8,
+    "population": 143767
+  }
+},
+{
+  "model": "core.city",
+  "pk": 178,
+  "fields": {
+    "latitude": 56.4704,
+    "longitude": -3.0,
+    "name": "Dundee",
+    "country": 8,
+    "population": 151592
+  }
+},
+{
+  "model": "core.city",
+  "pk": 179,
+  "fields": {
+    "latitude": 53.9704,
+    "longitude": -1.08,
+    "name": "York",
+    "country": 8,
+    "population": 158947
+  }
+},
+{
+  "model": "core.city",
+  "pk": 180,
+  "fields": {
+    "latitude": 57.1704,
+    "longitude": -2.08,
+    "name": "Aberdeen",
+    "country": 8,
+    "population": 189364
+  }
+},
+{
+  "model": "core.city",
+  "pk": 181,
+  "fields": {
+    "latitude": 52.6304,
+    "longitude": 1.3,
+    "name": "Norwich",
+    "country": 8,
+    "population": 190756
+  }
+},
+{
+  "model": "core.city",
+  "pk": 182,
+  "fields": {
+    "latitude": 51.7704,
+    "longitude": -1.25,
+    "name": "Oxford",
+    "country": 8,
+    "population": 192796
+  }
+},
+{
+  "model": "core.city",
+  "pk": 183,
+  "fields": {
+    "latitude": 51.8804,
+    "longitude": -0.42,
+    "name": "Luton",
+    "country": 8,
+    "population": 235958
+  }
+},
+{
+  "model": "core.city",
+  "pk": 184,
+  "fields": {
+    "latitude": 50.3854,
+    "longitude": -4.16,
+    "name": "Plymouth",
+    "country": 8,
+    "population": 247297
+  }
+},
+{
+  "model": "core.city",
+  "pk": 185,
+  "fields": {
+    "latitude": 53.8304,
+    "longitude": -3.05,
+    "name": "Blackpool",
+    "country": 8,
+    "population": 272792
+  }
+},
+{
+  "model": "core.city",
+  "pk": 186,
+  "fields": {
+    "latitude": 51.63,
+    "longitude": -3.95,
+    "name": "Swansea",
+    "country": 8,
+    "population": 294339
+  }
+},
+{
+  "model": "core.city",
+  "pk": 187,
+  "fields": {
+    "latitude": 53.7504,
+    "longitude": -0.33,
+    "name": "Kingston upon Hull",
+    "country": 8,
+    "population": 302296
+  }
+},
+{
+  "model": "core.city",
+  "pk": 188,
+  "fields": {
+    "latitude": 51.47,
+    "longitude": -0.98,
+    "name": "Reading",
+    "country": 8,
+    "population": 369804
+  }
+},
+{
+  "model": "core.city",
+  "pk": 189,
+  "fields": {
+    "latitude": 50.9,
+    "longitude": -1.4,
+    "name": "Southampton",
+    "country": 8,
+    "population": 384417
+  }
+},
+{
+  "model": "core.city",
+  "pk": 190,
+  "fields": {
+    "latitude": 52.4204,
+    "longitude": -1.5,
+    "name": "Coventry",
+    "country": 8,
+    "population": 388271
+  }
+},
+{
+  "model": "core.city",
+  "pk": 191,
+  "fields": {
+    "latitude": 53.0004,
+    "longitude": -2.18,
+    "name": "Stoke",
+    "country": 8,
+    "population": 390801
+  }
+},
+{
+  "model": "core.city",
+  "pk": 192,
+  "fields": {
+    "latitude": 54.5804,
+    "longitude": -1.23,
+    "name": "Middlesbrough",
+    "country": 8,
+    "population": 416042
+  }
+},
+{
+  "model": "core.city",
+  "pk": 193,
+  "fields": {
+    "latitude": 50.73,
+    "longitude": -1.9,
+    "name": "Bournemouth",
+    "country": 8,
+    "population": 426945
+  }
+},
+{
+  "model": "core.city",
+  "pk": 194,
+  "fields": {
+    "latitude": 50.8003,
+    "longitude": -1.08,
+    "name": "Portsmouth",
+    "country": 8,
+    "population": 442252
+  }
+},
+{
+  "model": "core.city",
+  "pk": 195,
+  "fields": {
+    "latitude": 54.6,
+    "longitude": -5.96,
+    "name": "Belfast",
+    "country": 8,
+    "population": 450406
+  }
+},
+{
+  "model": "core.city",
+  "pk": 196,
+  "fields": {
+    "latitude": 54.92,
+    "longitude": -1.38,
+    "name": "Sunderland",
+    "country": 8,
+    "population": 452934
+  }
+},
+{
+  "model": "core.city",
+  "pk": 197,
+  "fields": {
+    "latitude": 52.63,
+    "longitude": -1.1332,
+    "name": "Leicester",
+    "country": 8,
+    "population": 457983
+  }
+},
+{
+  "model": "core.city",
+  "pk": 198,
+  "fields": {
+    "latitude": 53.8,
+    "longitude": -1.75,
+    "name": "Bradford",
+    "country": 8,
+    "population": 501700
+  }
+},
+{
+  "model": "core.city",
+  "pk": 199,
+  "fields": {
+    "latitude": 50.8303,
+    "longitude": -0.17,
+    "name": "Brighton",
+    "country": 8,
+    "population": 503008
+  }
+},
+{
+  "model": "core.city",
+  "pk": 200,
+  "fields": {
+    "latitude": 55.9483,
+    "longitude": -3.2191,
+    "name": "Edinburgh",
+    "country": 8,
+    "population": 504966
+  }
+},
+{
+  "model": "core.city",
+  "pk": 201,
+  "fields": {
+    "latitude": 51.45,
+    "longitude": -2.5833,
+    "name": "Bristol",
+    "country": 8,
+    "population": 553528
+  }
+},
+{
+  "model": "core.city",
+  "pk": 202,
+  "fields": {
+    "latitude": 51.55,
+    "longitude": 0.72,
+    "name": "Southend-on-Sea",
+    "country": 8,
+    "population": 618386
+  }
+},
+{
+  "model": "core.city",
+  "pk": 203,
+  "fields": {
+    "latitude": 53.416,
+    "longitude": -2.918,
+    "name": "Liverpool",
+    "country": 8,
+    "population": 811000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 204,
+  "fields": {
+    "latitude": 52.9703,
+    "longitude": -1.17,
+    "name": "Nottingham",
+    "country": 8,
+    "population": 825600
+  }
+},
+{
+  "model": "core.city",
+  "pk": 205,
+  "fields": {
+    "latitude": 51.5,
+    "longitude": -3.225,
+    "name": "Cardiff",
+    "country": 8,
+    "population": 861400
+  }
+},
+{
+  "model": "core.city",
+  "pk": 206,
+  "fields": {
+    "latitude": 55.0004,
+    "longitude": -1.6,
+    "name": "Newcastle",
+    "country": 8,
+    "population": 882000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 207,
+  "fields": {
+    "latitude": 55.8744,
+    "longitude": -4.2507,
+    "name": "Glasgow",
+    "country": 8,
+    "population": 1160000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 208,
+  "fields": {
+    "latitude": 53.3667,
+    "longitude": -1.5,
+    "name": "Sheffield",
+    "country": 8,
+    "population": 1292900
+  }
+},
+{
+  "model": "core.city",
+  "pk": 209,
+  "fields": {
+    "latitude": 53.83,
+    "longitude": -1.58,
+    "name": "Leeds",
+    "country": 8,
+    "population": 1529000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 210,
+  "fields": {
+    "latitude": 53.5004,
+    "longitude": -2.248,
+    "name": "Manchester",
+    "country": 8,
+    "population": 2230000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 211,
+  "fields": {
+    "latitude": 52.475,
+    "longitude": -1.92,
+    "name": "Birmingham",
+    "country": 8,
+    "population": 2285000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 212,
+  "fields": {
+    "latitude": 51.5,
+    "longitude": -0.1167,
+    "name": "London",
+    "country": 8,
+    "population": 8567000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 213,
+  "fields": {
+    "latitude": 43.6004,
+    "longitude": 13.4999,
+    "name": "Ancona",
+    "country": 9,
+    "population": 100507
+  }
+},
+{
+  "model": "core.city",
+  "pk": 214,
+  "fields": {
+    "latitude": 45.45,
+    "longitude": 8.62,
+    "name": "Novara",
+    "country": 9,
+    "population": 100910
+  }
+},
+{
+  "model": "core.city",
+  "pk": 215,
+  "fields": {
+    "latitude": 40.6403,
+    "longitude": 17.93,
+    "name": "Brindisi",
+    "country": 9,
+    "population": 104437
+  }
+},
+{
+  "model": "core.city",
+  "pk": 216,
+  "fields": {
+    "latitude": 46.0804,
+    "longitude": 11.12,
+    "name": "Trento",
+    "country": 9,
+    "population": 107808
+  }
+},
+{
+  "model": "core.city",
+  "pk": 217,
+  "fields": {
+    "latitude": 41.32,
+    "longitude": 16.27,
+    "name": "Barletta",
+    "country": 9,
+    "population": 107830
+  }
+},
+{
+  "model": "core.city",
+  "pk": 218,
+  "fields": {
+    "latitude": 46.07,
+    "longitude": 13.24,
+    "name": "Udine",
+    "country": 9,
+    "population": 119009
+  }
+},
+{
+  "model": "core.city",
+  "pk": 219,
+  "fields": {
+    "latitude": 40.73,
+    "longitude": 8.57,
+    "name": "Sassari",
+    "country": 9,
+    "population": 120729
+  }
+},
+{
+  "model": "core.city",
+  "pk": 220,
+  "fields": {
+    "latitude": 37.0704,
+    "longitude": 15.29,
+    "name": "Siracusa",
+    "country": 9,
+    "population": 123657
+  }
+},
+{
+  "model": "core.city",
+  "pk": 221,
+  "fields": {
+    "latitude": 44.8504,
+    "longitude": 11.6099,
+    "name": "Ferrara",
+    "country": 9,
+    "population": 130992
+  }
+},
+{
+  "model": "core.city",
+  "pk": 222,
+  "fields": {
+    "latitude": 44.4204,
+    "longitude": 12.22,
+    "name": "Ravenna",
+    "country": 9,
+    "population": 134631
+  }
+},
+{
+  "model": "core.city",
+  "pk": 223,
+  "fields": {
+    "latitude": 43.1104,
+    "longitude": 12.39,
+    "name": "Perugia",
+    "country": 9,
+    "population": 149125
+  }
+},
+{
+  "model": "core.city",
+  "pk": 224,
+  "fields": {
+    "latitude": 41.4605,
+    "longitude": 15.56,
+    "name": "Foggia",
+    "country": 9,
+    "population": 155203
+  }
+},
+{
+  "model": "core.city",
+  "pk": 225,
+  "fields": {
+    "latitude": 43.5511,
+    "longitude": 10.3023,
+    "name": "Livorno",
+    "country": 9,
+    "population": 156274
+  }
+},
+{
+  "model": "core.city",
+  "pk": 226,
+  "fields": {
+    "latitude": 40.3604,
+    "longitude": 18.15,
+    "name": "Lecce",
+    "country": 9,
+    "population": 162582
+  }
+},
+{
+  "model": "core.city",
+  "pk": 227,
+  "fields": {
+    "latitude": 44.8104,
+    "longitude": 10.32,
+    "name": "Parma",
+    "country": 9,
+    "population": 166011
+  }
+},
+{
+  "model": "core.city",
+  "pk": 228,
+  "fields": {
+    "latitude": 44.65,
+    "longitude": 10.92,
+    "name": "Modena",
+    "country": 9,
+    "population": 175502
+  }
+},
+{
+  "model": "core.city",
+  "pk": 229,
+  "fields": {
+    "latitude": 45.67,
+    "longitude": 12.24,
+    "name": "Treviso",
+    "country": 9,
+    "population": 177309
+  }
+},
+{
+  "model": "core.city",
+  "pk": 230,
+  "fields": {
+    "latitude": 38.115,
+    "longitude": 15.6414,
+    "name": "Reggio di Calabria",
+    "country": 9,
+    "population": 180353
+  }
+},
+{
+  "model": "core.city",
+  "pk": 231,
+  "fields": {
+    "latitude": 45.7004,
+    "longitude": 9.67,
+    "name": "Bergamo",
+    "country": 9,
+    "population": 200000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 232,
+  "fields": {
+    "latitude": 40.5084,
+    "longitude": 17.23,
+    "name": "Taranto",
+    "country": 9,
+    "population": 202033
+  }
+},
+{
+  "model": "core.city",
+  "pk": 233,
+  "fields": {
+    "latitude": 43.7205,
+    "longitude": 10.4,
+    "name": "Pisa",
+    "country": 9,
+    "population": 203336
+  }
+},
+{
+  "model": "core.city",
+  "pk": 234,
+  "fields": {
+    "latitude": 45.6504,
+    "longitude": 13.8,
+    "name": "Trieste",
+    "country": 9,
+    "population": 216035
+  }
+},
+{
+  "model": "core.city",
+  "pk": 235,
+  "fields": {
+    "latitude": 45.81,
+    "longitude": 9.08,
+    "name": "Como",
+    "country": 9,
+    "population": 250000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 236,
+  "fields": {
+    "latitude": 41.06,
+    "longitude": 14.3374,
+    "name": "Caserta",
+    "country": 9,
+    "population": 250000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 237,
+  "fields": {
+    "latitude": 38.2005,
+    "longitude": 15.55,
+    "name": "Messina",
+    "country": 9,
+    "population": 252026
+  }
+},
+{
+  "model": "core.city",
+  "pk": 238,
+  "fields": {
+    "latitude": 45.4387,
+    "longitude": 12.335,
+    "name": "Venice",
+    "country": 9,
+    "population": 270816
+  }
+},
+{
+  "model": "core.city",
+  "pk": 239,
+  "fields": {
+    "latitude": 39.2224,
+    "longitude": 9.104,
+    "name": "Cagliari",
+    "country": 9,
+    "population": 291511
+  }
+},
+{
+  "model": "core.city",
+  "pk": 240,
+  "fields": {
+    "latitude": 42.4554,
+    "longitude": 14.2187,
+    "name": "Pescara",
+    "country": 9,
+    "population": 314789
+  }
+},
+{
+  "model": "core.city",
+  "pk": 241,
+  "fields": {
+    "latitude": 45.4404,
+    "longitude": 10.99,
+    "name": "Verona",
+    "country": 9,
+    "population": 347459
+  }
+},
+{
+  "model": "core.city",
+  "pk": 242,
+  "fields": {
+    "latitude": 44.5004,
+    "longitude": 11.34,
+    "name": "Bologna",
+    "country": 9,
+    "population": 488172
+  }
+},
+{
+  "model": "core.city",
+  "pk": 243,
+  "fields": {
+    "latitude": 41.1142,
+    "longitude": 16.8728,
+    "name": "Bari",
+    "country": 9,
+    "population": 500577
+  }
+},
+{
+  "model": "core.city",
+  "pk": 244,
+  "fields": {
+    "latitude": 44.41,
+    "longitude": 8.93,
+    "name": "Genoa",
+    "country": 9,
+    "population": 647497
+  }
+},
+{
+  "model": "core.city",
+  "pk": 245,
+  "fields": {
+    "latitude": 37.5,
+    "longitude": 15.08,
+    "name": "Catania",
+    "country": 9,
+    "population": 674542
+  }
+},
+{
+  "model": "core.city",
+  "pk": 246,
+  "fields": {
+    "latitude": 38.125,
+    "longitude": 13.35,
+    "name": "Palermo",
+    "country": 9,
+    "population": 863000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 247,
+  "fields": {
+    "latitude": 40.6804,
+    "longitude": 14.7699,
+    "name": "Salerno",
+    "country": 9,
+    "population": 954265
+  }
+},
+{
+  "model": "core.city",
+  "pk": 248,
+  "fields": {
+    "latitude": 43.78,
+    "longitude": 11.25,
+    "name": "Florence",
+    "country": 9,
+    "population": 1500000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 249,
+  "fields": {
+    "latitude": 45.0704,
+    "longitude": 7.67,
+    "name": "Turin",
+    "country": 9,
+    "population": 1652000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 250,
+  "fields": {
+    "latitude": 40.84,
+    "longitude": 14.245,
+    "name": "Naples",
+    "country": 9,
+    "population": 2250000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 251,
+  "fields": {
+    "latitude": 45.47,
+    "longitude": 9.205,
+    "name": "Milan",
+    "country": 9,
+    "population": 2945000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 252,
+  "fields": {
+    "latitude": 41.896,
+    "longitude": 12.4833,
+    "name": "Rome",
+    "country": 9,
+    "population": 3339000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 253,
+  "fields": {
+    "latitude": 52.524,
+    "longitude": 6.097,
+    "name": "Zwolle",
+    "country": 10,
+    "population": 111805
+  }
+},
+{
+  "model": "core.city",
+  "pk": 254,
+  "fields": {
+    "latitude": 50.853,
+    "longitude": 5.677,
+    "name": "Maastricht",
+    "country": 10,
+    "population": 122378
+  }
+},
+{
+  "model": "core.city",
+  "pk": 255,
+  "fields": {
+    "latitude": 53.2504,
+    "longitude": 5.7834,
+    "name": "Leeuwarden",
+    "country": 10,
+    "population": 125778
+  }
+},
+{
+  "model": "core.city",
+  "pk": 256,
+  "fields": {
+    "latitude": 51.6833,
+    "longitude": 5.3167,
+    "name": "'s-Hertogenbosch",
+    "country": 10,
+    "population": 134520
+  }
+},
+{
+  "model": "core.city",
+  "pk": 257,
+  "fields": {
+    "latitude": 51.988,
+    "longitude": 5.923,
+    "name": "Arnhem",
+    "country": 10,
+    "population": 141674
+  }
+},
+{
+  "model": "core.city",
+  "pk": 258,
+  "fields": {
+    "latitude": 53.2204,
+    "longitude": 6.58,
+    "name": "Groningen",
+    "country": 10,
+    "population": 216688
+  }
+},
+{
+  "model": "core.city",
+  "pk": 259,
+  "fields": {
+    "latitude": 52.3804,
+    "longitude": 4.63,
+    "name": "Haarlem",
+    "country": 10,
+    "population": 349957
+  }
+},
+{
+  "model": "core.city",
+  "pk": 260,
+  "fields": {
+    "latitude": 51.43,
+    "longitude": 5.5,
+    "name": "Eindhoven",
+    "country": 10,
+    "population": 398053
+  }
+},
+{
+  "model": "core.city",
+  "pk": 261,
+  "fields": {
+    "latitude": 52.1003,
+    "longitude": 5.12,
+    "name": "Utrecht",
+    "country": 10,
+    "population": 640000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 262,
+  "fields": {
+    "latitude": 51.92,
+    "longitude": 4.48,
+    "name": "Rotterdam",
+    "country": 10,
+    "population": 1005000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 263,
+  "fields": {
+    "latitude": 52.35,
+    "longitude": 4.9166,
+    "name": "Amsterdam",
+    "country": 10,
+    "population": 1031000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 264,
+  "fields": {
+    "latitude": 52.08,
+    "longitude": 4.27,
+    "name": "The Hague",
+    "country": 10,
+    "population": 1406000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 265,
+  "fields": {
+    "latitude": 59.9135,
+    "longitude": 11.3472,
+    "name": "Baerum",
+    "country": 11,
+    "population": 113659
+  }
+},
+{
+  "model": "core.city",
+  "pk": 266,
+  "fields": {
+    "latitude": 63.4167,
+    "longitude": 10.4167,
+    "name": "Trondheim",
+    "country": 11,
+    "population": 147139
+  }
+},
+{
+  "model": "core.city",
+  "pk": 267,
+  "fields": {
+    "latitude": 58.97,
+    "longitude": 5.68,
+    "name": "Stavanger",
+    "country": 11,
+    "population": 173132
+  }
+},
+{
+  "model": "core.city",
+  "pk": 268,
+  "fields": {
+    "latitude": 60.391,
+    "longitude": 5.3245,
+    "name": "Bergen",
+    "country": 11,
+    "population": 213585
+  }
+},
+{
+  "model": "core.city",
+  "pk": 269,
+  "fields": {
+    "latitude": 59.9167,
+    "longitude": 10.75,
+    "name": "Oslo",
+    "country": 11,
+    "population": 835000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 270,
+  "fields": {
+    "latitude": 53.4804,
+    "longitude": 18.75,
+    "name": "Grudziadz",
+    "country": 12,
+    "population": 102443
+  }
+},
+{
+  "model": "core.city",
+  "pk": 271,
+  "fields": {
+    "latitude": 54.2,
+    "longitude": 16.1833,
+    "name": "Koszalin",
+    "country": 12,
+    "population": 107450
+  }
+},
+{
+  "model": "core.city",
+  "pk": 272,
+  "fields": {
+    "latitude": 51.9504,
+    "longitude": 15.5,
+    "name": "Zielona Gora",
+    "country": 12,
+    "population": 118433
+  }
+},
+{
+  "model": "core.city",
+  "pk": 273,
+  "fields": {
+    "latitude": 54.19,
+    "longitude": 19.4027,
+    "name": "Elblag",
+    "country": 12,
+    "population": 127558
+  }
+},
+{
+  "model": "core.city",
+  "pk": 274,
+  "fields": {
+    "latitude": 50.685,
+    "longitude": 17.9313,
+    "name": "Opole",
+    "country": 12,
+    "population": 131412
+  }
+},
+{
+  "model": "core.city",
+  "pk": 275,
+  "fields": {
+    "latitude": 53.8,
+    "longitude": 20.48,
+    "name": "Olsztyn",
+    "country": 12,
+    "population": 186670
+  }
+},
+{
+  "model": "core.city",
+  "pk": 276,
+  "fields": {
+    "latitude": 50.8904,
+    "longitude": 20.66,
+    "name": "Kielce",
+    "country": 12,
+    "population": 215733
+  }
+},
+{
+  "model": "core.city",
+  "pk": 277,
+  "fields": {
+    "latitude": 50.0705,
+    "longitude": 22.0,
+    "name": "Rzeszow",
+    "country": 12,
+    "population": 245686
+  }
+},
+{
+  "model": "core.city",
+  "pk": 278,
+  "fields": {
+    "latitude": 53.1504,
+    "longitude": 23.17,
+    "name": "Bialystok",
+    "country": 12,
+    "population": 291855
+  }
+},
+{
+  "model": "core.city",
+  "pk": 279,
+  "fields": {
+    "latitude": 54.5204,
+    "longitude": 18.53,
+    "name": "Gdynia",
+    "country": 12,
+    "population": 314664
+  }
+},
+{
+  "model": "core.city",
+  "pk": 280,
+  "fields": {
+    "latitude": 51.2504,
+    "longitude": 22.5727,
+    "name": "Lublin",
+    "country": 12,
+    "population": 360044
+  }
+},
+{
+  "model": "core.city",
+  "pk": 281,
+  "fields": {
+    "latitude": 53.1204,
+    "longitude": 18.01,
+    "name": "Bydgoszcz",
+    "country": 12,
+    "population": 366452
+  }
+},
+{
+  "model": "core.city",
+  "pk": 282,
+  "fields": {
+    "latitude": 53.4204,
+    "longitude": 14.53,
+    "name": "Szczecin",
+    "country": 12,
+    "population": 407811
+  }
+},
+{
+  "model": "core.city",
+  "pk": 283,
+  "fields": {
+    "latitude": 50.3304,
+    "longitude": 18.67,
+    "name": "Gliwice",
+    "country": 12,
+    "population": 507670
+  }
+},
+{
+  "model": "core.city",
+  "pk": 284,
+  "fields": {
+    "latitude": 52.4058,
+    "longitude": 16.8999,
+    "name": "Poznan",
+    "country": 12,
+    "population": 623997
+  }
+},
+{
+  "model": "core.city",
+  "pk": 285,
+  "fields": {
+    "latitude": 51.1104,
+    "longitude": 17.03,
+    "name": "Wroclaw",
+    "country": 12,
+    "population": 634893
+  }
+},
+{
+  "model": "core.city",
+  "pk": 286,
+  "fields": {
+    "latitude": 50.35,
+    "longitude": 18.91,
+    "name": "Bytom",
+    "country": 12,
+    "population": 662247
+  }
+},
+{
+  "model": "core.city",
+  "pk": 287,
+  "fields": {
+    "latitude": 54.36,
+    "longitude": 18.64,
+    "name": "Gdansk",
+    "country": 12,
+    "population": 740000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 288,
+  "fields": {
+    "latitude": 50.06,
+    "longitude": 19.96,
+    "name": "Krakow",
+    "country": 12,
+    "population": 756000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 289,
+  "fields": {
+    "latitude": 51.775,
+    "longitude": 19.4514,
+    "name": "Lodz",
+    "country": 12,
+    "population": 758000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 290,
+  "fields": {
+    "latitude": 52.25,
+    "longitude": 21.0,
+    "name": "Warsaw",
+    "country": 12,
+    "population": 1707000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 291,
+  "fields": {
+    "latitude": 50.2604,
+    "longitude": 19.02,
+    "name": "Katowice",
+    "country": 12,
+    "population": 2746000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 292,
+  "fields": {
+    "latitude": 57.99,
+    "longitude": 102.6333,
+    "name": "Ust-Ulimsk",
+    "country": 13,
+    "population": 100271
+  }
+},
+{
+  "model": "core.city",
+  "pk": 293,
+  "fields": {
+    "latitude": 58.1232,
+    "longitude": 52.6288,
+    "name": "Glazov",
+    "country": 13,
+    "population": 100676
+  }
+},
+{
+  "model": "core.city",
+  "pk": 294,
+  "fields": {
+    "latitude": 59.67,
+    "longitude": 56.75,
+    "name": "Solikamsk",
+    "country": 13,
+    "population": 100812
+  }
+},
+{
+  "model": "core.city",
+  "pk": 295,
+  "fields": {
+    "latitude": 56.4791,
+    "longitude": 53.7987,
+    "name": "Sarapul",
+    "country": 13,
+    "population": 101344
+  }
+},
+{
+  "model": "core.city",
+  "pk": 296,
+  "fields": {
+    "latitude": 56.19,
+    "longitude": 95.71,
+    "name": "Kansk",
+    "country": 13,
+    "population": 101502
+  }
+},
+{
+  "model": "core.city",
+  "pk": 297,
+  "fields": {
+    "latitude": 63.56,
+    "longitude": 53.69,
+    "name": "Ukhta",
+    "country": 13,
+    "population": 102187
+  }
+},
+{
+  "model": "core.city",
+  "pk": 298,
+  "fields": {
+    "latitude": 56.32,
+    "longitude": 30.52,
+    "name": "Velikiye Luki",
+    "country": 13,
+    "population": 103149
+  }
+},
+{
+  "model": "core.city",
+  "pk": 299,
+  "fields": {
+    "latitude": 54.0,
+    "longitude": 86.64,
+    "name": "Kiselevsk",
+    "country": 13,
+    "population": 104000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 300,
+  "fields": {
+    "latitude": 42.0578,
+    "longitude": 48.2774,
+    "name": "Derbent",
+    "country": 13,
+    "population": 105965
+  }
+},
+{
+  "model": "core.city",
+  "pk": 301,
+  "fields": {
+    "latitude": 51.2,
+    "longitude": 58.33,
+    "name": "Novotroitsk",
+    "country": 13,
+    "population": 106186
+  }
+},
+{
+  "model": "core.city",
+  "pk": 302,
+  "fields": {
+    "latitude": 67.1643,
+    "longitude": 32.4144,
+    "name": "Kandalaksha",
+    "country": 13,
+    "population": 106798
+  }
+},
+{
+  "model": "core.city",
+  "pk": 303,
+  "fields": {
+    "latitude": 46.3287,
+    "longitude": 44.2087,
+    "name": "Elista",
+    "country": 13,
+    "population": 106971
+  }
+},
+{
+  "model": "core.city",
+  "pk": 304,
+  "fields": {
+    "latitude": 52.9743,
+    "longitude": 49.7243,
+    "name": "Chapayevsk",
+    "country": 13,
+    "population": 107164
+  }
+},
+{
+  "model": "core.city",
+  "pk": 305,
+  "fields": {
+    "latitude": 55.0804,
+    "longitude": 36.62,
+    "name": "Obninsk",
+    "country": 13,
+    "population": 107392
+  }
+},
+{
+  "model": "core.city",
+  "pk": 306,
+  "fields": {
+    "latitude": 54.46,
+    "longitude": 53.46,
+    "name": "Oktyabrskiy",
+    "country": 13,
+    "population": 108200
+  }
+},
+{
+  "model": "core.city",
+  "pk": 307,
+  "fields": {
+    "latitude": 51.7067,
+    "longitude": 94.3831,
+    "name": "Kyzyl",
+    "country": 13,
+    "population": 108240
+  }
+},
+{
+  "model": "core.city",
+  "pk": 308,
+  "fields": {
+    "latitude": 54.66,
+    "longitude": 86.17,
+    "name": "Leninsk Kuznetsky",
+    "country": 13,
+    "population": 109023
+  }
+},
+{
+  "model": "core.city",
+  "pk": 309,
+  "fields": {
+    "latitude": 56.33,
+    "longitude": 38.17,
+    "name": "Sergiyev Posad",
+    "country": 13,
+    "population": 109252
+  }
+},
+{
+  "model": "core.city",
+  "pk": 310,
+  "fields": {
+    "latitude": 47.1368,
+    "longitude": 39.7449,
+    "name": "Bataysk",
+    "country": 13,
+    "population": 109962
+  }
+},
+{
+  "model": "core.city",
+  "pk": 311,
+  "fields": {
+    "latitude": 63.1665,
+    "longitude": 75.6165,
+    "name": "Noyabrsk",
+    "country": 13,
+    "population": 110572
+  }
+},
+{
+  "model": "core.city",
+  "pk": 312,
+  "fields": {
+    "latitude": 61.0777,
+    "longitude": 72.7027,
+    "name": "Nefteyugansk",
+    "country": 13,
+    "population": 112632
+  }
+},
+{
+  "model": "core.city",
+  "pk": 313,
+  "fields": {
+    "latitude": 58.1998,
+    "longitude": 68.2648,
+    "name": "Tobolsk",
+    "country": 13,
+    "population": 113800
+  }
+},
+{
+  "model": "core.city",
+  "pk": 314,
+  "fields": {
+    "latitude": 52.58,
+    "longitude": 38.5,
+    "name": "Yelets",
+    "country": 13,
+    "population": 115919
+  }
+},
+{
+  "model": "core.city",
+  "pk": 315,
+  "fields": {
+    "latitude": 44.2904,
+    "longitude": 42.06,
+    "name": "Cherkessk",
+    "country": 13,
+    "population": 116224
+  }
+},
+{
+  "model": "core.city",
+  "pk": 316,
+  "fields": {
+    "latitude": 60.7039,
+    "longitude": 28.7549,
+    "name": "Vyborg",
+    "country": 13,
+    "population": 117201
+  }
+},
+{
+  "model": "core.city",
+  "pk": 317,
+  "fields": {
+    "latitude": 56.27,
+    "longitude": 90.5,
+    "name": "Achinsk",
+    "country": 13,
+    "population": 117634
+  }
+},
+{
+  "model": "core.city",
+  "pk": 318,
+  "fields": {
+    "latitude": 56.0835,
+    "longitude": 54.2631,
+    "name": "Neftekamsk",
+    "country": 13,
+    "population": 126805
+  }
+},
+{
+  "model": "core.city",
+  "pk": 319,
+  "fields": {
+    "latitude": 50.0804,
+    "longitude": 45.4,
+    "name": "Kamyshin",
+    "country": 13,
+    "population": 128626
+  }
+},
+{
+  "model": "core.city",
+  "pk": 320,
+  "fields": {
+    "latitude": 54.09,
+    "longitude": 38.22,
+    "name": "Novomoskovsk",
+    "country": 13,
+    "population": 130982
+  }
+},
+{
+  "model": "core.city",
+  "pk": 321,
+  "fields": {
+    "latitude": 55.5704,
+    "longitude": 42.04,
+    "name": "Murom",
+    "country": 13,
+    "population": 131287
+  }
+},
+{
+  "model": "core.city",
+  "pk": 322,
+  "fields": {
+    "latitude": 54.2504,
+    "longitude": 49.56,
+    "name": "Dimitrovgrad",
+    "country": 13,
+    "population": 132226
+  }
+},
+{
+  "model": "core.city",
+  "pk": 323,
+  "fields": {
+    "latitude": 43.91,
+    "longitude": 42.72,
+    "name": "Kislovodsk",
+    "country": 13,
+    "population": 132771
+  }
+},
+{
+  "model": "core.city",
+  "pk": 324,
+  "fields": {
+    "latitude": 56.91,
+    "longitude": 59.955,
+    "name": "Pervouralsk",
+    "country": 13,
+    "population": 133600
+  }
+},
+{
+  "model": "core.city",
+  "pk": 325,
+  "fields": {
+    "latitude": 44.6201,
+    "longitude": 41.95,
+    "name": "Nevinnomyssk",
+    "country": 13,
+    "population": 134380
+  }
+},
+{
+  "model": "core.city",
+  "pk": 326,
+  "fields": {
+    "latitude": 54.9304,
+    "longitude": 37.43,
+    "name": "Serpukhov",
+    "country": 13,
+    "population": 135584
+  }
+},
+{
+  "model": "core.city",
+  "pk": 327,
+  "fields": {
+    "latitude": 55.82,
+    "longitude": 38.98,
+    "name": "Orekhovo-Zuevo",
+    "country": 13,
+    "population": 140247
+  }
+},
+{
+  "model": "core.city",
+  "pk": 328,
+  "fields": {
+    "latitude": 54.9004,
+    "longitude": 52.3199,
+    "name": "Almetyevsk",
+    "country": 13,
+    "population": 140437
+  }
+},
+{
+  "model": "core.city",
+  "pk": 329,
+  "fields": {
+    "latitude": 55.4,
+    "longitude": 43.8,
+    "name": "Arzamas",
+    "country": 13,
+    "population": 142597
+  }
+},
+{
+  "model": "core.city",
+  "pk": 330,
+  "fields": {
+    "latitude": 44.08,
+    "longitude": 43.09,
+    "name": "Pyatigorsk",
+    "country": 13,
+    "population": 142865
+  }
+},
+{
+  "model": "core.city",
+  "pk": 331,
+  "fields": {
+    "latitude": 55.08,
+    "longitude": 38.785,
+    "name": "Kolomna",
+    "country": 13,
+    "population": 147690
+  }
+},
+{
+  "model": "core.city",
+  "pk": 332,
+  "fields": {
+    "latitude": 53.12,
+    "longitude": 49.9199,
+    "name": "Novokuybishevsk",
+    "country": 13,
+    "population": 152334
+  }
+},
+{
+  "model": "core.city",
+  "pk": 333,
+  "fields": {
+    "latitude": 56.3604,
+    "longitude": 41.33,
+    "name": "Kovrov",
+    "country": 13,
+    "population": 154224
+  }
+},
+{
+  "model": "core.city",
+  "pk": 334,
+  "fields": {
+    "latitude": 43.8,
+    "longitude": 132.02,
+    "name": "Ussuriysk",
+    "country": 13,
+    "population": 157068
+  }
+},
+{
+  "model": "core.city",
+  "pk": 335,
+  "fields": {
+    "latitude": 44.61,
+    "longitude": 40.12,
+    "name": "Maykop",
+    "country": 13,
+    "population": 158451
+  }
+},
+{
+  "model": "core.city",
+  "pk": 336,
+  "fields": {
+    "latitude": 42.8374,
+    "longitude": 132.8874,
+    "name": "Nakhodka",
+    "country": 13,
+    "population": 159551
+  }
+},
+{
+  "model": "core.city",
+  "pk": 337,
+  "fields": {
+    "latitude": 53.3703,
+    "longitude": 55.93,
+    "name": "Salavat",
+    "country": 13,
+    "population": 159893
+  }
+},
+{
+  "model": "core.city",
+  "pk": 338,
+  "fields": {
+    "latitude": 51.52,
+    "longitude": 81.21,
+    "name": "Rubtsovsk",
+    "country": 13,
+    "population": 161065
+  }
+},
+{
+  "model": "core.city",
+  "pk": 339,
+  "fields": {
+    "latitude": 69.34,
+    "longitude": 88.225,
+    "name": "Norilsk",
+    "country": 13,
+    "population": 165873
+  }
+},
+{
+  "model": "core.city",
+  "pk": 340,
+  "fields": {
+    "latitude": 47.42,
+    "longitude": 40.08,
+    "name": "Novocherkassk",
+    "country": 13,
+    "population": 166974
+  }
+},
+{
+  "model": "core.city",
+  "pk": 341,
+  "fields": {
+    "latitude": 53.7037,
+    "longitude": 91.445,
+    "name": "Abakan",
+    "country": 13,
+    "population": 167289
+  }
+},
+{
+  "model": "core.city",
+  "pk": 342,
+  "fields": {
+    "latitude": 54.9954,
+    "longitude": 60.0949,
+    "name": "Miass",
+    "country": 13,
+    "population": 167500
+  }
+},
+{
+  "model": "core.city",
+  "pk": 343,
+  "fields": {
+    "latitude": 47.51,
+    "longitude": 42.1599,
+    "name": "Volgodonsk",
+    "country": 13,
+    "population": 167731
+  }
+},
+{
+  "model": "core.city",
+  "pk": 344,
+  "fields": {
+    "latitude": 59.42,
+    "longitude": 56.76,
+    "name": "Berezniki",
+    "country": 13,
+    "population": 167748
+  }
+},
+{
+  "model": "core.city",
+  "pk": 345,
+  "fields": {
+    "latitude": 46.965,
+    "longitude": 142.74,
+    "name": "Yuzhno Sakhalinsk",
+    "country": 13,
+    "population": 176484
+  }
+},
+{
+  "model": "core.city",
+  "pk": 346,
+  "fields": {
+    "latitude": 56.4205,
+    "longitude": 61.935,
+    "name": "Kamensk Uralskiy",
+    "country": 13,
+    "population": 182500
+  }
+},
+{
+  "model": "core.city",
+  "pk": 347,
+  "fields": {
+    "latitude": 53.062,
+    "longitude": 158.623,
+    "name": "Petropavlovsk Kamchatskiy",
+    "country": 13,
+    "population": 187282
+  }
+},
+{
+  "model": "core.city",
+  "pk": 348,
+  "fields": {
+    "latitude": 53.17,
+    "longitude": 48.48,
+    "name": "Syzran",
+    "country": 13,
+    "population": 189338
+  }
+},
+{
+  "model": "core.city",
+  "pk": 349,
+  "fields": {
+    "latitude": 55.175,
+    "longitude": 59.65,
+    "name": "Zlatoust",
+    "country": 13,
+    "population": 191366
+  }
+},
+{
+  "model": "core.city",
+  "pk": 350,
+  "fields": {
+    "latitude": 64.57,
+    "longitude": 39.83,
+    "name": "Severodvinsk",
+    "country": 13,
+    "population": 194292
+  }
+},
+{
+  "model": "core.city",
+  "pk": 351,
+  "fields": {
+    "latitude": 51.5004,
+    "longitude": 46.12,
+    "name": "Engels",
+    "country": 13,
+    "population": 196011
+  }
+},
+{
+  "model": "core.city",
+  "pk": 352,
+  "fields": {
+    "latitude": 45.0004,
+    "longitude": 41.13,
+    "name": "Armavir",
+    "country": 13,
+    "population": 199548
+  }
+},
+{
+  "model": "core.city",
+  "pk": 353,
+  "fields": {
+    "latitude": 52.03,
+    "longitude": 47.8,
+    "name": "Balakovo",
+    "country": 13,
+    "population": 199572
+  }
+},
+{
+  "model": "core.city",
+  "pk": 354,
+  "fields": {
+    "latitude": 57.83,
+    "longitude": 28.3299,
+    "name": "Pskov",
+    "country": 13,
+    "population": 201990
+  }
+},
+{
+  "model": "core.city",
+  "pk": 355,
+  "fields": {
+    "latitude": 52.5341,
+    "longitude": 85.18,
+    "name": "Biysk",
+    "country": 13,
+    "population": 215430
+  }
+},
+{
+  "model": "core.city",
+  "pk": 356,
+  "fields": {
+    "latitude": 58.0503,
+    "longitude": 38.82,
+    "name": "Rybinsk",
+    "country": 13,
+    "population": 216724
+  }
+},
+{
+  "model": "core.city",
+  "pk": 357,
+  "fields": {
+    "latitude": 58.5,
+    "longitude": 31.33,
+    "name": "Velikiy Novgorod",
+    "country": 13,
+    "population": 218717
+  }
+},
+{
+  "model": "core.city",
+  "pk": 358,
+  "fields": {
+    "latitude": 50.2666,
+    "longitude": 127.5333,
+    "name": "Blagoveshchensk",
+    "country": 13,
+    "population": 221296
+  }
+},
+{
+  "model": "core.city",
+  "pk": 359,
+  "fields": {
+    "latitude": 47.7204,
+    "longitude": 40.27,
+    "name": "Shakhty",
+    "country": 13,
+    "population": 221312
+  }
+},
+{
+  "model": "core.city",
+  "pk": 360,
+  "fields": {
+    "latitude": 59.73,
+    "longitude": 30.65,
+    "name": "Kolpino",
+    "country": 13,
+    "population": 225801
+  }
+},
+{
+  "model": "core.city",
+  "pk": 361,
+  "fields": {
+    "latitude": 43.3187,
+    "longitude": 45.6987,
+    "name": "Groznyy",
+    "country": 13,
+    "population": 226100
+  }
+},
+{
+  "model": "core.city",
+  "pk": 362,
+  "fields": {
+    "latitude": 51.3004,
+    "longitude": 37.84,
+    "name": "Starsy Oskol",
+    "country": 13,
+    "population": 226977
+  }
+},
+{
+  "model": "core.city",
+  "pk": 363,
+  "fields": {
+    "latitude": 55.8704,
+    "longitude": 38.48,
+    "name": "Noginsk",
+    "country": 13,
+    "population": 229731
+  }
+},
+{
+  "model": "core.city",
+  "pk": 364,
+  "fields": {
+    "latitude": 61.66,
+    "longitude": 50.82,
+    "name": "Syktyvkar",
+    "country": 13,
+    "population": 230910
+  }
+},
+{
+  "model": "core.city",
+  "pk": 365,
+  "fields": {
+    "latitude": 55.6404,
+    "longitude": 51.82,
+    "name": "Nizhnekamsk",
+    "country": 13,
+    "population": 234297
+  }
+},
+{
+  "model": "core.city",
+  "pk": 366,
+  "fields": {
+    "latitude": 62.035,
+    "longitude": 129.735,
+    "name": "Yakutsk",
+    "country": 13,
+    "population": 235600
+  }
+},
+{
+  "model": "core.city",
+  "pk": 367,
+  "fields": {
+    "latitude": 44.73,
+    "longitude": 37.7699,
+    "name": "Novorossiysk",
+    "country": 13,
+    "population": 241856
+  }
+},
+{
+  "model": "core.city",
+  "pk": 368,
+  "fields": {
+    "latitude": 52.56,
+    "longitude": 103.92,
+    "name": "Angarsk",
+    "country": 13,
+    "population": 243158
+  }
+},
+{
+  "model": "core.city",
+  "pk": 369,
+  "fields": {
+    "latitude": 60.935,
+    "longitude": 76.58,
+    "name": "Nizhenvartovsk",
+    "country": 13,
+    "population": 244937
+  }
+},
+{
+  "model": "core.city",
+  "pk": 370,
+  "fields": {
+    "latitude": 56.157,
+    "longitude": 101.615,
+    "name": "Bratsk",
+    "country": 13,
+    "population": 246348
+  }
+},
+{
+  "model": "core.city",
+  "pk": 371,
+  "fields": {
+    "latitude": 51.21,
+    "longitude": 58.6273,
+    "name": "Orsk",
+    "country": 13,
+    "population": 246836
+  }
+},
+{
+  "model": "core.city",
+  "pk": 372,
+  "fields": {
+    "latitude": 56.2504,
+    "longitude": 43.46,
+    "name": "Dzerzhinsk",
+    "country": 13,
+    "population": 256537
+  }
+},
+{
+  "model": "core.city",
+  "pk": 373,
+  "fields": {
+    "latitude": 61.85,
+    "longitude": 34.28,
+    "name": "Petrozavodsk",
+    "country": 13,
+    "population": 265025
+  }
+},
+{
+  "model": "core.city",
+  "pk": 374,
+  "fields": {
+    "latitude": 53.63,
+    "longitude": 55.96,
+    "name": "Sterlitamak",
+    "country": 13,
+    "population": 267231
+  }
+},
+{
+  "model": "core.city",
+  "pk": 375,
+  "fields": {
+    "latitude": 53.9,
+    "longitude": 86.71,
+    "name": "Prokopyevsk",
+    "country": 13,
+    "population": 275615
+  }
+},
+{
+  "model": "core.city",
+  "pk": 376,
+  "fields": {
+    "latitude": 50.555,
+    "longitude": 137.02,
+    "name": "Komsomolsk na Amure",
+    "country": 13,
+    "population": 275908
+  }
+},
+{
+  "model": "core.city",
+  "pk": 377,
+  "fields": {
+    "latitude": 57.77,
+    "longitude": 40.94,
+    "name": "Kostroma",
+    "country": 13,
+    "population": 277656
+  }
+},
+{
+  "model": "core.city",
+  "pk": 378,
+  "fields": {
+    "latitude": 47.23,
+    "longitude": 38.92,
+    "name": "Taganrog",
+    "country": 13,
+    "population": 279056
+  }
+},
+{
+  "model": "core.city",
+  "pk": 379,
+  "fields": {
+    "latitude": 59.21,
+    "longitude": 39.92,
+    "name": "Vologda",
+    "country": 13,
+    "population": 294889
+  }
+},
+{
+  "model": "core.city",
+  "pk": 380,
+  "fields": {
+    "latitude": 52.73,
+    "longitude": 41.43,
+    "name": "Tambov",
+    "country": 13,
+    "population": 301482
+  }
+},
+{
+  "model": "core.city",
+  "pk": 381,
+  "fields": {
+    "latitude": 54.1704,
+    "longitude": 45.18,
+    "name": "Saransk",
+    "country": 13,
+    "population": 303394
+  }
+},
+{
+  "model": "core.city",
+  "pk": 382,
+  "fields": {
+    "latitude": 43.4981,
+    "longitude": 43.6179,
+    "name": "Naltchik",
+    "country": 13,
+    "population": 307866
+  }
+},
+{
+  "model": "core.city",
+  "pk": 383,
+  "fields": {
+    "latitude": 52.055,
+    "longitude": 113.465,
+    "name": "Chita",
+    "country": 13,
+    "population": 308500
+  }
+},
+{
+  "model": "core.city",
+  "pk": 384,
+  "fields": {
+    "latitude": 59.1404,
+    "longitude": 37.91,
+    "name": "Cherepovets",
+    "country": 13,
+    "population": 311850
+  }
+},
+{
+  "model": "core.city",
+  "pk": 385,
+  "fields": {
+    "latitude": 56.13,
+    "longitude": 40.4099,
+    "name": "Vladimir",
+    "country": 13,
+    "population": 318648
+  }
+},
+{
+  "model": "core.city",
+  "pk": 386,
+  "fields": {
+    "latitude": 68.97,
+    "longitude": 33.1,
+    "name": "Murmansk",
+    "country": 13,
+    "population": 319263
+  }
+},
+{
+  "model": "core.city",
+  "pk": 387,
+  "fields": {
+    "latitude": 55.3804,
+    "longitude": 37.5299,
+    "name": "Podolsk",
+    "country": 13,
+    "population": 320635
+  }
+},
+{
+  "model": "core.city",
+  "pk": 388,
+  "fields": {
+    "latitude": 54.7827,
+    "longitude": 32.0473,
+    "name": "Smolensk",
+    "country": 13,
+    "population": 320991
+  }
+},
+{
+  "model": "core.city",
+  "pk": 389,
+  "fields": {
+    "latitude": 48.7948,
+    "longitude": 44.7744,
+    "name": "Volzhskiy",
+    "country": 13,
+    "population": 323293
+  }
+},
+{
+  "model": "core.city",
+  "pk": 390,
+  "fields": {
+    "latitude": 56.6354,
+    "longitude": 47.8749,
+    "name": "Yoshkar Ola",
+    "country": 13,
+    "population": 324406
+  }
+},
+{
+  "model": "core.city",
+  "pk": 391,
+  "fields": {
+    "latitude": 43.59,
+    "longitude": 39.73,
+    "name": "Sochi",
+    "country": 13,
+    "population": 327608
+  }
+},
+{
+  "model": "core.city",
+  "pk": 392,
+  "fields": {
+    "latitude": 52.97,
+    "longitude": 36.07,
+    "name": "Orel",
+    "country": 13,
+    "population": 334552
+  }
+},
+{
+  "model": "core.city",
+  "pk": 393,
+  "fields": {
+    "latitude": 54.5204,
+    "longitude": 36.27,
+    "name": "Kaluga",
+    "country": 13,
+    "population": 338978
+  }
+},
+{
+  "model": "core.city",
+  "pk": 394,
+  "fields": {
+    "latitude": 55.46,
+    "longitude": 65.345,
+    "name": "Kurgan",
+    "country": 13,
+    "population": 343129
+  }
+},
+{
+  "model": "core.city",
+  "pk": 395,
+  "fields": {
+    "latitude": 50.63,
+    "longitude": 36.5999,
+    "name": "Belgorod",
+    "country": 13,
+    "population": 345289
+  }
+},
+{
+  "model": "core.city",
+  "pk": 396,
+  "fields": {
+    "latitude": 64.575,
+    "longitude": 40.545,
+    "name": "Archangel",
+    "country": 13,
+    "population": 356051
+  }
+},
+{
+  "model": "core.city",
+  "pk": 397,
+  "fields": {
+    "latitude": 51.825,
+    "longitude": 107.625,
+    "name": "Ulan Ude",
+    "country": 13,
+    "population": 360278
+  }
+},
+{
+  "model": "core.city",
+  "pk": 398,
+  "fields": {
+    "latitude": 45.05,
+    "longitude": 41.98,
+    "name": "Stavropol",
+    "country": 13,
+    "population": 363064
+  }
+},
+{
+  "model": "core.city",
+  "pk": 399,
+  "fields": {
+    "latitude": 43.0504,
+    "longitude": 44.67,
+    "name": "Vladikavkaz",
+    "country": 13,
+    "population": 364630
+  }
+},
+{
+  "model": "core.city",
+  "pk": 400,
+  "fields": {
+    "latitude": 57.92,
+    "longitude": 59.975,
+    "name": "Nizhny Tagil",
+    "country": 13,
+    "population": 381116
+  }
+},
+{
+  "model": "core.city",
+  "pk": 401,
+  "fields": {
+    "latitude": 61.2599,
+    "longitude": 73.425,
+    "name": "Surgut",
+    "country": 13,
+    "population": 400000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 402,
+  "fields": {
+    "latitude": 56.86,
+    "longitude": 35.89,
+    "name": "Tver",
+    "country": 13,
+    "population": 400212
+  }
+},
+{
+  "model": "core.city",
+  "pk": 403,
+  "fields": {
+    "latitude": 51.74,
+    "longitude": 36.19,
+    "name": "Kursk",
+    "country": 13,
+    "population": 409431
+  }
+},
+{
+  "model": "core.city",
+  "pk": 404,
+  "fields": {
+    "latitude": 53.4227,
+    "longitude": 58.98,
+    "name": "Magnitogorsk",
+    "country": 13,
+    "population": 413351
+  }
+},
+{
+  "model": "core.city",
+  "pk": 405,
+  "fields": {
+    "latitude": 57.01,
+    "longitude": 41.01,
+    "name": "Ivanovo",
+    "country": 13,
+    "population": 420839
+  }
+},
+{
+  "model": "core.city",
+  "pk": 406,
+  "fields": {
+    "latitude": 53.26,
+    "longitude": 34.43,
+    "name": "Bryansk",
+    "country": 13,
+    "population": 427236
+  }
+},
+{
+  "model": "core.city",
+  "pk": 407,
+  "fields": {
+    "latitude": 54.7,
+    "longitude": 20.4973,
+    "name": "Kaliningrad",
+    "country": 13,
+    "population": 434954
+  }
+},
+{
+  "model": "core.city",
+  "pk": 408,
+  "fields": {
+    "latitude": 56.13,
+    "longitude": 47.25,
+    "name": "Cheboksary",
+    "country": 13,
+    "population": 446781
+  }
+},
+{
+  "model": "core.city",
+  "pk": 409,
+  "fields": {
+    "latitude": 58.5901,
+    "longitude": 49.67,
+    "name": "Kirov",
+    "country": 13,
+    "population": 457437
+  }
+},
+{
+  "model": "core.city",
+  "pk": 410,
+  "fields": {
+    "latitude": 55.7,
+    "longitude": 52.3199,
+    "name": "Naberezhnyye Chelny",
+    "country": 13,
+    "population": 461086
+  }
+},
+{
+  "model": "core.city",
+  "pk": 411,
+  "fields": {
+    "latitude": 55.34,
+    "longitude": 86.09,
+    "name": "Kemerovo",
+    "country": 13,
+    "population": 477090
+  }
+},
+{
+  "model": "core.city",
+  "pk": 412,
+  "fields": {
+    "latitude": 54.2,
+    "longitude": 37.6299,
+    "name": "Tula",
+    "country": 13,
+    "population": 489486
+  }
+},
+{
+  "model": "core.city",
+  "pk": 413,
+  "fields": {
+    "latitude": 46.3487,
+    "longitude": 48.055,
+    "name": "Astrakhan",
+    "country": 13,
+    "population": 502533
+  }
+},
+{
+  "model": "core.city",
+  "pk": 414,
+  "fields": {
+    "latitude": 53.18,
+    "longitude": 45.0,
+    "name": "Penza",
+    "country": 13,
+    "population": 512602
+  }
+},
+{
+  "model": "core.city",
+  "pk": 415,
+  "fields": {
+    "latitude": 52.62,
+    "longitude": 39.64,
+    "name": "Lipetsk",
+    "country": 13,
+    "population": 515655
+  }
+},
+{
+  "model": "core.city",
+  "pk": 416,
+  "fields": {
+    "latitude": 57.14,
+    "longitude": 65.53,
+    "name": "Tyumen",
+    "country": 13,
+    "population": 519119
+  }
+},
+{
+  "model": "core.city",
+  "pk": 417,
+  "fields": {
+    "latitude": 54.62,
+    "longitude": 39.72,
+    "name": "Ryazan",
+    "country": 13,
+    "population": 520173
+  }
+},
+{
+  "model": "core.city",
+  "pk": 418,
+  "fields": {
+    "latitude": 56.495,
+    "longitude": 84.975,
+    "name": "Tomsk",
+    "country": 13,
+    "population": 535479
+  }
+},
+{
+  "model": "core.city",
+  "pk": 419,
+  "fields": {
+    "latitude": 53.75,
+    "longitude": 87.115,
+    "name": "Novokuznetsk",
+    "country": 13,
+    "population": 539616
+  }
+},
+{
+  "model": "core.city",
+  "pk": 420,
+  "fields": {
+    "latitude": 51.78,
+    "longitude": 55.11,
+    "name": "Orenburg",
+    "country": 13,
+    "population": 550204
+  }
+},
+{
+  "model": "core.city",
+  "pk": 421,
+  "fields": {
+    "latitude": 42.98,
+    "longitude": 47.5,
+    "name": "Makhachkala",
+    "country": 13,
+    "population": 554981
+  }
+},
+{
+  "model": "core.city",
+  "pk": 422,
+  "fields": {
+    "latitude": 48.455,
+    "longitude": 135.12,
+    "name": "Khabarovsk",
+    "country": 13,
+    "population": 579000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 423,
+  "fields": {
+    "latitude": 52.32,
+    "longitude": 104.245,
+    "name": "Irkutsk",
+    "country": 13,
+    "population": 586695
+  }
+},
+{
+  "model": "core.city",
+  "pk": 424,
+  "fields": {
+    "latitude": 43.13,
+    "longitude": 131.91,
+    "name": "Vladivostok",
+    "country": 13,
+    "population": 587022
+  }
+},
+{
+  "model": "core.city",
+  "pk": 425,
+  "fields": {
+    "latitude": 53.355,
+    "longitude": 83.745,
+    "name": "Barnaul",
+    "country": 13,
+    "population": 599579
+  }
+},
+{
+  "model": "core.city",
+  "pk": 426,
+  "fields": {
+    "latitude": 57.62,
+    "longitude": 39.87,
+    "name": "Yaroslavl",
+    "country": 13,
+    "population": 606730
+  }
+},
+{
+  "model": "core.city",
+  "pk": 427,
+  "fields": {
+    "latitude": 56.85,
+    "longitude": 53.23,
+    "name": "Izhevsk",
+    "country": 13,
+    "population": 631038
+  }
+},
+{
+  "model": "core.city",
+  "pk": 428,
+  "fields": {
+    "latitude": 54.33,
+    "longitude": 48.41,
+    "name": "Ulyanovsk",
+    "country": 13,
+    "population": 640680
+  }
+},
+{
+  "model": "core.city",
+  "pk": 429,
+  "fields": {
+    "latitude": 45.02,
+    "longitude": 39.0,
+    "name": "Krasnodar",
+    "country": 13,
+    "population": 649851
+  }
+},
+{
+  "model": "core.city",
+  "pk": 430,
+  "fields": {
+    "latitude": 53.4804,
+    "longitude": 49.53,
+    "name": "Tolyatti",
+    "country": 13,
+    "population": 702879
+  }
+},
+{
+  "model": "core.city",
+  "pk": 431,
+  "fields": {
+    "latitude": 51.58,
+    "longitude": 46.03,
+    "name": "Saratov",
+    "country": 13,
+    "population": 843000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 432,
+  "fields": {
+    "latitude": 51.73,
+    "longitude": 39.27,
+    "name": "Voronezh",
+    "country": 13,
+    "population": 844000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 433,
+  "fields": {
+    "latitude": 56.014,
+    "longitude": 92.866,
+    "name": "Krasnoyarsk",
+    "country": 13,
+    "population": 925000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 434,
+  "fields": {
+    "latitude": 48.71,
+    "longitude": 44.5,
+    "name": "Volgograd",
+    "country": 13,
+    "population": 984000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 435,
+  "fields": {
+    "latitude": 58.0,
+    "longitude": 56.25,
+    "name": "Perm",
+    "country": 13,
+    "population": 997000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 436,
+  "fields": {
+    "latitude": 54.79,
+    "longitude": 56.04,
+    "name": "Ufa",
+    "country": 13,
+    "population": 1018000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 437,
+  "fields": {
+    "latitude": 47.2346,
+    "longitude": 39.7127,
+    "name": "Rostov",
+    "country": 13,
+    "population": 1052000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 438,
+  "fields": {
+    "latitude": 55.155,
+    "longitude": 61.4387,
+    "name": "Chelyabinsk",
+    "country": 13,
+    "population": 1091000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 439,
+  "fields": {
+    "latitude": 55.7499,
+    "longitude": 49.1263,
+    "name": "Kazan",
+    "country": 13,
+    "population": 1115000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 440,
+  "fields": {
+    "latitude": 54.99,
+    "longitude": 73.4,
+    "name": "Omsk",
+    "country": 13,
+    "population": 1135000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 441,
+  "fields": {
+    "latitude": 53.195,
+    "longitude": 50.1513,
+    "name": "Samara",
+    "country": 13,
+    "population": 1137000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 442,
+  "fields": {
+    "latitude": 56.333,
+    "longitude": 44.0001,
+    "name": "Nizhny Novgorod",
+    "country": 13,
+    "population": 1278000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 443,
+  "fields": {
+    "latitude": 56.85,
+    "longitude": 60.6,
+    "name": "Yekaterinburg",
+    "country": 13,
+    "population": 1313000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 444,
+  "fields": {
+    "latitude": 55.03,
+    "longitude": 82.96,
+    "name": "Novosibirsk",
+    "country": 13,
+    "population": 1389000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 445,
+  "fields": {
+    "latitude": 59.939,
+    "longitude": 30.316,
+    "name": "St. Petersburg",
+    "country": 13,
+    "population": 4553000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 446,
+  "fields": {
+    "latitude": 55.7522,
+    "longitude": 37.6155,
+    "name": "Moscow",
+    "country": 13,
+    "population": 10452000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 447,
+  "fields": {
+    "latitude": 59.63,
+    "longitude": 16.54,
+    "name": "Vasteraas",
+    "country": 14,
+    "population": 107194
+  }
+},
+{
+  "model": "core.city",
+  "pk": 448,
+  "fields": {
+    "latitude": 59.8601,
+    "longitude": 17.64,
+    "name": "Uppsala",
+    "country": 14,
+    "population": 133117
+  }
+},
+{
+  "model": "core.city",
+  "pk": 449,
+  "fields": {
+    "latitude": 55.5833,
+    "longitude": 13.0333,
+    "name": "Malmo",
+    "country": 14,
+    "population": 269349
+  }
+},
+{
+  "model": "core.city",
+  "pk": 450,
+  "fields": {
+    "latitude": 57.75,
+    "longitude": 12.0,
+    "name": "Goteborg",
+    "country": 14,
+    "population": 537797
+  }
+},
+{
+  "model": "core.city",
+  "pk": 451,
+  "fields": {
+    "latitude": 59.3508,
+    "longitude": 18.0973,
+    "name": "Stockholm",
+    "country": 14,
+    "population": 1264000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 452,
+  "fields": {
+    "latitude": 37.03,
+    "longitude": 41.23,
+    "name": "Al Qamishli",
+    "country": 15,
+    "population": 104107
+  }
+},
+{
+  "model": "core.city",
+  "pk": 453,
+  "fields": {
+    "latitude": 36.5266,
+    "longitude": 37.9563,
+    "name": "Manbij",
+    "country": 15,
+    "population": 120169
+  }
+},
+{
+  "model": "core.city",
+  "pk": 454,
+  "fields": {
+    "latitude": 36.4833,
+    "longitude": 40.75,
+    "name": "Al Hasakah",
+    "country": 15,
+    "population": 128100
+  }
+},
+{
+  "model": "core.city",
+  "pk": 455,
+  "fields": {
+    "latitude": 35.9297,
+    "longitude": 36.6317,
+    "name": "Idlib",
+    "country": 15,
+    "population": 128840
+  }
+},
+{
+  "model": "core.city",
+  "pk": 456,
+  "fields": {
+    "latitude": 32.625,
+    "longitude": 36.105,
+    "name": "Dar'a",
+    "country": 15,
+    "population": 146481
+  }
+},
+{
+  "model": "core.city",
+  "pk": 457,
+  "fields": {
+    "latitude": 34.8846,
+    "longitude": 35.8866,
+    "name": "Tartus",
+    "country": 15,
+    "population": 162980
+  }
+},
+{
+  "model": "core.city",
+  "pk": 458,
+  "fields": {
+    "latitude": 35.9304,
+    "longitude": 39.02,
+    "name": "Ar Raqqah",
+    "country": 15,
+    "population": 177636
+  }
+},
+{
+  "model": "core.city",
+  "pk": 459,
+  "fields": {
+    "latitude": 35.3304,
+    "longitude": 40.13,
+    "name": "Dayr az Zawr",
+    "country": 15,
+    "population": 309141
+  }
+},
+{
+  "model": "core.city",
+  "pk": 460,
+  "fields": {
+    "latitude": 35.1503,
+    "longitude": 36.73,
+    "name": "Hamah",
+    "country": 15,
+    "population": 460602
+  }
+},
+{
+  "model": "core.city",
+  "pk": 461,
+  "fields": {
+    "latitude": 33.5833,
+    "longitude": 36.4,
+    "name": "Douma",
+    "country": 15,
+    "population": 496145
+  }
+},
+{
+  "model": "core.city",
+  "pk": 462,
+  "fields": {
+    "latitude": 35.54,
+    "longitude": 35.78,
+    "name": "Al Ladhiqiyah",
+    "country": 15,
+    "population": 539147
+  }
+},
+{
+  "model": "core.city",
+  "pk": 463,
+  "fields": {
+    "latitude": 34.73,
+    "longitude": 36.72,
+    "name": "Hims",
+    "country": 15,
+    "population": 1005000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 464,
+  "fields": {
+    "latitude": 33.5,
+    "longitude": 36.3,
+    "name": "Damascus",
+    "country": 15,
+    "population": 2466000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 465,
+  "fields": {
+    "latitude": 36.23,
+    "longitude": 37.17,
+    "name": "Aleppo",
+    "country": 15,
+    "population": 2738000
+  }
+},
+{
+  "model": "core.city",
+  "pk": 466,
+  "fields": {
+    "latitude": 50.317,
+    "longitude": 11.9167,
+    "name": "Hof",
+    "country": 3,
+    "population": 56153
+  }
+},
+{
+  "model": "core.city",
+  "pk": 467,
+  "fields": {
+    "latitude": 50.2666,
+    "longitude": 10.9666,
+    "name": "Coburg",
+    "country": 3,
+    "population": 61054
+  }
+},
+{
+  "model": "core.city",
+  "pk": 468,
+  "fields": {
+    "latitude": 54.3004,
+    "longitude": 13.1,
+    "name": "Stralsund",
+    "country": 3,
+    "population": 61368
+  }
+},
+{
+  "model": "core.city",
+  "pk": 469,
+  "fields": {
+    "latitude": 50.5837,
+    "longitude": 8.65,
+    "name": "Giessen",
+    "country": 3,
+    "population": 82358
+  }
+},
+{
+  "model": "core.city",
+  "pk": 470,
+  "fields": {
+    "latitude": 47.8503,
+    "longitude": 12.1333,
+    "name": "Rosenheim",
+    "country": 3,
+    "population": 92809
+  }
+},
+{
+  "model": "core.city",
+  "pk": 471,
+  "fields": {
+    "latitude": 53.6333,
+    "longitude": 11.4167,
+    "name": "Schwerin",
+    "country": 3,
+    "population": 96641
+  }
+},
+{
+  "model": "core.city",
+  "pk": 472,
+  "fields": {
+    "latitude": 54.7837,
+    "longitude": 9.4333,
+    "name": "Flensburg",
+    "country": 3,
+    "population": 97930
+  }
+},
+{
+  "model": "core.city",
+  "pk": 473,
+  "fields": {
+    "latitude": 28.969,
+    "longitude": -13.5378,
+    "name": "Arrecife",
+    "country": 6,
+    "population": 52944
+  }
+},
+{
+  "model": "core.city",
+  "pk": 474,
+  "fields": {
+    "latitude": 38.0833,
+    "longitude": -3.6334,
+    "name": "Linares",
+    "country": 6,
+    "population": 59761
+  }
+},
+{
+  "model": "core.city",
+  "pk": 475,
+  "fields": {
+    "latitude": 40.6337,
+    "longitude": -3.1666,
+    "name": "Guadalajara",
+    "country": 6,
+    "population": 72850
+  }
+},
+{
+  "model": "core.city",
+  "pk": 476,
+  "fields": {
+    "latitude": 39.867,
+    "longitude": -4.0167,
+    "name": "Toledo",
+    "country": 6,
+    "population": 74632
+  }
+},
+{
+  "model": "core.city",
+  "pk": 477,
+  "fields": {
+    "latitude": 35.889,
+    "longitude": -5.307,
+    "name": "Ceuta",
+    "country": 6,
+    "population": 78674
+  }
+},
+{
+  "model": "core.city",
+  "pk": 478,
+  "fields": {
+    "latitude": 37.6886,
+    "longitude": -1.6985,
+    "name": "Lorca",
+    "country": 6,
+    "population": 86119
+  }
+},
+{
+  "model": "core.city",
+  "pk": 479,
+  "fields": {
+    "latitude": 42.8829,
+    "longitude": -8.5411,
+    "name": "Santiago de Compostela",
+    "country": 6,
+    "population": 92430
+  }
+},
+{
+  "model": "core.city",
+  "pk": 480,
+  "fields": {
+    "latitude": 48.5167,
+    "longitude": -2.7833,
+    "name": "St.-Brieuc",
+    "country": 7,
+    "population": 53223
+  }
+},
+{
+  "model": "core.city",
+  "pk": 481,
+  "fields": {
+    "latitude": 41.9271,
+    "longitude": 8.7283,
+    "name": "Ajaccio",
+    "country": 7,
+    "population": 54364
+  }
+},
+{
+  "model": "core.city",
+  "pk": 482,
+  "fields": {
+    "latitude": 43.2333,
+    "longitude": 0.0833,
+    "name": "Tarbes",
+    "country": 7,
+    "population": 54854
+  }
+},
+{
+  "model": "core.city",
+  "pk": 483,
+  "fields": {
+    "latitude": 45.1504,
+    "longitude": 1.5333,
+    "name": "Brive",
+    "country": 7,
+    "population": 55448
+  }
+},
+{
+  "model": "core.city",
+  "pk": 484,
+  "fields": {
+    "latitude": 44.2004,
+    "longitude": 0.6333,
+    "name": "Agen",
+    "country": 7,
+    "population": 58223
+  }
+},
+{
+  "model": "core.city",
+  "pk": 485,
+  "fields": {
+    "latitude": 49.6504,
+    "longitude": -1.65,
+    "name": "Cherbourg",
+    "country": 7,
+    "population": 60991
+  }
+},
+{
+  "model": "core.city",
+  "pk": 486,
+  "fields": {
+    "latitude": 48.3404,
+    "longitude": 4.0834,
+    "name": "Troyes",
+    "country": 7,
+    "population": 61703
+  }
+},
+{
+  "model": "core.city",
+  "pk": 487,
+  "fields": {
+    "latitude": 50.2833,
+    "longitude": 2.7833,
+    "name": "Arras",
+    "country": 7,
+    "population": 64165
+  }
+},
+{
+  "model": "core.city",
+  "pk": 488,
+  "fields": {
+    "latitude": 47.0837,
+    "longitude": 2.4,
+    "name": "Bourges",
+    "country": 7,
+    "population": 72340
+  }
+},
+{
+  "model": "core.city",
+  "pk": 489,
+  "fields": {
+    "latitude": 46.0333,
+    "longitude": 4.0667,
+    "name": "Roanne",
+    "country": 7,
+    "population": 73315
+  }
+},
+{
+  "model": "core.city",
+  "pk": 490,
+  "fields": {
+    "latitude": 46.1667,
+    "longitude": -1.15,
+    "name": "La Rochelle",
+    "country": 7,
+    "population": 76997
+  }
+},
+{
+  "model": "core.city",
+  "pk": 491,
+  "fields": {
+    "latitude": 43.3505,
+    "longitude": 3.21,
+    "name": "Beziers",
+    "country": 7,
+    "population": 81438
+  }
+},
+{
+  "model": "core.city",
+  "pk": 492,
+  "fields": {
+    "latitude": 47.7504,
+    "longitude": -3.3666,
+    "name": "Lorient",
+    "country": 7,
+    "population": 84952
+  }
+},
+{
+  "model": "core.city",
+  "pk": 493,
+  "fields": {
+    "latitude": 48.8005,
+    "longitude": 2.1333,
+    "name": "Versailles",
+    "country": 7,
+    "population": 85416
+  }
+},
+{
+  "model": "core.city",
+  "pk": 494,
+  "fields": {
+    "latitude": 46.5833,
+    "longitude": 0.3333,
+    "name": "Poitier",
+    "country": 7,
+    "population": 85960
+  }
+},
+{
+  "model": "core.city",
+  "pk": 495,
+  "fields": {
+    "latitude": 50.9504,
+    "longitude": 1.8333,
+    "name": "Calais",
+    "country": 7,
+    "population": 92201
+  }
+},
+{
+  "model": "core.city",
+  "pk": 496,
+  "fields": {
+    "latitude": 55.4504,
+    "longitude": -4.6167,
+    "name": "Ayr",
+    "country": 8,
+    "population": 69042
+  }
+},
+{
+  "model": "core.city",
+  "pk": 497,
+  "fields": {
+    "latitude": 54.2804,
+    "longitude": -0.43,
+    "name": "Scarborough",
+    "country": 8,
+    "population": 70571
+  }
+},
+{
+  "model": "core.city",
+  "pk": 498,
+  "fields": {
+    "latitude": 54.88,
+    "longitude": -2.93,
+    "name": "Carlisle",
+    "country": 8,
+    "population": 72633
+  }
+},
+{
+  "model": "core.city",
+  "pk": 499,
+  "fields": {
+    "latitude": 55.9333,
+    "longitude": -4.75,
+    "name": "Greenock",
+    "country": 8,
+    "population": 74635
+  }
+},
+{
+  "model": "core.city",
+  "pk": 500,
+  "fields": {
+    "latitude": 55.0004,
+    "longitude": -7.3333,
+    "name": "Londonderry",
+    "country": 8,
+    "population": 83652
+  }
+},
+{
+  "model": "core.city",
+  "pk": 501,
+  "fields": {
+    "latitude": 53.2,
+    "longitude": -2.92,
+    "name": "Chester",
+    "country": 8,
+    "population": 89531
+  }
+},
+{
+  "model": "core.city",
+  "pk": 502,
+  "fields": {
+    "latitude": 51.3837,
+    "longitude": -2.35,
+    "name": "Bath",
+    "country": 8,
+    "population": 93238
+  }
+},
+{
+  "model": "core.city",
+  "pk": 503,
+  "fields": {
+    "latitude": 53.0,
+    "longitude": 6.55,
+    "name": "Assen",
+    "country": 10,
+    "population": 62237
+  }
+}
+]

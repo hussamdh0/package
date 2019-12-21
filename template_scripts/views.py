@@ -7,7 +7,7 @@ from django.core.exceptions import MultipleObjectsReturned
 
 def add_city_data(request, test=False):
     data_path = os.path.join('backend', 'template_scripts', 'data', 'worldcities.csv')
-    population_limit = 100_000
+    population_limit = 50_000
     if test:
         population_limit = 500_000
     data_path = os.path.join ('C:\\Users\\Hussam\\Desktop\\appdev_project', data_path)
@@ -17,7 +17,7 @@ def add_city_data(request, test=False):
         for row in csv_reader:
             if row["population"] and float(row["population"]) > population_limit:
                 if test and row["iso2"] != 'US': continue
-                if not test and row["iso2"] not in ['DE', 'AE', 'BE', 'CH'' CZ', 'EG', 'ES', 'FR', 'GB', 'IT', 'NL', 'SY']: continue
+                if not test and row["iso2"] not in ['DE',  'ES', 'FR', 'GB', 'NL',]: continue
                 cntry, crtd = Country.objects.get_or_create(name__iexact=row["country"])
                 
                 if crtd:

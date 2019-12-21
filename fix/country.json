@@ -1,0 +1,122 @@
+[
+{
+  "model": "core.country",
+  "pk": 1,
+  "fields": {
+    "name": "United Arab Emirates",
+    "iso": "AE"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 2,
+  "fields": {
+    "name": "Belgium",
+    "iso": "BE"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 3,
+  "fields": {
+    "name": "Germany",
+    "iso": "DE"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 4,
+  "fields": {
+    "name": "Denmark",
+    "iso": "DK"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 5,
+  "fields": {
+    "name": "Egypt",
+    "iso": "EG"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 6,
+  "fields": {
+    "name": "Spain",
+    "iso": "ES"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 7,
+  "fields": {
+    "name": "France",
+    "iso": "FR"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 8,
+  "fields": {
+    "name": "United Kingdom",
+    "iso": "GB"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 9,
+  "fields": {
+    "name": "Italy",
+    "iso": "IT"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 10,
+  "fields": {
+    "name": "Netherlands",
+    "iso": "NL"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 11,
+  "fields": {
+    "name": "Norway",
+    "iso": "NO"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 12,
+  "fields": {
+    "name": "Poland",
+    "iso": "PL"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 13,
+  "fields": {
+    "name": "Russia",
+    "iso": "RU"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 14,
+  "fields": {
+    "name": "Sweden",
+    "iso": "SE"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 15,
+  "fields": {
+    "name": "Syria",
+    "iso": "SY"
+  }
+}
+]

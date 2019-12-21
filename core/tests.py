@@ -76,13 +76,16 @@ class ApplicantCreationTest (TestCase):
         response.render()
         return json.loads(response.content)
     
-    def journey_request(self, **kwargs):
-        user         = kwargs.pop('user', AnonymousUser())
-        request      = self.factory.get('/api/journey', kwargs)
-        request.user = user
-        response     = JourneyLCV.as_view()(request)
+    def journey_request(self, post=False, **kwargs):
+        user             = kwargs.pop('user', AnonymousUser())
+        if post: request = self.factory.post('/api/journey', data=json.dumps(kwargs), content_type='application/json',)
+        else:    request = self.factory.get('/api/journey', kwargs)
+        request._dont_enforce_csrf_checks = True
+        request.user     = user
+        response         = JourneyLCV.as_view()(request)
         response.render()
         return json.loads(response.content)
+    
 
     def test_city(self):
         # Test sorting by distance
@@ -98,6 +101,7 @@ class ApplicantCreationTest (TestCase):
         assert results[0]['name'] == 'New York'
         assert 'name' in results[0]
         assert 'country' not in results[0]
+
 
     def test_journey(self):
         # Test no kwargs
@@ -129,3 +133,33 @@ class ApplicantCreationTest (TestCase):
         response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-04', date_tolerance=0)
         assert response['count'] == 1
         assert response['results'][0]['name'] == 'pt to dv: 2019-09-04'
+    
+    def test_journey_post(self):
+        self.user = mixer.blend(User)
+        response = self.journey_request(post=True, user=self.user, origin='Riverside', destination='Denver', date='2020-01-13',)
+        new_id = response['id']
+        new_journey = Journey.objects.get(id=new_id)
+        assert new_journey.origin.name      == 'Riverside'
+        assert new_journey.destination.name == 'Denver'
+        assert str(new_journey.date)        == '2020-01-13'
+        thor_dict = {
+            "origin": "Riverside",
+            "destination": "New York",
+            "date": "2044-04-04",
+            "time": "21:45:44",
+            "phone": "1234",
+            "email": "a@b.de",
+            "description": "only docs",
+            "available_weight": 2,
+        }
+        response = self.journey_request(post=True, user=self.user, **thor_dict)
+        new_id = response['id']
+        new_journey = Journey.objects.get(id=new_id)
+        assert new_journey.origin.name      == 'Riverside'
+        assert new_journey.destination.name == 'New York'
+        assert str(new_journey.date)        == '2044-04-04'
+        assert str(new_journey.time)        == '21:45:44'
+        assert new_journey.phone            == '1234'
+        assert new_journey.email            == 'a@b.de'
+        assert new_journey.description      == 'only docs'
+        assert new_journey.available_weight == 2

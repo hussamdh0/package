@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$150000$GjsShciRjqIy$UE1lTb4VdvZcV1FVtGOvKWJSi05EIHMOG9dHOyTbMk4=",
-    "last_login": "2019-12-20T20:18:13Z",
+    "last_login": "2019-12-21T15:42:21.330Z",
     "is_superuser": true,
     "username": "cfe",
     "first_name": "Huvsssam",
@@ -25,7 +25,7 @@
 },
 {
   "model": "core.user",
-  "pk": 13,
+  "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$150000$nprHqStwG7ih$PlTrCpYU1Oe8b+m2105mZEzFZ3AbpQnj3qDhMSF7HY8=",
     "last_login": null,
@@ -36,36 +36,12 @@
     "is_staff": false,
     "is_active": true,
     "date_joined": "2019-12-16T20:45:05Z",
-    "_phone": null,
+    "_phone": "samy phone",
     "_email": null,
     "latitude": null,
     "longitude": null,
     "avatar": "",
     "email": "a.samyabdelhay@gmail.com",
-    "reset_token": null,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "core.user",
-  "pk": 15,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$mjJyGHHHEDcA$EUvH5f4xsXhGQtPBPZBZydXv7OtA8r+1hIU0MMrAvcs=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "ddd@sd.de",
-    "first_name": "",
-    "last_name": "",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2019-12-20T21:13:42.485Z",
-    "_phone": null,
-    "_email": null,
-    "latitude": null,
-    "longitude": null,
-    "avatar": "",
-    "email": "ddd@sd.de",
     "reset_token": null,
     "groups": [],
     "user_permissions": []
