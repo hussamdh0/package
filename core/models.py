@@ -5,7 +5,7 @@ from datetime                   import date, timedelta, datetime
 from django.core.exceptions     import PermissionDenied
 from django.utils.translation   import gettext_lazy as _
 from django.utils               import timezone
-from django.db.models           import Q
+# from django.db.models         import Q
 
 
 # mixin
@@ -43,8 +43,8 @@ class HasLocation(models.Model):
             d_latitude  = (latitude2  - latitude1)  * dtor
             d_longitude = (longitude2 - longitude1) * dtor
     
-            a = pow (sin (d_latitude / 2), 2) + cos (latitude1 * dtor) * cos (latitude2 * dtor) * pow (sin (d_longitude / 2), 2)
-            c = 2 * atan2 (sqrt (a), sqrt (1 - a))
+            a = pow( sin( d_latitude/2), 2) + cos( latitude1*dtor) * cos( latitude2*dtor) * pow( sin( d_longitude/2), 2)
+            c = 2 * atan2( sqrt( a), sqrt( 1-a))
             return 6367 * c
         return 1000
     
@@ -205,7 +205,7 @@ class JourneyManager(models.Manager):
         init_filter_kwargs = {}
         init_filter_args = []
         if 'my_journeys' in kwargs: init_filter_kwargs['user'] = u
-        else: init_filter_args.append( ~Q(user=u) )
+        else: init_filter_args.append( ~models.Q(user=u) )
         if kwargs['recent']: init_filter_kwargs['last_modified__gt'] = datetime.now(tz=timezone.utc) - timedelta(minutes=10)
         if 'date' in kwargs:
             d = kwargs['date']  # date
