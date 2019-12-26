@@ -1,0 +1,501 @@
+origin,destination,date,phone,description,available_weight,user
+47,57,2019-12-28,16880102 1554,"ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing",10,6
+61,41,2020-01-20,16600521 4967,nisi dictum augue malesuada malesuada. Integer id,7,5
+51,43,2020-01-17,16010825 0101,"et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit",11,7
+59,48,2020-01-04,16191007 1297,metus. Vivamus euismod urna.,6,2
+57,51,2020-01-10,16510625 9400,"non, bibendum sed, est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque",4,4
+48,56,2019-12-25,16071015 7165,"nisl arcu iaculis enim, sit amet",9,4
+51,53,2019-12-12,16390105 6758,consectetuer mauris id sapien.,5,10
+57,52,2020-01-01,16430825 9391,sed turpis nec mauris blandit mattis. Cras eget nisi,10,6
+47,49,2019-12-10,16600809 9167,"Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac",9,9
+54,60,2020-01-20,16030508 7165,"convallis, ante lectus convallis est, vitae sodales nisi magna sed dui.",4,3
+41,60,2020-01-11,16760615 8900,sed pede. Cum sociis natoque,10,4
+53,44,2019-12-21,16561023 6019,"dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit,",5,5
+52,56,2019-12-31,16111120 2915,Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare,10,8
+59,58,2019-12-30,16860926 0271,"ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis,",9,4
+57,55,2020-01-15,16550110 2700,"Cras lorem lorem, luctus ut,",6,3
+46,44,2020-01-13,16410112 9502,velit eu sem. Pellentesque ut ipsum ac mi eleifend,8,6
+45,52,2019-12-12,16300705 4343,non nisi. Aenean eget metus. In nec,8,1
+52,51,2019-12-08,16850401 3676,eros turpis non enim. Mauris quis,10,7
+61,51,2019-12-10,16990910 4599,"lacus. Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus nibh dolor, nonummy",10,5
+59,55,2020-01-09,16610822 4244,"ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales",8,2
+56,47,2020-01-22,16390304 6443,"odio vel est tempor bibendum. Donec felis orci,",4,8
+48,52,2019-12-12,16051206 8776,"Suspendisse non leo. Vivamus nibh dolor, nonummy ac, feugiat non,",9,3
+56,50,2019-12-23,16430224 6410,"lectus, a sollicitudin orci sem eget massa. Suspendisse eleifend. Cras sed leo.",6,7
+41,45,2020-01-05,16940820 0112,"vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit,",11,6
+44,43,2020-01-01,16330920 2574,"a purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi",7,10
+53,60,2020-01-05,16330412 3403,In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum ante ipsum primis in faucibus,7,5
+43,53,2020-01-03,16360814 2844,Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu,7,2
+53,60,2020-01-25,16510311 0010,ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel,10,10
+54,47,2020-01-22,16140204 8209,"nisl sem, consequat nec,",4,1
+49,44,2020-01-30,16700426 2965,"aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.",8,1
+45,60,2019-12-31,16630827 2043,"purus, in molestie tortor nibh sit amet",9,1
+41,57,2019-12-14,16110626 9226,erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat,7,4
+45,52,2019-12-13,16180425 3282,mauris. Morbi non sapien molestie,6,10
+53,41,2020-01-03,16570428 0204,fringilla mi lacinia mattis. Integer,6,3
+54,42,2020-01-03,16810601 9972,"accumsan laoreet ipsum. Curabitur consequat, lectus sit amet luctus vulputate,",6,3
+42,53,2020-01-18,16410330 9433,Cras eget nisi dictum augue,7,2
+44,41,2020-01-04,16450404 3029,interdum enim non nisi. Aenean eget metus. In,10,10
+47,47,2020-01-22,16030124 8860,"luctus, ipsum leo elementum sem, vitae",4,2
+41,57,2020-01-04,16240705 3350,"viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum",4,7
+42,51,2020-01-31,16721017 7387,"tempus eu, ligula. Aenean",9,8
+47,43,2019-12-15,16910320 3130,"magna, malesuada vel, convallis in, cursus et, eros. Proin ultrices. Duis volutpat nunc",5,10
+46,52,2019-12-31,16171224 9372,feugiat tellus lorem eu,5,2
+57,49,2019-12-28,16610625 4425,Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus. Duis,7,2
+48,51,2019-12-15,16240808 4248,Duis gravida. Praesent eu nulla,11,6
+54,55,2020-01-01,16191003 1002,"nisl arcu iaculis enim, sit amet ornare lectus justo",5,3
+54,54,2020-01-01,16181103 0202,"orci, adipiscing non, luctus sit amet, faucibus ut, nulla. Cras eu tellus eu augue",9,1
+55,41,2020-01-26,16310405 2943,"malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue ac",6,8
+50,57,2019-12-02,16980915 2672,vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate,9,10
+53,50,2020-01-20,16140404 6524,"enim, gravida sit amet, dapibus",5,5
+45,60,2019-12-24,16800615 9548,"tellus. Phasellus elit pede, malesuada vel, venenatis",10,8
+59,49,2020-01-25,16860406 3183,"egestas a, scelerisque sed, sapien. Nunc",10,9
+61,52,2019-12-18,16350906 8122,"lorem, sit amet ultricies",11,4
+50,53,2020-01-03,16161107 7825,amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis natoque penatibus et magnis,5,6
+61,49,2020-01-06,16030310 9227,rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a,5,2
+46,48,2019-12-05,16580214 0342,"sit amet, faucibus ut, nulla. Cras eu tellus eu augue",11,2
+61,56,2019-12-24,16410920 5528,"tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus, varius et, euismod",9,4
+53,59,2020-01-04,16281227 1894,hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus,5,3
+42,59,2019-12-20,16420926 7386,"parturient montes, nascetur ridiculus mus. Donec dignissim magna",6,7
+52,60,2020-01-16,16650125 7783,"auctor, nunc nulla vulputate dui, nec tempus mauris erat eget ipsum.",4,8
+61,51,2019-12-02,16460329 8847,sodales elit erat vitae risus. Duis a mi fringilla mi,5,1
+59,54,2020-01-14,16691119 6084,"dolor quam, elementum at, egestas a, scelerisque sed,",8,9
+50,61,2020-01-09,16700906 9928,"molestie pharetra nibh. Aliquam ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit amet",5,4
+59,53,2020-01-17,16920907 7610,"Quisque libero lacus, varius et, euismod et, commodo at,",10,2
+49,54,2019-12-03,16380625 1231,"nec, mollis vitae, posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat,",5,6
+53,50,2020-01-13,16141221 5467,id risus quis diam luctus,8,3
+44,61,2019-12-31,16490416 2338,"ut, pharetra sed, hendrerit a, arcu. Sed",9,1
+56,53,2020-01-14,16330207 9052,"malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus",11,1
+44,57,2020-01-07,16130519 1270,"mauris ut mi. Duis risus odio,",8,10
+55,55,2020-01-07,16730825 4544,"ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue",4,6
+45,54,2019-12-26,16480807 9380,"tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec ante.",11,2
+55,59,2019-12-08,16990703 3337,"porttitor interdum. Sed auctor odio a purus. Duis elementum,",5,5
+51,53,2020-01-30,16600320 3160,"aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris",5,6
+45,53,2020-01-14,16510806 2281,"sed, hendrerit a, arcu. Sed et libero. Proin mi. Aliquam gravida mauris",5,4
+42,48,2019-12-18,16060924 1955,Suspendisse ac metus vitae velit egestas,10,6
+41,54,2020-01-29,16010327 3199,Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis,8,9
+42,47,2020-01-03,16030209 7472,"natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",8,2
+58,44,2019-12-05,16371124 5328,"torquent per conubia nostra,",9,5
+47,60,2020-01-28,16860719 1338,fringilla purus mauris a nunc. In at pede. Cras vulputate velit eu sem.,7,6
+51,58,2020-01-13,16970803 7412,"mi tempor lorem, eget mollis lectus pede et risus. Quisque libero",7,4
+50,50,2019-12-27,16891115 4469,"Vivamus nibh dolor, nonummy ac,",6,3
+55,42,2020-01-26,16480324 4864,Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec,10,4
+45,56,2019-12-22,16500414 1379,arcu. Nunc mauris. Morbi non sapien molestie,7,3
+51,61,2020-01-22,16780706 9856,consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec,4,1
+45,56,2019-12-16,16961105 4926,"Integer sem elit, pharetra ut, pharetra sed, hendrerit",8,2
+56,43,2020-01-16,16641124 4624,"mattis ornare, lectus ante dictum mi, ac",6,10
+57,49,2019-12-22,16670325 8670,consequat enim diam vel,11,2
+45,47,2019-12-29,16150328 3481,sit amet ornare lectus justo eu arcu. Morbi,8,8
+59,56,2019-12-01,16400622 0174,malesuada. Integer id magna et ipsum,5,7
+60,55,2019-12-13,16640827 2893,"iaculis enim, sit amet",7,1
+61,42,2019-12-26,16871029 9465,"non, egestas a, dui. Cras pellentesque. Sed dictum. Proin",9,3
+55,59,2020-01-17,16310325 3799,"pede. Cum sociis natoque penatibus et magnis dis parturient montes,",11,4
+53,48,2019-12-20,16740101 3318,"nibh dolor, nonummy ac, feugiat non, lobortis quis, pede. Suspendisse dui. Fusce",9,2
+52,55,2020-01-10,16580105 7943,"amet massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices",11,1
+61,47,2020-01-26,16711010 3335,"sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus",8,3
+44,42,2019-12-22,16200806 3956,mauris erat eget ipsum. Suspendisse sagittis. Nullam,4,10
+50,55,2019-12-02,16220610 7811,"pharetra, felis eget varius ultrices,",8,2
+51,41,2020-01-12,16171021 1887,"non sapien molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare, libero at",6,2
+61,50,2019-12-16,16580325 5354,"felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem eu metus. In",10,5
+42,49,2019-12-23,16620921 5752,Maecenas malesuada fringilla est. Mauris,6,1
+50,44,2019-12-08,16611101 8898,"purus, in molestie tortor nibh sit amet",4,1
+45,43,2020-01-20,16190127 9420,"enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci.",8,4
+42,44,2020-01-16,16150823 5221,"tempor lorem, eget mollis lectus pede et risus.",5,1
+54,56,2020-01-22,16151021 7100,Morbi sit amet massa. Quisque,9,8
+51,52,2020-01-10,16480322 7422,tempor erat neque non quam. Pellentesque habitant morbi tristique senectus,8,1
+57,46,2020-01-05,16340301 6581,"pede nec ante blandit viverra. Donec tempus, lorem",10,3
+58,43,2019-12-19,16921203 6850,Nam interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque,7,2
+49,60,2020-01-01,16341130 3880,malesuada. Integer id magna et ipsum cursus vestibulum. Mauris magna. Duis dignissim tempor arcu.,6,7
+41,44,2020-01-06,16730114 3256,Nullam vitae diam. Proin,4,10
+54,46,2020-01-14,16570327 4794,"tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci.",10,6
+48,51,2019-12-14,16700606 6802,faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi,9,2
+45,52,2019-12-04,16560622 6362,"mi enim, condimentum eget, volutpat ornare, facilisis eget,",4,2
+55,57,2020-01-01,16621015 3661,"elit, a feugiat tellus lorem eu metus. In lorem. Donec elementum, lorem",4,9
+61,59,2020-01-08,16720808 9578,risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per,5,9
+45,60,2020-01-12,16201021 5255,ipsum. Suspendisse sagittis. Nullam vitae diam. Proin dolor. Nulla semper tellus id nunc interdum feugiat.,7,6
+41,48,2020-01-18,16440506 2912,metus. In nec orci. Donec nibh. Quisque nonummy ipsum non arcu. Vivamus sit,8,3
+43,44,2019-12-07,16020827 2674,"accumsan sed, facilisis vitae, orci. Phasellus",4,4
+47,46,2020-01-27,16820706 5171,"ut, nulla. Cras eu tellus eu augue",11,3
+54,47,2019-12-22,16121112 1288,"ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis",5,10
+56,50,2020-01-31,16071019 9993,mauris sit amet lorem semper auctor.,9,5
+41,41,2020-01-12,16021027 9824,tellus eu augue porttitor interdum. Sed auctor odio a purus.,8,6
+59,60,2019-12-28,16431027 5500,"ornare placerat, orci lacus vestibulum lorem, sit",11,8
+54,44,2020-01-25,16230121 4645,ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus,4,4
+42,43,2019-12-27,16050919 1425,"ut cursus luctus, ipsum leo elementum sem, vitae",6,5
+44,55,2020-01-16,16971118 2023,urna. Ut tincidunt vehicula,8,2
+49,44,2019-12-21,16211125 6158,"rhoncus id, mollis nec, cursus a, enim. Suspendisse aliquet, sem ut cursus luctus, ipsum leo",11,7
+45,56,2020-01-15,16080922 9214,"auctor odio a purus. Duis elementum, dui quis accumsan convallis, ante lectus convallis est, vitae",5,6
+52,48,2019-12-28,16490727 6150,"accumsan laoreet ipsum. Curabitur consequat, lectus sit amet luctus vulputate, nisi sem",4,4
+43,51,2020-01-31,16580719 1548,"risus. Nulla eget metus eu erat semper rutrum. Fusce dolor quam, elementum",10,2
+53,49,2019-12-18,16211217 2164,arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,10,3
+56,42,2019-12-28,16560908 4909,"varius orci, in consequat enim diam vel arcu. Curabitur ut",6,6
+56,42,2019-12-09,16820413 7312,sem magna nec quam. Curabitur vel lectus. Cum sociis natoque penatibus,8,5
+50,60,2020-01-18,16580524 6708,Integer in magna. Phasellus dolor,8,1
+49,61,2019-12-24,16710115 8678,feugiat metus sit amet,5,6
+59,48,2020-01-10,16831105 9474,et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus,9,5
+41,55,2020-01-15,16411024 8285,"elit, dictum eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus",11,5
+57,52,2019-12-10,16051206 5202,fringilla est. Mauris eu turpis. Nulla aliquet. Proin velit. Sed,6,9
+56,50,2019-12-19,16050420 0486,"lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla.",6,8
+49,56,2020-01-19,16720106 8322,"consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies",5,10
+59,61,2019-12-21,16900920 0040,"egestas rhoncus. Proin nisl sem, consequat nec, mollis vitae, posuere at, velit. Cras",11,5
+52,45,2020-01-19,16310914 8019,euismod urna. Nullam lobortis quam a felis ullamcorper,8,5
+59,59,2020-01-29,16211027 6587,"pellentesque a, facilisis non, bibendum sed, est. Nunc laoreet lectus",5,5
+50,47,2020-01-09,16730702 6075,eget nisi dictum augue malesuada malesuada. Integer,6,10
+51,41,2019-12-04,16150223 3941,"vulputate, posuere vulputate, lacus. Cras interdum. Nunc",10,10
+53,61,2019-12-25,16720916 2226,Morbi vehicula. Pellentesque tincidunt tempus,7,8
+41,44,2019-12-14,16380616 3451,eros. Nam consequat dolor vitae dolor. Donec fringilla. Donec feugiat metus sit,8,6
+42,49,2020-01-11,16901120 4238,tempor augue ac ipsum. Phasellus,4,6
+57,49,2019-12-25,16550803 2751,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;,8,1
+47,54,2019-12-24,16710124 6432,"vehicula risus. Nulla eget metus eu erat semper rutrum. Fusce dolor quam,",6,1
+60,47,2019-12-31,16161019 0850,bibendum fermentum metus. Aenean sed pede,4,3
+44,52,2019-12-16,16900102 0057,"Maecenas libero est, congue a, aliquet vel,",6,4
+55,45,2020-01-01,16471114 3851,"non, dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed",8,9
+45,61,2019-12-05,16330403 2646,hendrerit. Donec porttitor tellus non magna.,11,7
+46,55,2019-12-19,16660228 5006,Nulla facilisi. Sed neque. Sed eget lacus. Mauris,6,1
+60,42,2019-12-29,16140906 9687,"Cras dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent",9,3
+46,51,2019-12-21,16241106 8758,mus. Proin vel nisl. Quisque fringilla euismod,5,6
+46,49,2020-01-13,16960518 9241,"nec enim. Nunc ut erat. Sed nunc est, mollis non, cursus non,",11,10
+54,50,2019-12-01,16940423 4859,"suscipit, est ac facilisis facilisis, magna tellus faucibus",8,1
+61,48,2020-01-10,16350113 0979,"Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare,",10,10
+55,41,2020-01-15,16690619 5919,"enim. Nunc ut erat. Sed nunc est, mollis non, cursus non, egestas a, dui. Cras",10,1
+50,49,2020-01-28,16240929 9159,"ligula. Nullam enim. Sed nulla ante, iaculis nec,",4,1
+56,48,2020-01-17,16690221 8590,Nam tempor diam dictum sapien.,5,5
+42,43,2019-12-21,16340113 8833,In tincidunt congue turpis. In condimentum. Donec,7,9
+43,46,2020-01-08,16211021 9553,"vulputate, risus a ultricies adipiscing,",7,3
+58,46,2020-01-10,16010617 8346,Cras pellentesque. Sed dictum. Proin eget odio.,6,1
+41,45,2019-12-24,16610919 1384,"vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum",9,2
+43,44,2019-12-08,16550708 5131,tincidunt. Donec vitae erat vel pede,5,8
+45,61,2019-12-08,16490615 7823,arcu eu odio tristique pharetra. Quisque ac,11,5
+53,60,2019-12-26,16900508 4307,blandit mattis. Cras eget nisi dictum augue malesuada,4,1
+41,59,2020-01-29,16500228 7596,rutrum magna. Cras convallis convallis dolor. Quisque tincidunt pede,10,8
+41,45,2019-12-20,16600922 1331,"parturient montes, nascetur ridiculus mus. Proin vel nisl.",7,7
+44,53,2019-12-11,16600909 4605,"Donec elementum, lorem ut aliquam iaculis, lacus",5,3
+59,45,2020-01-15,16070111 6519,ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam nec enim.,7,1
+52,55,2019-12-28,16990922 4702,vel arcu eu odio tristique pharetra. Quisque ac libero,9,7
+41,46,2019-12-24,16891004 0206,"mi. Duis risus odio, auctor vitae, aliquet nec, imperdiet nec, leo. Morbi neque tellus,",9,1
+54,51,2020-01-09,16620928 5185,Nulla semper tellus id nunc,7,10
+57,58,2019-12-27,16241019 9281,sem eget massa. Suspendisse eleifend.,5,7
+52,55,2019-12-06,16831024 4432,ac ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis.,11,2
+42,58,2020-01-11,16020312 4037,nisl. Nulla eu neque pellentesque massa lobortis ultrices.,9,10
+50,50,2019-12-19,16380504 7671,fermentum convallis ligula. Donec luctus aliquet odio.,10,5
+45,47,2020-01-19,16011123 0728,sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue scelerisque,7,7
+59,44,2019-12-20,16491105 3231,"accumsan convallis, ante lectus convallis est, vitae sodales nisi",11,4
+51,52,2020-01-13,16281127 0475,"sed pede nec ante blandit viverra. Donec tempus, lorem",5,10
+49,44,2019-12-09,16550818 5930,"enim mi tempor lorem, eget mollis lectus pede et risus. Quisque libero lacus, varius et,",4,4
+44,52,2020-01-14,16451220 7723,facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit,4,3
+51,58,2020-01-30,16080325 6940,augue malesuada malesuada. Integer id magna et ipsum cursus vestibulum. Mauris magna. Duis,6,7
+57,61,2019-12-30,16911023 8574,"placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur",8,3
+46,55,2019-12-13,16360820 1913,"euismod ac, fermentum vel, mauris. Integer sem elit, pharetra ut, pharetra sed,",6,1
+50,54,2019-12-09,16050523 0805,"imperdiet nec, leo. Morbi neque tellus, imperdiet non, vestibulum nec, euismod",6,6
+48,49,2020-01-16,16810403 5749,"Donec nibh enim, gravida sit amet, dapibus id, blandit at, nisi. Cum sociis",7,10
+55,55,2019-12-16,16341105 7635,"risus. Quisque libero lacus, varius et,",10,8
+55,48,2019-12-30,16490125 2686,"mauris sagittis placerat. Cras dictum ultricies ligula. Nullam enim. Sed nulla ante,",4,5
+43,53,2020-01-04,16511221 1759,"Suspendisse aliquet, sem ut cursus luctus, ipsum leo elementum sem,",6,1
+46,57,2019-12-19,16930904 6440,malesuada fames ac turpis,7,4
+49,43,2020-01-28,16240327 5387,"rutrum, justo. Praesent luctus. Curabitur egestas nunc",6,7
+55,60,2019-12-11,16230909 2647,diam. Proin dolor. Nulla semper tellus id nunc interdum feugiat.,4,3
+58,54,2019-12-20,16660230 7628,"euismod ac, fermentum vel, mauris. Integer sem elit, pharetra",10,5
+58,61,2019-12-16,16840502 8435,"Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt,",11,10
+60,46,2019-12-06,16261226 8009,"adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus sem mollis",11,9
+48,56,2019-12-10,16140228 8813,nec urna suscipit nonummy. Fusce,9,5
+50,56,2020-01-01,16041212 4224,"sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa rutrum magna. Cras",9,4
+61,49,2019-12-06,16471003 9019,"pellentesque, tellus sem mollis dui, in sodales elit erat vitae risus. Duis a",5,9
+60,47,2019-12-30,16160605 2221,"convallis, ante lectus convallis est,",4,1
+60,58,2019-12-27,16480502 5899,"risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio",6,9
+45,61,2019-12-09,16231224 1926,neque. Nullam nisl. Maecenas malesuada fringilla est.,6,7
+61,55,2019-12-25,16930908 9978,molestie sodales. Mauris blandit,10,4
+58,50,2019-12-14,16010315 3698,massa rutrum magna. Cras convallis convallis dolor. Quisque tincidunt pede ac urna. Ut,8,9
+45,45,2020-01-26,16790308 9584,"interdum. Sed auctor odio a purus. Duis elementum, dui quis accumsan convallis, ante lectus",7,8
+61,58,2019-12-28,16030407 0212,nisl. Quisque fringilla euismod enim. Etiam gravida,9,4
+45,58,2019-12-13,16830315 2725,"at sem molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a,",10,5
+45,55,2020-01-16,16160330 1670,"dis parturient montes, nascetur ridiculus mus.",6,2
+46,43,2020-01-07,16650408 6700,"blandit viverra. Donec tempus, lorem fringilla ornare placerat,",11,6
+53,54,2019-12-28,16671118 9362,"vulputate, nisi sem semper",5,1
+44,52,2020-01-07,16040603 7697,"iaculis, lacus pede sagittis augue, eu",7,9
+53,56,2019-12-28,16400126 7915,arcu et pede. Nunc sed orci lobortis augue scelerisque mollis. Phasellus,9,7
+59,44,2019-12-17,16171210 5657,"per conubia nostra, per",10,5
+51,60,2019-12-07,16360414 2509,"est ac facilisis facilisis, magna tellus faucibus",9,5
+48,50,2019-12-24,16290406 8117,Vivamus nisi. Mauris nulla. Integer,9,9
+58,44,2019-12-31,16520409 0681,"eu tellus. Phasellus elit pede, malesuada vel,",7,8
+42,48,2020-01-26,16590528 7719,"tincidunt nibh. Phasellus nulla. Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem,",8,5
+58,49,2019-12-04,16990621 0118,Suspendisse eleifend. Cras sed,9,4
+50,50,2020-01-05,16730219 2609,aliquet libero. Integer in,10,8
+42,47,2019-12-17,16360411 6651,posuere cubilia Curae; Donec,10,4
+55,42,2019-12-11,16890412 2713,"Nam ligula elit, pretium et, rutrum non, hendrerit id,",6,10
+55,43,2019-12-30,16360309 8546,enim non nisi. Aenean eget,5,9
+53,55,2020-01-09,16300318 2940,"elit, pretium et, rutrum non,",5,8
+53,54,2020-01-16,16530410 5504,"est ac facilisis facilisis, magna tellus faucibus leo, in",7,3
+41,61,2020-01-11,16430708 6175,erat eget ipsum. Suspendisse sagittis. Nullam vitae,8,5
+54,53,2020-01-01,16330423 7914,"eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit,",4,6
+56,47,2020-01-09,16160926 8618,blandit congue. In scelerisque,5,9
+41,48,2020-01-23,16240230 8841,"nulla. Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem, eget mollis",9,6
+42,41,2020-01-02,16980430 8980,"mattis semper, dui lectus rutrum urna, nec luctus felis purus ac",6,8
+41,43,2019-12-12,16521020 5026,Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non leo.,7,4
+55,53,2019-12-19,16060407 5077,"ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam auctor, velit eget laoreet posuere, enim",5,3
+47,51,2020-01-20,16030221 1255,"semper erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum",10,5
+60,59,2019-12-14,16540320 8381,feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus,8,4
+43,45,2019-12-10,16361107 9694,"mollis non, cursus non, egestas a, dui. Cras pellentesque. Sed",11,1
+44,49,2020-01-22,16140401 9372,"orci lacus vestibulum lorem, sit",8,3
+51,52,2019-12-22,16840906 1994,"rhoncus id, mollis nec, cursus a, enim. Suspendisse aliquet, sem ut cursus luctus,",8,9
+59,56,2019-12-07,16710130 3696,"orci lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan sed, facilisis",4,9
+41,48,2019-12-24,16090619 4618,Quisque varius. Nam porttitor,9,7
+45,49,2020-01-20,16780428 4649,enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras,11,4
+44,54,2020-01-26,16260819 3948,scelerisque scelerisque dui. Suspendisse ac metus,10,8
+46,48,2020-01-18,16630704 7669,mus. Aenean eget magna. Suspendisse tristique neque,8,8
+57,52,2020-01-20,16911128 7661,dolor. Donec fringilla. Donec,8,1
+55,57,2020-01-02,16530830 7734,"vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy",5,2
+42,44,2020-01-19,16091214 7055,"In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean euismod",6,8
+46,48,2020-01-14,16890718 5238,dui nec urna suscipit nonummy. Fusce fermentum fermentum arcu. Vestibulum,6,2
+50,41,2019-12-10,16120823 0944,"mollis. Phasellus libero mauris, aliquam",9,3
+46,50,2020-01-22,16120506 4429,"rutrum urna, nec luctus felis purus ac tellus. Suspendisse sed dolor.",5,1
+46,53,2019-12-22,16610908 1841,"dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem",8,2
+57,45,2019-12-13,16790717 4937,non lorem vitae odio sagittis semper. Nam tempor diam dictum sapien.,9,5
+54,54,2019-12-30,16551222 3867,lacinia mattis. Integer eu lacus. Quisque,10,4
+43,57,2019-12-20,16260209 0629,"consequat, lectus sit amet luctus vulputate,",10,5
+44,51,2019-12-03,16700313 3894,tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam fringilla cursus,6,3
+41,53,2020-01-18,16630404 4230,Proin non massa non ante bibendum ullamcorper. Duis,9,6
+58,46,2020-01-05,16031025 1087,tincidunt aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum,7,10
+48,54,2019-12-14,16451007 1188,"elit elit fermentum risus, at fringilla purus mauris a nunc.",5,2
+45,49,2019-12-10,16941130 6765,In at pede. Cras vulputate velit eu sem. Pellentesque ut ipsum ac mi eleifend,9,7
+55,45,2019-12-23,16351107 7491,Suspendisse sagittis. Nullam vitae diam. Proin dolor. Nulla semper tellus id,11,7
+52,49,2020-01-27,16351217 1749,"Phasellus libero mauris, aliquam eu,",8,4
+43,43,2019-12-10,16671126 3555,luctus et ultrices posuere cubilia Curae; Donec tincidunt. Donec vitae,8,5
+58,54,2020-01-15,16850322 8416,quis diam luctus lobortis. Class,4,4
+43,48,2019-12-07,16760913 4825,"vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse",5,4
+59,45,2020-01-07,16030516 7967,eros non enim commodo hendrerit. Donec porttitor tellus non,6,6
+41,47,2019-12-18,16750421 7683,enim. Etiam imperdiet dictum magna.,11,9
+60,55,2020-01-18,16001003 6853,"penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean",8,7
+57,48,2020-01-26,16931023 9372,Class aptent taciti sociosqu,4,8
+57,41,2019-12-14,16010317 6475,"pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in",4,5
+58,50,2019-12-17,16740211 9049,orci luctus et ultrices posuere cubilia Curae; Phasellus ornare. Fusce mollis. Duis sit,9,9
+48,48,2019-12-15,16080905 4794,"Nunc lectus pede, ultrices a, auctor",6,9
+44,60,2019-12-14,16120304 3748,Donec at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia,4,2
+44,53,2020-01-20,16390612 6002,"Suspendisse dui. Fusce diam nunc, ullamcorper eu,",8,10
+50,60,2019-12-10,16610909 1337,mattis. Cras eget nisi dictum augue malesuada malesuada. Integer id magna,5,3
+50,46,2019-12-18,16350321 0217,nec urna et arcu imperdiet ullamcorper. Duis at lacus.,7,3
+45,49,2019-12-15,16460822 0853,Suspendisse sagittis. Nullam vitae diam. Proin dolor.,6,1
+54,61,2019-12-17,16710209 4351,"erat semper rutrum. Fusce dolor quam, elementum at, egestas a, scelerisque sed,",6,3
+50,45,2019-12-03,16250316 3723,"neque. In ornare sagittis felis. Donec tempor, est ac mattis semper, dui",7,7
+61,44,2019-12-02,16390629 7449,"imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est",4,3
+59,50,2019-12-26,16370207 6419,"Cras dictum ultricies ligula. Nullam enim. Sed nulla ante, iaculis nec,",4,1
+61,59,2019-12-22,16660722 7177,"nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales",5,6
+47,49,2020-01-22,16610321 8415,"id ante dictum cursus. Nunc mauris elit,",11,1
+58,48,2020-01-15,16510421 2591,dapibus quam quis diam. Pellentesque habitant,10,4
+51,52,2020-01-14,16540620 7810,at arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;,7,4
+49,51,2019-12-20,16411022 7925,Donec at arcu. Vestibulum ante ipsum primis in faucibus orci,10,1
+42,57,2020-01-25,16470901 3181,"Duis mi enim, condimentum eget,",5,6
+46,46,2020-01-18,16990323 3618,"tempus scelerisque, lorem ipsum sodales purus, in molestie",10,1
+60,46,2019-12-27,16250130 3578,fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat.,6,8
+56,51,2019-12-19,16381010 8864,Sed auctor odio a,8,6
+59,57,2020-01-29,16700909 7606,quam. Pellentesque habitant morbi tristique senectus et netus et,4,9
+41,50,2020-01-07,16740221 4972,nisi. Mauris nulla. Integer urna.,5,10
+55,43,2019-12-09,16160415 6651,"lectus. Cum sociis natoque penatibus et magnis dis parturient montes,",5,5
+58,55,2019-12-14,16800127 2619,erat eget ipsum. Suspendisse sagittis. Nullam vitae diam. Proin,7,3
+41,60,2020-01-10,16890515 3774,"tempus eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget",6,2
+48,52,2020-01-09,16440519 6926,"Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper",11,9
+59,43,2019-12-26,16970420 2895,vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis,11,7
+45,59,2020-01-20,16520617 2891,euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat.,11,10
+55,44,2020-01-26,16230621 4657,"lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla.",11,10
+49,58,2020-01-24,16160704 6883,"mollis vitae, posuere at,",5,8
+53,43,2020-01-14,16410401 3323,libero. Proin mi. Aliquam,9,3
+42,50,2020-01-15,16020404 3814,"nisi sem semper erat, in",8,10
+60,44,2019-12-17,16260606 4695,"ligula elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien,",9,6
+49,51,2019-12-18,16250709 2027,ac nulla. In tincidunt congue turpis.,8,5
+61,57,2019-12-18,16890219 3450,aptent taciti sociosqu ad litora torquent,7,1
+46,61,2019-12-13,16100704 4116,sit amet ultricies sem magna,10,9
+51,61,2019-12-31,16730610 0400,ac mi eleifend egestas.,10,5
+42,48,2020-01-14,16901228 7067,Vivamus non lorem vitae,10,8
+43,60,2019-12-11,16370207 9207,"diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non,",7,4
+59,50,2020-01-03,16491224 1397,adipiscing lacus. Ut nec urna et,8,8
+53,47,2020-01-22,16060101 9946,quam quis diam. Pellentesque habitant,9,1
+41,59,2019-12-07,16231129 2169,orci sem eget massa. Suspendisse eleifend. Cras sed leo.,11,4
+42,59,2019-12-04,16290824 9739,aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim,8,10
+58,52,2019-12-19,16110626 8467,"ut, pharetra sed, hendrerit a, arcu. Sed et libero. Proin mi. Aliquam gravida",10,1
+42,50,2020-01-06,16730425 1817,dictum. Phasellus in felis. Nulla tempor augue ac ipsum. Phasellus vitae mauris sit,5,6
+58,47,2020-01-19,16180126 4100,"Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus",10,10
+54,60,2019-12-27,16550517 2972,justo. Praesent luctus. Curabitur egestas,5,7
+41,47,2019-12-03,16420402 4600,Proin sed turpis nec mauris blandit mattis. Cras eget nisi dictum augue malesuada,9,4
+41,52,2020-01-18,16751201 2308,sit amet ultricies sem,11,4
+54,51,2020-01-23,16521211 5231,Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat,9,1
+54,44,2020-01-19,16240610 2844,"pede, ultrices a, auctor non, feugiat nec,",8,3
+55,41,2020-01-31,16940520 4224,"sed, sapien. Nunc pulvinar arcu et pede. Nunc",6,1
+42,45,2019-12-19,16350325 1146,tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean,6,9
+47,43,2020-01-09,16560207 3958,"convallis, ante lectus convallis est, vitae sodales nisi",8,7
+50,58,2019-12-29,16000117 2451,Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit nonummy. Fusce fermentum fermentum,8,4
+46,42,2020-01-07,16830905 3828,"velit dui, semper et, lacinia vitae,",7,2
+61,59,2020-01-15,16990325 9183,"magnis dis parturient montes, nascetur ridiculus mus. Proin",11,7
+52,61,2020-01-05,16010618 0953,arcu. Vestibulum ante ipsum primis in faucibus orci luctus et,9,1
+51,58,2020-01-15,16770227 7828,"Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus",5,1
+51,55,2019-12-08,16030811 2127,"sem semper erat, in consectetuer ipsum nunc id enim. Curabitur massa.",5,4
+48,53,2020-01-12,16000823 0344,Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia,7,8
+46,57,2020-01-05,16880217 9385,"nunc est, mollis non, cursus non, egestas a, dui.",10,2
+59,45,2020-01-14,16071001 7898,non dui nec urna suscipit nonummy. Fusce fermentum fermentum arcu.,11,1
+51,46,2020-01-18,16211117 4971,ultrices iaculis odio. Nam,5,7
+48,55,2020-01-22,16210714 8591,elit erat vitae risus.,11,1
+57,42,2019-12-09,16261129 8684,Cras eu tellus eu augue porttitor interdum. Sed auctor odio a purus.,5,5
+51,42,2020-01-24,16020918 9729,"sociis natoque penatibus et magnis dis parturient montes,",8,4
+44,46,2019-12-20,16290828 2169,Proin non massa non ante,9,10
+48,53,2020-01-27,16080605 1579,"penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc",7,4
+41,41,2019-12-26,16550904 3922,rutrum magna. Cras convallis convallis dolor. Quisque,8,8
+53,47,2019-12-01,16530719 0263,"risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare,",11,6
+56,53,2019-12-16,16880614 4633,"id, libero. Donec consectetuer mauris id sapien. Cras dolor dolor, tempus non,",8,3
+44,57,2020-01-14,16620914 1560,"aliquet, sem ut cursus luctus, ipsum leo elementum sem, vitae",10,5
+57,53,2020-01-24,16360712 1666,"Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est ac",6,2
+46,60,2020-01-23,16960112 8458,non dui nec urna suscipit nonummy.,8,2
+58,60,2020-01-25,16281229 7253,dui nec urna suscipit nonummy. Fusce fermentum fermentum arcu. Vestibulum ante ipsum primis in,5,7
+46,51,2019-12-28,16840508 7498,eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus.,4,5
+45,45,2019-12-23,16940421 7201,mattis. Cras eget nisi dictum augue malesuada malesuada.,6,9
+48,50,2019-12-02,16051123 4361,"Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy ut, molestie in,",7,7
+52,57,2020-01-23,16370117 3837,"ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec ante.",5,10
+57,55,2019-12-26,16360109 3705,urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam.,6,2
+56,53,2019-12-04,16700709 5248,adipiscing lacus. Ut nec urna et arcu imperdiet ullamcorper. Duis,6,3
+51,53,2020-01-11,16810415 4813,massa. Quisque porttitor eros nec tellus.,9,9
+43,57,2019-12-07,16120624 1679,"aliquet, metus urna convallis erat, eget tincidunt dui augue eu tellus. Phasellus elit pede,",10,9
+50,41,2019-12-28,16981018 4433,a feugiat tellus lorem eu metus. In,10,4
+44,61,2019-12-10,16250222 6463,accumsan interdum libero dui,11,5
+54,41,2020-01-18,16540827 0048,"nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida non,",7,1
+57,47,2020-01-16,16810811 5356,"at lacus. Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa",9,5
+42,57,2019-12-03,16940728 7813,"elit. Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat",10,3
+49,43,2019-12-24,16750417 2771,"urna justo faucibus lectus, a sollicitudin orci sem eget",8,7
+58,54,2020-01-16,16400823 8414,egestas. Aliquam fringilla cursus,7,5
+46,53,2019-12-17,16310910 0333,"vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit amet,",7,1
+52,52,2019-12-02,16821104 3396,"ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus justo eu arcu. Morbi",11,7
+43,55,2019-12-28,16040305 7409,"sit amet, faucibus ut, nulla. Cras eu tellus",11,4
+58,43,2020-01-07,16480328 5883,"adipiscing non, luctus sit amet, faucibus ut, nulla.",8,3
+49,55,2019-12-27,16991102 6491,nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus,6,6
+56,56,2019-12-26,16101229 7659,"ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,",6,6
+52,57,2020-01-01,16940520 4976,"congue, elit sed consequat auctor, nunc nulla vulputate dui, nec tempus mauris",5,10
+61,55,2019-12-21,16210129 8509,ridiculus mus. Proin vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie,7,10
+42,47,2020-01-19,16820808 9840,"scelerisque sed, sapien. Nunc",8,2
+56,47,2019-12-28,16680230 9655,"facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant",4,8
+52,54,2019-12-04,16500414 5818,Aenean sed pede nec ante blandit viverra.,10,6
+43,55,2019-12-19,16210413 3927,"Morbi accumsan laoreet ipsum. Curabitur consequat,",8,9
+45,60,2019-12-02,16480808 3614,"elit elit fermentum risus, at",10,6
+53,51,2020-01-28,16840209 7631,"sit amet luctus vulputate, nisi sem semper erat, in consectetuer ipsum nunc",5,9
+46,56,2020-01-08,16761224 3142,"odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum eu,",9,8
+49,61,2020-01-29,16860516 2661,lorem ac risus. Morbi,6,4
+53,42,2019-12-07,16780206 8556,tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam,10,6
+53,58,2020-01-19,16331230 9390,"nec, cursus a, enim. Suspendisse",8,8
+41,46,2020-01-15,16181228 2463,Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula.,4,9
+53,54,2020-01-05,16310530 7965,Ut tincidunt vehicula risus.,6,6
+49,42,2019-12-24,16920715 9485,Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque,8,6
+45,42,2020-01-07,16001117 6138,ipsum. Phasellus vitae mauris sit amet lorem semper auctor. Mauris,8,10
+50,45,2020-01-18,16850409 3454,aliquet magna a neque. Nullam ut,7,9
+41,41,2020-01-06,16190530 9124,eu turpis. Nulla aliquet. Proin velit. Sed malesuada augue ut,7,1
+57,58,2020-01-06,16901110 2531,"mauris ipsum porta elit, a feugiat tellus lorem eu metus. In lorem.",9,4
+57,46,2019-12-04,16540807 8664,"elementum sem, vitae aliquam eros turpis non enim.",10,1
+53,42,2019-12-05,16770215 5198,"dolor dolor, tempus non, lacinia at, iaculis",4,3
+60,43,2019-12-26,16680417 6185,urna. Nullam lobortis quam a,6,5
+50,50,2020-01-30,16651113 1929,nulla at sem molestie sodales. Mauris blandit enim consequat purus.,5,1
+41,47,2019-12-14,16341010 2978,Cras convallis convallis dolor. Quisque tincidunt pede ac,11,6
+48,58,2020-01-30,16720104 0875,"velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque",11,6
+51,46,2020-01-07,16751107 0281,"commodo ipsum. Suspendisse non leo. Vivamus nibh dolor,",4,10
+53,41,2019-12-15,16270617 7975,fermentum arcu. Vestibulum ante ipsum primis,11,1
+43,55,2019-12-10,16810208 4285,lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet,11,3
+45,45,2019-12-09,16511117 4768,feugiat placerat velit. Quisque varius. Nam porttitor,8,6
+49,53,2020-01-17,16670526 9006,non quam. Pellentesque habitant morbi tristique senectus,6,1
+44,41,2019-12-27,16770127 9403,lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis,8,7
+47,58,2019-12-26,16540315 3959,"non, feugiat nec, diam. Duis mi enim,",4,10
+53,49,2020-01-26,16060522 4559,imperdiet ornare. In faucibus. Morbi vehicula.,10,8
+50,58,2019-12-19,16601030 8705,sodales elit erat vitae risus. Duis a mi fringilla mi,5,4
+41,44,2019-12-16,16290217 4545,"aliquam, enim nec tempus scelerisque, lorem",11,10
+57,45,2020-01-18,16430803 0073,"scelerisque neque sed sem egestas blandit. Nam nulla magna, malesuada",6,6
+61,58,2020-01-15,16780509 8485,risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent,11,3
+51,52,2020-01-19,16860301 4401,"malesuada id, erat. Etiam vestibulum massa",8,5
+57,54,2019-12-22,16311227 3085,odio. Phasellus at augue id ante dictum cursus. Nunc,4,2
+58,54,2019-12-23,16820630 6642,"sem, consequat nec, mollis vitae, posuere",11,7
+42,51,2020-01-11,16050212 2005,Suspendisse tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante,11,2
+55,52,2019-12-12,16071102 8993,consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque,5,4
+41,54,2019-12-15,16621102 4994,Vivamus nisi. Mauris nulla. Integer,9,4
+55,53,2020-01-31,16530429 0017,"eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus",7,6
+42,45,2020-01-04,16790309 5656,Duis a mi fringilla mi lacinia,5,1
+43,61,2020-01-26,16780811 8736,enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras dictum ultricies,8,4
+42,46,2019-12-12,16511125 3711,"mattis velit justo nec ante. Maecenas mi felis, adipiscing",8,4
+54,54,2019-12-14,16550503 1665,"congue a, aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum",10,6
+48,53,2019-12-07,16310405 8858,"gravida non, sollicitudin a, malesuada id,",10,3
+42,47,2019-12-12,16020806 3792,"Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi nibh",8,10
+59,59,2020-01-01,16810512 2678,"sed consequat auctor, nunc",10,1
+59,45,2020-01-25,16350215 7864,"sed consequat auctor, nunc nulla vulputate dui, nec tempus mauris erat eget ipsum.",10,1
+56,53,2020-01-14,16500224 4464,"eu metus. In lorem. Donec elementum, lorem ut aliquam iaculis, lacus pede sagittis augue, eu",11,2
+55,41,2020-01-21,16030210 6562,"dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed",5,10
+52,59,2019-12-02,16821129 8701,Integer tincidunt aliquam arcu.,6,5
+44,42,2019-12-05,16541016 8537,dignissim tempor arcu. Vestibulum ut eros non enim commodo hendrerit. Donec porttitor tellus non magna.,7,3
+51,51,2019-12-14,16300905 2428,"nunc est, mollis non, cursus non, egestas a, dui. Cras",4,4
+58,53,2019-12-10,16890805 9424,Mauris molestie pharetra nibh. Aliquam,8,6
+55,56,2020-01-03,16900512 8872,Cras eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum,4,2
+54,45,2019-12-06,16100315 9975,"sit amet, faucibus ut, nulla. Cras eu tellus eu augue",10,5
+41,46,2020-01-07,16030513 1955,"mauris ipsum porta elit, a feugiat tellus",8,4
+48,52,2019-12-24,16930713 6961,"Donec tempor, est ac mattis semper,",7,5
+61,57,2019-12-11,16020912 1920,"Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod",9,2
+55,53,2020-01-01,16281225 4635,"tellus faucibus leo, in",9,4
+56,42,2019-12-30,16790112 1249,est arcu ac orci. Ut semper pretium neque. Morbi quis urna. Nunc quis arcu,4,4
+52,49,2019-12-08,16511128 3155,Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus.,6,9
+60,53,2019-12-08,16130918 8801,"dui, semper et, lacinia",6,7
+58,41,2019-12-15,16710425 6677,"Cras interdum. Nunc sollicitudin commodo ipsum. Suspendisse non leo. Vivamus nibh dolor,",8,9
+48,58,2020-01-07,16141002 5983,adipiscing elit. Curabitur sed tortor. Integer aliquam adipiscing lacus. Ut nec urna,6,9
+52,48,2019-12-01,16221211 5600,Nullam nisl. Maecenas malesuada fringilla est. Mauris eu turpis. Nulla aliquet. Proin,6,8
+60,59,2020-01-04,16980417 0992,"convallis est, vitae sodales nisi magna sed dui. Fusce aliquam, enim",4,4
+53,46,2020-01-06,16720615 0695,"et, rutrum eu, ultrices sit amet, risus. Donec nibh enim, gravida sit amet, dapibus",9,6
+50,53,2019-12-28,16610421 2656,"sit amet diam eu dolor egestas rhoncus. Proin nisl sem, consequat nec,",7,10
+44,44,2020-01-29,16750123 2107,turpis. In condimentum. Donec at arcu. Vestibulum ante,8,1
+53,61,2020-01-22,16490724 8720,"vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae diam. Proin dolor.",8,7
+43,60,2020-01-25,16011026 2375,Sed eu eros. Nam consequat dolor,5,2
+52,49,2019-12-11,16830522 6055,"lobortis risus. In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean",8,1
+41,50,2019-12-20,16090327 5485,"faucibus lectus, a sollicitudin orci sem",11,9
+55,50,2020-01-20,16751217 7820,euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet,7,10
+49,50,2019-12-13,16510722 5186,justo sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis,4,4
+47,49,2019-12-29,16311209 3723,"enim mi tempor lorem, eget mollis lectus pede et risus. Quisque",7,9
+60,42,2020-01-21,16750225 6865,aliquam eros turpis non enim.,11,1
+48,46,2019-12-24,16370807 7429,"nec, malesuada ut, sem. Nulla interdum. Curabitur",7,6
+44,45,2020-01-16,16011115 6691,"at augue id ante dictum cursus. Nunc mauris elit,",8,5
+60,51,2020-01-16,16011125 9685,sollicitudin orci sem eget massa. Suspendisse eleifend. Cras sed,11,9
+49,58,2019-12-28,16510804 9692,"aliquet, metus urna convallis erat, eget tincidunt dui augue eu tellus.",9,9
+47,57,2019-12-15,16761024 0777,"sed, hendrerit a, arcu. Sed et",10,1
+47,41,2020-01-29,16681117 1583,"quis lectus. Nullam suscipit, est",5,5
+57,51,2020-01-09,16781230 2227,"vehicula aliquet libero. Integer in magna. Phasellus dolor elit, pellentesque a, facilisis non, bibendum sed,",7,2
+57,50,2020-01-17,16420728 7774,"lectus. Nullam suscipit, est ac facilisis facilisis,",5,3
+49,58,2019-12-19,16680426 8578,"pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur",10,5
+44,52,2020-01-01,16840704 1386,habitant morbi tristique senectus et netus et malesuada,6,2
+54,58,2019-12-18,16691229 2270,tristique neque venenatis lacus. Etiam bibendum,5,4
+42,43,2020-01-08,16641009 7114,"sed dictum eleifend, nunc",4,9
+52,44,2019-12-08,16671130 6651,"libero at auctor ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus",6,9
+55,50,2020-01-14,16600117 7994,scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia. Sed,8,10
+42,42,2020-01-16,16410123 7917,Praesent eu dui. Cum sociis,11,9
+48,60,2019-12-08,16511212 3566,venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec,6,6
+56,58,2019-12-18,16480823 5529,lobortis ultrices. Vivamus rhoncus. Donec est. Nunc,7,3
+59,53,2020-01-31,16700620 5947,tincidunt. Donec vitae erat vel pede blandit congue.,11,7
+53,53,2020-01-14,16231230 1050,"dolor dolor, tempus non, lacinia at, iaculis quis, pede.",7,4
+44,59,2019-12-01,16551002 4192,Nam tempor diam dictum sapien. Aenean massa. Integer vitae nibh. Donec,5,1
+61,46,2020-01-06,16910417 5469,"Donec felis orci, adipiscing non, luctus sit amet,",7,4
+54,53,2019-12-01,16600713 0542,netus et malesuada fames ac,5,9
+52,56,2019-12-08,16040323 6391,cubilia Curae; Donec tincidunt. Donec vitae erat vel,8,1
+53,51,2019-12-13,16310725 3001,"id, mollis nec, cursus a, enim. Suspendisse aliquet, sem ut",6,3
+51,53,2020-01-31,16190508 1467,erat. Etiam vestibulum massa rutrum magna. Cras convallis convallis dolor. Quisque tincidunt pede ac urna.,5,9
+54,41,2020-01-17,16750630 3309,"erat nonummy ultricies ornare, elit",7,3
+48,41,2019-12-30,16860619 8722,nec urna suscipit nonummy. Fusce fermentum fermentum arcu. Vestibulum ante,11,10
+46,55,2020-01-19,16440223 4555,Duis dignissim tempor arcu. Vestibulum ut eros non,8,10
+59,49,2019-12-30,16950307 7480,nulla. In tincidunt congue turpis. In condimentum. Donec at arcu. Vestibulum ante ipsum primis,5,4
+46,47,2020-01-16,16991015 0375,"parturient montes, nascetur ridiculus",11,3
+48,50,2020-01-27,16840304 1109,ut odio vel est tempor bibendum. Donec felis,10,2
+52,47,2019-12-22,16490506 1208,"libero at auctor ullamcorper, nisl arcu iaculis enim, sit",10,4
+60,45,2019-12-08,16601017 5179,"convallis in, cursus et, eros. Proin ultrices. Duis volutpat nunc sit amet metus. Aliquam",11,2
+42,49,2019-12-27,16980806 2260,convallis convallis dolor. Quisque tincidunt pede ac urna. Ut tincidunt vehicula,5,9
+60,60,2019-12-27,16190529 6958,"enim nisl elementum purus,",6,6
+59,51,2020-01-19,16730106 0039,Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet libero. Integer,7,5
+54,53,2019-12-14,16600106 4325,nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra.,7,2
+49,56,2019-12-04,16900101 5081,"ac, feugiat non, lobortis quis, pede.",9,9
+51,50,2020-01-21,16020228 9955,"mauris elit, dictum eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur dictum.",11,3
+61,53,2019-12-17,16810115 6696,neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus,6,3
+58,53,2019-12-30,16490919 5150,"orci, in consequat enim diam vel",4,1
+54,41,2019-12-18,16710919 7090,"sem ut cursus luctus, ipsum leo elementum",5,4
+44,59,2020-01-14,16961030 2508,"Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in",11,9
+46,48,2019-12-15,16350411 2982,"Morbi neque tellus, imperdiet non, vestibulum nec, euismod in, dolor. Fusce feugiat. Lorem ipsum",11,8
+45,48,2019-12-17,16360918 7863,Ut semper pretium neque. Morbi quis urna. Nunc quis,7,8
+58,43,2020-01-02,16790605 7125,ridiculus mus. Proin vel arcu,10,7
+51,59,2020-01-11,16680628 2866,"dolor. Fusce feugiat. Lorem ipsum dolor sit amet,",5,4
+44,54,2019-12-22,16571123 6942,"fringilla ornare placerat, orci lacus vestibulum lorem, sit amet ultricies sem",11,2
+45,61,2019-12-06,16980108 7116,"nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",10,10
+41,54,2019-12-21,16550122 6053,"Donec elementum, lorem ut aliquam iaculis, lacus",8,6
+51,51,2019-12-22,16090702 1554,"lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per",4,4
+58,52,2020-01-20,16591205 8442,"sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales",6,2
+43,57,2019-12-23,16130608 3856,Aenean eget metus. In nec orci. Donec nibh. Quisque,5,1

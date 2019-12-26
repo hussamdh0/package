@@ -73,6 +73,7 @@ class JourneySerializer(serializers.ModelSerializer):
                   'date', 'time',
                   'phone', 'email',
                   'description', 'available_weight',
+                  'successful',
                   'user']
     
     def create(self, validated_data):

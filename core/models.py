@@ -1,9 +1,10 @@
 from django.contrib.auth.models import AbstractUser, UserManager
 from django.db                  import models
 from math                       import pi, sqrt, sin, cos, atan2
-from datetime                   import date, timedelta
+from datetime                   import date, timedelta, datetime
 from django.core.exceptions     import PermissionDenied
 from django.utils.translation   import gettext_lazy as _
+from django.utils               import timezone
 
 
 # mixin
@@ -138,13 +139,13 @@ class City(HasLocation):
 
 class User(BaseUserModel, HasContact, HasLocation):
     objects     = UserManager()
-    avatar      = models.ImageField(null=True, blank=True)
+    avatar      = models.CharField(max_length=1024, null=True, blank=True)
     email       = models.EmailField(_('email address'), blank=False, null=False, unique=True)
     reset_token = models.CharField(max_length=16, blank=True, null=True, default=None)
     
     @property
     def successful_journeys(self):
-        return len( Journey.objects.filter(user=self, date__lt=date.today(), successful=True) )
+        return Journey.objects.filter(user=self, date__lt=date.today(), successful=True).count()
     
     @property
     def full_name(self):
@@ -195,8 +196,10 @@ class JourneyManager(models.Manager):
             return qs.filter(**kwargs), city
     
     def all_ordered(self, **kwargs):
-        if 'user' in kwargs: qs = self.filter(user=kwargs['user'])
-        else : qs = self.get_queryset()
+        init_filter_kwargs = {}
+        if 'user' in kwargs: init_filter_kwargs['user'] = kwargs['user']
+        if kwargs['recent']: init_filter_kwargs['last_modified__gt'] = datetime.now(tz=timezone.utc) - timedelta(minutes=10)
+        qs = self.filter(**init_filter_kwargs)
         radius = kwargs.pop('radius', 50)
         c1 = None
         c2 = None
@@ -226,7 +229,7 @@ class Journey(BaseModel, HasContact):
     user             = models.ForeignKey(User, on_delete=models.CASCADE, related_name='journey')
     date             = models.DateField(default=date.today)
     time             = models.TimeField(null=True)
-    successful       = models.BooleanField(default=True)
+    successful       = models.BooleanField(default=False)
     objects          = JourneyManager()
 
     @property

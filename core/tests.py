@@ -86,7 +86,6 @@ class ApplicantCreationTest (TestCase):
         response.render()
         return json.loads(response.content)
     
-
     def test_city(self):
         # Test sorting by distance
         results = self.city_request(latitude=47.6, longitude= -122.3)['results']
@@ -101,7 +100,6 @@ class ApplicantCreationTest (TestCase):
         assert results[0]['name'] == 'New York'
         assert 'name' in results[0]
         assert 'country' not in results[0]
-
 
     def test_journey(self):
         # Test no kwargs

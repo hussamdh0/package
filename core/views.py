@@ -59,6 +59,7 @@ class JourneyLCV(ListCreateAPIView):
     
     def get_params(self):
         kwargs          = {}
+        recent          = self.request.query_params.get('recent')
         _date           = self.request.query_params.get('date')
         date_tolerance  = self.request.query_params.get('date_tolerance')
         origin          = self.request.query_params.get('origin')
@@ -72,6 +73,8 @@ class JourneyLCV(ListCreateAPIView):
         if origin:          kwargs['origin']            = origin
         if destination:     kwargs['destination']       = destination
         if radius:          kwargs['radius']            = float(radius)
+        if recent:          kwargs['recent']            = True
+        else:               kwargs['recent']            = False
         if my_journeys and self.request.user and not self.request.user.is_anonymous:
                             kwargs['user']              = self.request.user
 
