@@ -5,6 +5,7 @@ from datetime                   import date, timedelta, datetime
 from django.core.exceptions     import PermissionDenied
 from django.utils.translation   import gettext_lazy as _
 from django.utils               import timezone
+from django.db.models           import Q
 
 
 # mixin
@@ -28,22 +29,25 @@ class HasLocation(models.Model):
     # returns distance between two sets of coordinates in KM
     def distance(self, longitude=0, latitude=0, o=None):
         if o:
+            if o == self:
+                return 0
             latitude  = o.latitude
             longitude = o.longitude
         latitude1  = latitude
         longitude1 = longitude
         latitude2  = self.latitude
         longitude2 = self.longitude
-
-        dtor = float (pi / 180.0)
-
-        d_latitude  = (latitude2  - latitude1)  * dtor
-        d_longitude = (longitude2 - longitude1) * dtor
-
-        a = pow (sin (d_latitude / 2), 2) + cos (latitude1 * dtor) * cos (latitude2 * dtor) * pow (sin (d_longitude / 2), 2)
-        c = 2 * atan2 (sqrt (a), sqrt (1 - a))
-        return 6367 * c
-
+        if all((latitude1, longitude1, latitude2, longitude2)):
+            dtor = float (pi / 180.0)
+    
+            d_latitude  = (latitude2  - latitude1)  * dtor
+            d_longitude = (longitude2 - longitude1) * dtor
+    
+            a = pow (sin (d_latitude / 2), 2) + cos (latitude1 * dtor) * cos (latitude2 * dtor) * pow (sin (d_longitude / 2), 2)
+            c = 2 * atan2 (sqrt (a), sqrt (1 - a))
+            return 6367 * c
+        return 1000
+    
     def distance_object(self, o):
         return self.distance(longitude=o.longitude, latitude=o.latitude)
 
@@ -197,8 +201,11 @@ class JourneyManager(models.Manager):
     
     def all_ordered(self, **kwargs):
         d = None
+        u = kwargs.get('user', None)
         init_filter_kwargs = {}
-        if 'user' in kwargs: init_filter_kwargs['user'] = kwargs['user']
+        init_filter_args = []
+        if 'my_journeys' in kwargs: init_filter_kwargs['user'] = u
+        else: init_filter_args.append( ~Q(user=u) )
         if kwargs['recent']: init_filter_kwargs['last_modified__gt'] = datetime.now(tz=timezone.utc) - timedelta(minutes=10)
         if 'date' in kwargs:
             d = kwargs['date']  # date
@@ -207,16 +214,21 @@ class JourneyManager(models.Manager):
             date_range = [max(today, d - t), max(today, d + t)]
             init_filter_kwargs['date__range']=date_range
 
-        qs = self.filter(**init_filter_kwargs)
+        qs = self.filter(*init_filter_args, **init_filter_kwargs)
         radius = kwargs.pop('radius', 50)
         c1 = None
         c2 = None
         # if 'date' in kwargs:          qs = self.filter_date(qs, **kwargs)
         if 'origin' in kwargs:        qs, c1 = self.filter_city(qs, kwargs['origin'],         s='origin',       radius=radius)
         if 'destination' in kwargs:   qs, c2 = self.filter_city(qs, kwargs['destination'],    s='destination',  radius=radius)
-        if d and c1 and c2: key=lambda a: (abs(a.date - d), a.origin.distance(o=c1) + a.destination.distance(o=c2))
-        elif c1 and c2:     key=lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2)
-        elif d:             key=lambda a: abs(a.date - d)
+        date_key  = lambda a: abs(a.date - d)
+        dist_key  = lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2)
+        udist_key = lambda a: a.user.distance(o=u)
+        if d and c1 and c2: key=lambda a: (date_key(a), dist_key(a))
+        elif c1 and c2:     key=lambda a: dist_key(a)
+        elif d and u:       key=lambda a: (date_key(a), udist_key(a))
+        elif d:             key=lambda a: date_key(a)
+        elif u:             key=lambda a: udist_key(a)
         else:               key=lambda a: 1
         qs = sorted(qs, key=key)  # lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2))
         return qs

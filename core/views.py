@@ -75,7 +75,8 @@ class JourneyLCV(ListCreateAPIView):
         if radius:          kwargs['radius']            = float(radius)
         if recent:          kwargs['recent']            = True
         else:               kwargs['recent']            = False
-        if my_journeys and self.request.user and not self.request.user.is_anonymous:
+        if my_journeys:     kwargs['my_journeys']       = True
+        if self.request.user and not self.request.user.is_anonymous:
                             kwargs['user']              = self.request.user
 
         return kwargs  #     self.request.query_params

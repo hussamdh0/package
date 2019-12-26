@@ -13,9 +13,9 @@ class CityInline(admin.TabularInline):
 @admin.register(User)
 class CUserAdmin(UserAdmin):
     fieldsets = UserAdmin.fieldsets + (
-            (None, {'fields': ('reset_token', 'avatar', '_phone' )}),
+            (None, {'fields': ('reset_token', 'avatar', '_phone', 'latitude', 'longitude' )}),
     )
-    list_display = ('__str__', 'username', 'email', 'successful_journeys')
+    list_display = ('__str__', 'username', 'email', 'successful_journeys', 'latitude', 'longitude')
 
 
 @admin.register(Country)
