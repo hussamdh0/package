@@ -15,7 +15,7 @@ class ApplicantCreationTest (TestCase):
         # "name"            : "the name",
     }
     
-    def mix_journey(self, frm='ny', to='la', date='2019-01-01', postfix_date_to_name=False):
+    def mix_journey(self, frm='ny', to='la', date='2021-01-01', postfix_date_to_name=False):
         date_postfix = ''
         if postfix_date_to_name: date_postfix = ': ' + date
         kwargs    = {
@@ -41,18 +41,18 @@ class ApplicantCreationTest (TestCase):
         self.pt   = City.objects.get(name='Portland')      # far from NY and LA
         self.dv   = City.objects.get(name='Denver')        # far from NY and LA
         
-        self.mix_journey('ny', 'la', '2019-09-09')
-        self.mix_journey('br', 'la', '2019-09-09')
-        self.mix_journey('ph', 'la', '2019-09-09')
-        self.mix_journey('ny', 'rs', '2019-09-08')
-        self.mix_journey('rs', 'la', '2019-09-08')
-        self.mix_journey('br', 'rs', '2019-09-08')
+        self.mix_journey('ny', 'la', '2021-09-09')
+        self.mix_journey('br', 'la', '2021-09-09')
+        self.mix_journey('ph', 'la', '2021-09-09')
+        self.mix_journey('ny', 'rs', '2021-09-08')
+        self.mix_journey('rs', 'la', '2021-09-08')
+        self.mix_journey('br', 'rs', '2021-09-08')
         
-        self.mix_journey('pt', 'dv', '2019-08-31', postfix_date_to_name=True)
-        self.mix_journey('pt', 'dv', '2019-09-02', postfix_date_to_name=True)
-        self.mix_journey('pt', 'dv', '2019-09-04', postfix_date_to_name=True)
-        self.mix_journey('pt', 'dv', '2019-09-05', postfix_date_to_name=True)
-        self.mix_journey('pt', 'dv', '2019-09-07', postfix_date_to_name=True)
+        self.mix_journey('pt', 'dv', '2021-08-31', postfix_date_to_name=True)
+        self.mix_journey('pt', 'dv', '2021-09-02', postfix_date_to_name=True)
+        self.mix_journey('pt', 'dv', '2021-09-04', postfix_date_to_name=True)
+        self.mix_journey('pt', 'dv', '2021-09-05', postfix_date_to_name=True)
+        self.mix_journey('pt', 'dv', '2021-09-07', postfix_date_to_name=True)
         
         self.num_of_journeys = 6 + 5
         
@@ -118,28 +118,28 @@ class ApplicantCreationTest (TestCase):
         assert response['results'][4]['name'] == 'ph to la'
         
         # Test origin, destination and radius
-        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-03', date_tolerance=10)
+        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2021-09-03', date_tolerance=10)
         assert response['count'] == 5
-        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-03', date_tolerance=3)
+        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2021-09-03', date_tolerance=3)
         assert response['count'] == 4
-        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-03', date_tolerance=2)
+        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2021-09-03', date_tolerance=2)
         assert response['count'] == 3
-        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-03', date_tolerance=1)
+        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2021-09-03', date_tolerance=1)
         assert response['count'] == 2
-        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-03', date_tolerance=0)
+        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2021-09-03', date_tolerance=0)
         assert response['count'] == 0
-        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2019-09-04', date_tolerance=0)
+        response = self.journey_request(origin=self.pt.id, destination=self.dv.id, date='2021-09-04', date_tolerance=0)
         assert response['count'] == 1
-        assert response['results'][0]['name'] == 'pt to dv: 2019-09-04'
+        assert response['results'][0]['name'] == 'pt to dv: 2021-09-04'
     
     def test_journey_post(self):
         self.user = mixer.blend(User)
-        response = self.journey_request(post=True, user=self.user, origin='Riverside', destination='Denver', date='2020-01-13',)
+        response = self.journey_request(post=True, user=self.user, origin='Riverside', destination='Denver', date='2022-01-13',)
         new_id = response['id']
         new_journey = Journey.objects.get(id=new_id)
         assert new_journey.origin.name      == 'Riverside'
         assert new_journey.destination.name == 'Denver'
-        assert str(new_journey.date)        == '2020-01-13'
+        assert str(new_journey.date)        == '2022-01-13'
         thor_dict = {
             "origin": "Riverside",
             "destination": "New York",

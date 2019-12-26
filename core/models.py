@@ -196,17 +196,29 @@ class JourneyManager(models.Manager):
             return qs.filter(**kwargs), city
     
     def all_ordered(self, **kwargs):
+        d = None
         init_filter_kwargs = {}
         if 'user' in kwargs: init_filter_kwargs['user'] = kwargs['user']
         if kwargs['recent']: init_filter_kwargs['last_modified__gt'] = datetime.now(tz=timezone.utc) - timedelta(minutes=10)
+        if 'date' in kwargs:
+            d = kwargs['date']  # date
+            t = timedelta(days=kwargs['date_tolerance'])  # number of tolerance days
+            today = date.today()
+            date_range = [max(today, d - t), max(today, d + t)]
+            init_filter_kwargs['date__range']=date_range
+
         qs = self.filter(**init_filter_kwargs)
         radius = kwargs.pop('radius', 50)
         c1 = None
         c2 = None
-        if 'date' in kwargs:          qs = self.filter_date(qs, **kwargs)
+        # if 'date' in kwargs:          qs = self.filter_date(qs, **kwargs)
         if 'origin' in kwargs:        qs, c1 = self.filter_city(qs, kwargs['origin'],         s='origin',       radius=radius)
         if 'destination' in kwargs:   qs, c2 = self.filter_city(qs, kwargs['destination'],    s='destination',  radius=radius)
-        if c1 and c2: qs = sorted(qs, key=lambda a: a.origin.distance(c1.longitude, c1.latitude) + a.destination.distance(c2.longitude, c2.latitude))
+        if d and c1 and c2: key=lambda a: (abs(a.date - d), a.origin.distance(o=c1) + a.destination.distance(o=c2))
+        elif c1 and c2:     key=lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2)
+        elif d:             key=lambda a: abs(a.date - d)
+        else:               key=lambda a: 1
+        qs = sorted(qs, key=key)  # lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2))
         return qs
     
     # def create(self, name=None, origin=None, destination=None, user=None, date=None):
