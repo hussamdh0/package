@@ -25,10 +25,18 @@ class CityLV(ListAPIView):
 
     def get_params(self):
         kwargs = {}
+        search   = self.request.query_params.get('search')
+        if search:
+            # self.serializer_class = CityNamesSerializer
+            return {'search': search}
         longitude   = self.request.query_params.get('longitude')
         latitude    = self.request.query_params.get('latitude')
         if longitude:    kwargs['longitude'] = float(longitude)
         if latitude:     kwargs['latitude']  = float(latitude)
+        elif self.request.user and self.request.user.longitude and self.request.user.latitude:
+            kwargs['longitude'] = self.request.user.longitude
+            kwargs['latitude']  = self.request.user.latitude
+        
         
         if self.request.query_params.get('names_only'):
             # self.serializer_class._declared_fields = {}

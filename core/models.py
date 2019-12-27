@@ -88,12 +88,20 @@ class Country(models.Model):
 
 class CityManager(models.Manager):
     def all_ordered(self, **kwargs):
+        if 'search' in kwargs:
+            kw = kwargs['search']
+            lkw = len(kw)
+            qs = self.filter(name__icontains=kw).order_by('-population')
+            if lkw < 3:
+                return qs
+            return sorted(qs, key=lambda a: a.name.lower()[0:lkw] != kw.lower())
+            
         qs = self.get_queryset()
-        if ('longitude' in kwargs and 'latitude' in kwargs):
+        if 'longitude' in kwargs and 'latitude' in kwargs:
             return sorted(qs, key=lambda a: a.distance(**kwargs))
-        if ('longitude' in kwargs):
+        if 'longitude' in kwargs:
             qs = qs.filter(longitude__gt=kwargs['longitude'] - 3, longitude__lt=kwargs['longitude'] + 3)
-        if ('latitude' in kwargs):
+        if 'latitude' in kwargs:
             qs = qs.filter(latitude__gt=kwargs['latitude'] - 3, latitude__lt=kwargs['latitude'] + 3)
         return qs.order_by('-population')
     
@@ -200,7 +208,7 @@ class JourneyManager(models.Manager):
             return qs.filter(**kwargs), city
     
     def all_ordered(self, **kwargs):
-        d = None
+        d = None # date
         u = kwargs.get('user', None)
         init_filter_kwargs = {}
         init_filter_args = []
@@ -225,10 +233,10 @@ class JourneyManager(models.Manager):
         dist_key  = lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2)
         udist_key = lambda a: a.user.distance(o=u)
         if d and c1 and c2: key=lambda a: (date_key(a), dist_key(a))
-        elif c1 and c2:     key=lambda a: dist_key(a)
+        elif c1 and c2:     key=lambda a:  dist_key(a)
         elif d and u:       key=lambda a: (date_key(a), udist_key(a))
-        elif d:             key=lambda a: date_key(a)
-        elif u:             key=lambda a: udist_key(a)
+        elif d:             key=lambda a:  date_key(a)
+        elif u:             key=lambda a:  udist_key(a)
         else:               key=lambda a: 1
         qs = sorted(qs, key=key)  # lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2))
         return qs
