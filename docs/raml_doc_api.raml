@@ -92,6 +92,12 @@ baseUri: http://167.71.46.156:8080/api/
 /city:
   get:
     queryParameters:
+      search:
+        displayName: search
+        type: text
+        description: used to filter out cities
+        example: ber (returns a list of cities that their names contain 'ber' where Berlin is the first city on that list)
+        required: false
       longitude:
         displayName: longitude
         type: number
@@ -226,10 +232,10 @@ baseUri: http://167.71.46.156:8080/api/
                     "phone": "+491781676556",
                     "email": "s_sd21@hotmail.com"
                 }
-    put:
+    patch:
       description: patch also works.  modify journey (you only need submit the fields to be modified)
         _ _ _
-        only users that are owner of said journey have permissions to modify it. (not implemented yet)
+        only users that are owner of said journey have permissions to modify it.
       body:
         application/json:
           example: |
@@ -266,7 +272,7 @@ baseUri: http://167.71.46.156:8080/api/
     delete:
       description: delete journey
         _ _ _
-        only users that are owner of said journey have permissions to delete it. (not implemented yet)
+        only users that are owner of said journey have permissions to delete it.
       responses:
         204:
           description: successfully deleted
@@ -282,6 +288,74 @@ baseUri: http://167.71.46.156:8080/api/
             application/json:
               example: |
                 {"detail":"Authentication credentials were not provided."}
+.
+
+
+/user:
+  get:
+    description: |
+      get current user info (404 if no user is logged in, make sure to keep the JWT token in the Authorization header)
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "id": 1,
+                "username": "cfe",
+                "email": "s_sd21@hotmail.com",
+                "successful_journeys": 28,
+                "avatar": "erik-lucatero-d2MSDujJl2g-unsplash.jpg",
+                "full_name": "Husssam Altaleb"
+              }
+  patch:
+    description: |
+      modify currently logged in user info, fields are optional, do not add fields that should not be modified
+    body:
+      application/json:
+        example: |
+          {
+            "avatar": "https://images.unsplash.com/photo-1549459685-701565fe9ff1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=350&q=80",
+            "full_name": "howdy",
+            "longitude": 10.0,
+            "latitude": 13.0
+          }
+          or (just update location)
+          {
+            "longitude": 10.0,
+            "latitude": 13.0
+          }
+          or
+          {
+            "full_name": "howdy reynolds"
+          }
+    responses:
+      200:
+        description: modified successfully
+        body:
+          application/json:
+            example: |
+              similar to GET
+              {
+                "id": 10,
+                "username": "howdy",
+                "email": "howdy@example.com",
+                "successful_journeys": 16,
+                "avatar": "https://images.unsplash.com/photo-1549459685-701565fe9ff1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=350&q=80",
+                "full_name": "howdy reynolds",
+                "longitude": 10.0,
+                "latitude": 13.0
+              }
+      4xx:
+        description: error happened and user wasn't updated
+        body:
+          application/json:
+            example: |
+              {
+                  "longitude": [
+                      "A valid number is required."
+                  ]
+              }
 .
 
 

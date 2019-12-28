@@ -13,7 +13,8 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'password', 'email', 'token',
-                  'successful_journeys', 'avatar', 'full_name']
+                  'successful_journeys', 'avatar', 'full_name',
+                  'longitude', 'latitude', ]
         extra_kwargs = {'password'           : {'write_only': True},
                         'username'           : {'required': False},
                         'successful_journeys': {'read_only': True},
