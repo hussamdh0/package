@@ -33,7 +33,7 @@ class CityLV(ListAPIView):
         latitude    = self.request.query_params.get('latitude')
         if longitude:    kwargs['longitude'] = float(longitude)
         if latitude:     kwargs['latitude']  = float(latitude)
-        elif self.request.user and self.request.user.longitude and self.request.user.latitude:
+        elif self.request.user and not self.request.user.is_anonymous and self.request.user.latitude:
             kwargs['longitude'] = self.request.user.longitude
             kwargs['latitude']  = self.request.user.latitude
         
