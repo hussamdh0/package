@@ -181,7 +181,7 @@ class User(BaseUserModel, HasContact, HasLocation):
         s = self._avatar
         if s is None or s == '':
             id = str(self.id + 10000)[-2:]
-            return f'http://167.71.46.156:8080/media/{id}.jpg'
+            return f'http://167.71.46.156:8080/media/small/{id}.jpg'
         return s
 
     @avatar.setter
