@@ -9,6 +9,7 @@ jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 class UserSerializer(serializers.ModelSerializer):
     token = serializers.CharField(read_only=True)
     full_name = serializers.CharField(required=False)
+    avatar = serializers.CharField(required=False, allow_blank=True)
     
     class Meta:
         model = User

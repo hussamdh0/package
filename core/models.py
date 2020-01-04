@@ -151,7 +151,7 @@ class City(HasLocation):
 
 class User(BaseUserModel, HasContact, HasLocation):
     objects     = UserManager()
-    avatar      = models.CharField(max_length=1024, null=True, blank=True)
+    _avatar     = models.CharField(max_length=1024, null=True, blank=True, db_column='avatar')
     email       = models.EmailField(_('email address'), blank=False, null=False, unique=True)
     reset_token = models.CharField(max_length=16, blank=True, null=True, default=None)
     
@@ -175,7 +175,21 @@ class User(BaseUserModel, HasContact, HasLocation):
             else:
                 self.first_name = value
         else: raise TypeError
-    
+
+    @property
+    def avatar(self):
+        s = self._avatar
+        if s is None or s == '':
+            id = str(self.id + 10000)[-2:]
+            return f'http://167.71.46.156:8080/media/{id}.jpg'
+        return s
+
+    @avatar.setter
+    def avatar(self, value):
+        if type(value) is str:
+            self._avatar = value
+        else:
+            raise TypeError
     # def save(self, *args, **kwargs):
     #     if not self.username:
     #         self.username = self.email
