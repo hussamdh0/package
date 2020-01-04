@@ -2,12 +2,7 @@
 from rest_framework.views       import APIView
 from rest_framework.response    import Response
 from rest_framework.generics    import ListAPIView, ListCreateAPIView, RetrieveUpdateDestroyAPIView, RetrieveUpdateAPIView
-from core.serializers           import (
-    CitySerializer,
-    CityNamesSerializer,
-    JourneySerializer,
-    UserSerializer,
-)
+from core.serializers           import CitySerializer, CityNamesSerializer, JourneySerializer, UserSerializer
 from core.models                import City, Journey, User
 from datetime                   import date, timedelta, datetime
 from django.shortcuts           import render
