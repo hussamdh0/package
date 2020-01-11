@@ -16,8 +16,9 @@ def index(request):
 
 
 class CityLV(ListAPIView):
-    serializer_class = CitySerializer
-
+    serializer_class = CityNamesSerializer
+    pagination_class = None
+    
     def get_params(self):
         kwargs = {}
         search   = self.request.query_params.get('search')
@@ -28,15 +29,15 @@ class CityLV(ListAPIView):
         latitude    = self.request.query_params.get('latitude')
         if longitude:    kwargs['longitude'] = float(longitude)
         if latitude:     kwargs['latitude']  = float(latitude)
-        elif self.request.user and not self.request.user.is_anonymous and self.request.user.latitude:
+        elif self.request.user and not self.request.user.is_anonymous and self.request.user.latitude and self.request.user.longitude:
             kwargs['longitude'] = self.request.user.longitude
             kwargs['latitude']  = self.request.user.latitude
         
         
-        if self.request.query_params.get('names_only'):
-            # self.serializer_class._declared_fields = {}
-            # self.serializer_class.Meta.fields = ['name',]
-            self.serializer_class = CityNamesSerializer
+        # if self.request.query_params.get('names_only'):
+        #     # self.serializer_class._declared_fields = {}
+        #     # self.serializer_class.Meta.fields = ['name',]
+        #     self.serializer_class = CityNamesSerializer
             
         return kwargs
 

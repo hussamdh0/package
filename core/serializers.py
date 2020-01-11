@@ -59,7 +59,7 @@ class CitySerializer(serializers.ModelSerializer):
 class CityNamesSerializer(CitySerializer):
     class Meta:
         model = City
-        fields = ('id', 'name',)
+        fields = ('name',)
 
 
 class JourneySerializer(serializers.ModelSerializer):
