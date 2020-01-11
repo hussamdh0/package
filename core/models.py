@@ -92,7 +92,7 @@ class CityManager(models.Manager):
             kw = kwargs['search']
             lkw = len(kw)
             qs = self.filter(name__icontains=kw).order_by('-population')
-            if lkw < 3:
+            if lkw < 2:
                 return qs
             return sorted(qs, key=lambda a: a.name.lower()[0:lkw] != kw.lower())
             
