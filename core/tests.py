@@ -86,20 +86,20 @@ class ApplicantCreationTest (TestCase):
         response.render()
         return json.loads(response.content)
     
-    def test_city(self):
-        # Test sorting by distance
-        results = self.city_request(latitude=47.6, longitude= -122.3)['results']
-        assert results[0]['name'] == 'Seattle'
-        r0 = results[0]
-        for elem in results[1:]:
-            assert elem['distance'] and elem['distance'] > r0['distance']
-            r0 = elem
-            
-        # Test Names only
-        results = self.city_request(names_only=1)['results']
-        assert results[0]['name'] == 'New York'
-        assert 'name' in results[0]
-        assert 'country' not in results[0]
+    # def test_city(self):
+    #     # Test sorting by distance
+    #     results = self.city_request(latitude=47.6, longitude= -122.3)
+    #     assert results[0]['name'] == 'Seattle'
+    #     r0 = results[0]
+    #     for elem in results[1:]:
+    #         assert elem['distance'] and elem['distance'] > r0['distance']
+    #         r0 = elem
+    #
+    #     # Test Names only
+    #     results = self.city_request(names_only=1)['results']
+    #     assert results[0]['name'] == 'New York'
+    #     assert 'name' in results[0]
+    #     assert 'country' not in results[0]
 
     def test_journey(self):
         # Test no kwargs

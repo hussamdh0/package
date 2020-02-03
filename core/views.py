@@ -62,24 +62,26 @@ class JourneyLCV(ListCreateAPIView):
     serializer_class = JourneySerializer
     
     def get_params(self):
-        kwargs          = {}
-        recent          = self.request.query_params.get('recent')
-        _date           = self.request.query_params.get('date')
-        date_tolerance  = self.request.query_params.get('date_tolerance')
-        origin          = self.request.query_params.get('origin')
-        destination     = self.request.query_params.get('destination')
-        radius          = self.request.query_params.get('radius')
-        my_journeys     = self.request.query_params.get('my_journeys')
+        kwargs              = {}
+        recent              = self.request.query_params.get('recent')
+        _date               = self.request.query_params.get('date')
+        date_tolerance      = self.request.query_params.get('date_tolerance')
+        origin              = self.request.query_params.get('origin')
+        destination         = self.request.query_params.get('destination')
+        radius              = self.request.query_params.get('radius')
+        my_journeys         = self.request.query_params.get('my_journeys')
+        location_disabled   = self.request.query_params.get('location_disabled')
         if _date:
             kwargs['date']              = datetime.strptime(_date, '%Y-%m-%d').date()
             kwargs['date_tolerance']    = 1
-        if date_tolerance:  kwargs['date_tolerance']    = int(date_tolerance)
-        if origin:          kwargs['origin']            = origin
-        if destination:     kwargs['destination']       = destination
-        if radius:          kwargs['radius']            = float(radius)
-        if recent:          kwargs['recent']            = True
-        else:               kwargs['recent']            = False
-        if my_journeys:     kwargs['my_journeys']       = True
+        if date_tolerance:      kwargs['date_tolerance']    = int(date_tolerance)
+        if origin:              kwargs['origin']            = origin
+        if destination:         kwargs['destination']       = destination
+        if radius:              kwargs['radius']            = float(radius)
+        if recent:              kwargs['recent']            = True
+        else:                   kwargs['recent']            = False
+        if my_journeys:         kwargs['my_journeys']       = True
+        if location_disabled:   kwargs['location_disabled']  = True
         if self.request.user and not self.request.user.is_anonymous:
                             kwargs['user']              = self.request.user
 

@@ -5,8 +5,10 @@ from datetime                   import date, timedelta, datetime
 from django.core.exceptions     import PermissionDenied
 from django.utils.translation   import gettext_lazy as _
 from django.utils               import timezone
-# from django.db.models         import Q
+from django.db.models         import Q
 
+
+STATIC_CITIES = [{"name":"Amsterdam"},{"name":"Augsburg"},{"name":"Berlin"},{"name":"Bielefeld"},{"name":"Bonn"},{"name":"Braunschweig"},{"name":"Bremen"},{"name":"Chemnitz"},{"name":"Cologne"},{"name":"Cottbus"},{"name":"Dortmund"},{"name":"Dresden"},{"name":"Duisburg"},{"name":"Dusseldorf"},{"name":"Eindhoven"},{"name":"Erfurt"},{"name":"Essen"},{"name":"Frankfurt"},{"name":"Freiburg"},{"name":"Furth"},{"name":"Gera"},{"name":"Goteborg"},{"name":"Gottingen"},{"name":"Groningen"},{"name":"Haarlem"},{"name":"Hamburg"},{"name":"Hannover"},{"name":"Heidelberg"},{"name":"Ingolstadt"},{"name":"Jena"},{"name":"Karlsruhe"},{"name":"Kassel"},{"name":"Kiel"},{"name":"Kobenhavn"},{"name":"Koblenz"},{"name":"Leeuwarden"},{"name":"Leipzig"},{"name":"Lubeck"},{"name":"Maastricht"},{"name":"Magdeburg"},{"name":"Mainz"},{"name":"Malmo"},{"name":"Mannheim"},{"name":"Munich"},{"name":"Munster"},{"name":"Nurnberg"},{"name":"Odense"},{"name":"Oldenburg"},{"name":"Osnabruck"},{"name":"Potsdam"},{"name":"Regensburg"},{"name":"Rostock"},{"name":"Rotterdam"},{"name":"Saarbrucken"},{"name":"Stockholm"},{"name":"Stuttgart"},{"name":"The Hague"},{"name":"Ulm"},{"name":"Uppsala"},{"name":"Utrecht"},{"name":"Vasteraas"},{"name":"Wiesbaden"},{"name":"Wuppertal"},{"name":"Wurzburg"},{"name":"Zwolle"}]
 
 # mixin
 
@@ -96,14 +98,16 @@ class CityManager(models.Manager):
                 return qs
             return sorted(qs, key=lambda a: a.name.lower()[0:lkw] != kw.lower())
             
-        qs = self.get_queryset()
-        if 'longitude' in kwargs and 'latitude' in kwargs:
-            return sorted(qs, key=lambda a: a.distance(**kwargs))
-        if 'longitude' in kwargs:
-            qs = qs.filter(longitude__gt=kwargs['longitude'] - 3, longitude__lt=kwargs['longitude'] + 3)
-        if 'latitude' in kwargs:
-            qs = qs.filter(latitude__gt=kwargs['latitude'] - 3, latitude__lt=kwargs['latitude'] + 3)
-        return qs.order_by('-population')
+        return STATIC_CITIES
+        # arg = [Q(country__name='Netherlands') | Q(country__name='Germany') | Q(country__name='Denmark') | Q(country__name='Sweden')]
+        # qs = self.filter(*arg, population__gt=100_000).order_by('name')
+        # if 'longitude' in kwargs and 'latitude' in kwargs:
+        #     return sorted(qs, key=lambda a: a.distance(**kwargs))
+        # if 'longitude' in kwargs:
+        #     qs = qs.filter(longitude__gt=kwargs['longitude'] - 3, longitude__lt=kwargs['longitude'] + 3)
+        # if 'latitude' in kwargs:
+        #     qs = qs.filter(latitude__gt=kwargs['latitude'] - 3, latitude__lt=kwargs['latitude'] + 3)
+        # return qs   # .order_by('-population')
     
     def get_json(self, value):
         if type(value) is int:
@@ -227,7 +231,7 @@ class JourneyManager(models.Manager):
         init_filter_kwargs = {}
         init_filter_args = []
         if 'my_journeys' in kwargs: init_filter_kwargs['user'] = u
-        else: init_filter_args.append( ~models.Q(user=u) )
+        # else: init_filter_args.append( ~models.Q(user=u) )
         if kwargs['recent']: init_filter_kwargs['last_modified__gt'] = datetime.now(tz=timezone.utc) - timedelta(minutes=10)
         if 'date' in kwargs:
             d = kwargs['date']  # date
@@ -246,6 +250,7 @@ class JourneyManager(models.Manager):
         date_key  = lambda a: abs(a.date - d)
         dist_key  = lambda a: a.origin.distance(o=c1) + a.destination.distance(o=c2)
         udist_key = lambda a: a.user.distance(o=u)
+        if 'location_disabled' in kwargs: u = None
         if d and c1 and c2: key=lambda a: (date_key(a), dist_key(a))
         elif c1 and c2:     key=lambda a:  dist_key(a)
         elif d and u:       key=lambda a: (date_key(a), udist_key(a))
