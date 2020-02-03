@@ -8,7 +8,7 @@ from django.views.decorators.http import require_POST
 from mixer.backend.django   import mixer
 from random import randint
 import datetime
-import names
+# import names
 from core.models import STATIC_CITIES
 
 
@@ -65,12 +65,12 @@ def add_journeys(request):
                 user = User(id=bid)
                 gender = 'male'
                 if FM[bid-3] == 0: gender='female'
-                fn = names.get_first_name(gender=gender)
-                ln = names.get_last_name()
-                user.first_name = fn
-                user.last_name  = ln
-                user.email      = f'{fn}.{ln}.{bid}@example.com'
-                user.username   = f'{fn}{bid}'
+                # fn = names.get_first_name(gender=gender)
+                # ln = names.get_last_name()
+                # user.first_name = fn
+                # user.last_name  = ln
+                # user.email      = f'{fn}.{ln}.{bid}@example.com'
+                # user.username   = f'{fn}{bid}'
                 user.save()
             # origin_idx = randint(0, len(STATIC_CITIES) - 1)
             origin_idx = randint(0, len(CLOSE_CITIES) - 1)
