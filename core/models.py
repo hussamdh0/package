@@ -156,6 +156,7 @@ class City(HasLocation):
 class User(BaseUserModel, HasContact, HasLocation):
     objects     = UserManager()
     _avatar     = models.CharField(max_length=1024, null=True, blank=True, db_column='avatar')
+    address     = models.CharField(max_length=1024, null=True, blank=True)
     email       = models.EmailField(_('email address'), blank=False, null=False, unique=True)
     reset_token = models.CharField(max_length=16, blank=True, null=True, default=None)
     
@@ -298,8 +299,15 @@ class Journey(BaseModel, HasContact):
     @_origin.setter
     def _origin(self, value):
         self.origin = City.objects.get_json(value)
-    
-    
+
+    @property
+    def _date(self):
+        return self.date.strftime("%b %d %Y")
+
+    @_date.setter
+    def _date(self, value):
+        self.date = value # date.strftime()
+
     @property
     def phone(self):
         if self._phone: return self._phone

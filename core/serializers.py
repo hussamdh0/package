@@ -14,11 +14,13 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'password', 'email', 'token',
+                  'address',
                   'successful_journeys', 'avatar', 'full_name',
                   'longitude', 'latitude', ]
         extra_kwargs = {'password'           : {'write_only': True},
-                        'username'           : {'required': False},
-                        'successful_journeys': {'read_only': True},
+                        'username'           : {'required':   False},
+                        'address'            : {'required':   False},
+                        'successful_journeys': {'read_only':  True},
                         # 'email':    {'write_only': True},
                         }
     
@@ -67,6 +69,7 @@ class JourneySerializer(serializers.ModelSerializer):
     destination = serializers.JSONField(required=False, source='_destination')
     phone       = serializers.JSONField(required=False)
     email       = serializers.JSONField(required=False)
+    # date        = serializers.JSONField(required=False, source='_date')
     user        = UserSerializer(read_only=True)
     
     class Meta:
