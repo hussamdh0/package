@@ -33,4 +33,5 @@ class CityAdmin(admin.ModelAdmin):
 @admin.register(Journey)
 class JourneyAdmin(admin.ModelAdmin):
     raw_id_fields = ('origin', 'destination')
-    list_display = ('__str__', 'name', 'user', 'date', 'pk')
+    list_per_page = 700
+    list_display = ('__str__', 'name', 'origin', 'user', 'date', 'pk')
